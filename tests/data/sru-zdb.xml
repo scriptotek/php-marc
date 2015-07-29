@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/"><version>1.1</version><numberOfRecords>8</numberOfRecords><records><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00869nas a2200325 c 4500</slim:leader>
+    <slim:controlfield tag="001">1008300616</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20111018120841.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">101115d20102010gw z||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="015" ind1=" " ind2=" ">
+      <slim:subfield code="a">10,A48</slim:subfield>
+      <slim:subfield code="2">dnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">1008300616</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2581828-4</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2581828-4</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)724667833</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">1241</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">1241</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="083" ind1="7" ind2=" ">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Unterwegs mit Hello Kitty</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Nettetal</slim:subfield>
+      <slim:subfield code="b">Panini-Verl.-GmbH</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="300" ind1=" " ind2=" ">
+      <slim:subfield code="c">28 cm</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">2010,1-2; damit Ersch. eingest.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="363" ind1="0" ind2="0">
+      <slim:subfield code="8">1.1\x</slim:subfield>
+      <slim:subfield code="i">2010</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="365" ind1=" " ind2=" ">
+      <slim:subfield code="b">EUR 3.50 (DE, Einzelh.), EUR 3.90 (AT, Einzelh.), sfr 6.80 (Einzelh.)</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="515" ind1=" " ind2=" ">
+      <slim:subfield code="a">Ersch. 3x monatl.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="925" ind1="r" ind2=" ">
+      <slim:subfield code="a">ra</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>1</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00900nas a2200349 c 4500</slim:leader>
+    <slim:controlfield tag="001">995583129</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20091020235207.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">090727c20099999gw q||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="015" ind1=" " ind2=" ">
+      <slim:subfield code="a">09,A44,2191</slim:subfield>
+      <slim:subfield code="2">dnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">995583129</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2507141-5</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2507141-5</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)723878271</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">1141</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9999</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="083" ind1="7" ind2=" ">
+      <slim:subfield code="a">360</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">360</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Hello Kitty</slim:subfield>
+      <slim:subfield code="n">[...]</slim:subfield>
+      <slim:subfield code="p">Mini</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="246" ind1="1" ind2="9">
+      <slim:subfield code="a">Hello Kitty / Mini</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Berlin</slim:subfield>
+      <slim:subfield code="b">Egmont Ehapa</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="300" ind1=" " ind2=" ">
+      <slim:subfield code="c">22 cm</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">2009 -</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="363" ind1="0" ind2="1">
+      <slim:subfield code="8">1.1\x</slim:subfield>
+      <slim:subfield code="i">2009</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="365" ind1=" " ind2=" ">
+      <slim:subfield code="b">EUR 3.95 (Einzelh., DE), EUR 4.50 (Einzelh., AT), sfr 7.90 (Einzelh.)</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="515" ind1=" " ind2=" ">
+      <slim:subfield code="a">Ersch. 4x jährl.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="925" ind1="r" ind2=" ">
+      <slim:subfield code="a">ra</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="930" ind1=" " ind2=" ">
+      <slim:subfield code="a">Mini</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>2</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>01079nas a2200325 c 4500</slim:leader>
+    <slim:controlfield tag="001">989802337</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20130128143758.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">080729d20082011gw u||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">989802337</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2441065-2</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2441065-2</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)723855026</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">0035</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">0035</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="110" ind1="2" ind2=" ">
+      <slim:subfield code="0">(DE-588)5129728-0</slim:subfield>
+      <slim:subfield code="0">(DE-101)944550819</slim:subfield>
+      <slim:subfield code="a">Sophienschule Hannover</slim:subfield>
+      <slim:subfield code="4">aut</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Abibuch der Sophienschule</slim:subfield>
+      <slim:subfield code="c">hrsg. vom Abibuch-Komitee</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="246" ind1="1" ind2="3">
+      <slim:subfield code="i">Nebent.</slim:subfield>
+      <slim:subfield code="a">Abitur an der Sophienschule Hannover</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">AbiTeam 2008</slim:subfield>
+      <slim:subfield code="f">Nebent. 2008</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">We love Sophie - 100.Abijahrgang</slim:subfield>
+      <slim:subfield code="f">Nebent. 2010</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">You say Goodbye and I say Hello ... go, go, go</slim:subfield>
+      <slim:subfield code="f">Nebent. 2011</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Hannover</slim:subfield>
+      <slim:subfield code="b">[s.n.]</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">2008 - 2011</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="363" ind1="0" ind2="0">
+      <slim:subfield code="8">1.1\x</slim:subfield>
+      <slim:subfield code="i">2008</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="363" ind1="1" ind2="0">
+      <slim:subfield code="8">1.2\x</slim:subfield>
+      <slim:subfield code="i">2011</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="785" ind1="0" ind2="0">
+      <slim:subfield code="i">Forts.:</slim:subfield>
+      <slim:subfield code="a">Sophienschule Hannover</slim:subfield>
+      <slim:subfield code="t">Abibuch / Sophienschule</slim:subfield>
+      <slim:subfield code="w">(DE-600)2700303-6</slim:subfield>
+      <slim:subfield code="w">(DE-101)1030238928</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>3</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00870nas a2200337 c 4500</slim:leader>
+    <slim:controlfield tag="001">980820553</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20110722102055.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">060810c20069999gw m||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="015" ind1=" " ind2=" ">
+      <slim:subfield code="a">06,A40,2309</slim:subfield>
+      <slim:subfield code="2">dnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">980820553</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2300294-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2300294-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)723640717</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">1141</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">1141</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="083" ind1="7" ind2=" ">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">K</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Hello Kitty magazine</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Berlin</slim:subfield>
+      <slim:subfield code="b">Egmont Ehapa</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="300" ind1=" " ind2=" ">
+      <slim:subfield code="c">28 cm</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">2006,1(Juli) -</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="363" ind1="0" ind2="1">
+      <slim:subfield code="8">1.1\x</slim:subfield>
+      <slim:subfield code="i">2006</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="365" ind1=" " ind2=" ">
+      <slim:subfield code="b">EUR 2.70 (Einzelh.), EUR 3.00 (Einzelh.), sfr 5.00 (Einzelh.)</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="515" ind1=" " ind2=" ">
+      <slim:subfield code="a">Ersch. monatl.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="889" ind1=" " ind2=" ">
+      <slim:subfield code="w">(DE-101)980820553</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="925" ind1="r" ind2=" ">
+      <slim:subfield code="a">ra</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>4</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00776nas a2200289 c 4500</slim:leader>
+    <slim:controlfield tag="001">960393137</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20080116023038.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">001211c20009999sz u||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="015" ind1=" " ind2=" ">
+      <slim:subfield code="a">02,B45,0452</slim:subfield>
+      <slim:subfield code="2">dnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">960393137</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2404646-2</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2404646-2</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)85646863</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">1130</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9999</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-CH</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">39</slim:subfield>
+      <slim:subfield code="a">32</slim:subfield>
+      <slim:subfield code="a">42</slim:subfield>
+      <slim:subfield code="a">18</slim:subfield>
+      <slim:subfield code="a">630</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Hello</slim:subfield>
+      <slim:subfield code="b">Mitarbeiter-Zeitung der Syngenta Schweiz</slim:subfield>
+      <slim:subfield code="c">Hrsg.: Syngenta Communication</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Basel</slim:subfield>
+      <slim:subfield code="b">Syngenta Communication</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="300" ind1=" " ind2=" ">
+      <slim:subfield code="c">40 cm</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">2000,1-</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="889" ind1=" " ind2=" ">
+      <slim:subfield code="w">(DE-101)960393137</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="925" ind1="r" ind2=" ">
+      <slim:subfield code="a">rb</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>5</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>01171nas a2200325 c 4500</slim:leader>
+    <slim:controlfield tag="001">016152883</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20080311214928.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">991121d19902000gw u||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="015" ind1=" " ind2=" ">
+      <slim:subfield code="a">01,A12,0852</slim:subfield>
+      <slim:subfield code="2">dnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">016152883</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">1084503-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="022" ind1=" " ind2=" ">
+      <slim:subfield code="a">0863-436X</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="029" ind1="a" ind2="a">
+      <slim:subfield code="a">0863-436X</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB1084503-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(OCoLC)724546796</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">9001</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9999</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">23</slim:subfield>
+      <slim:subfield code="a">78</slim:subfield>
+      <slim:subfield code="a">S</slim:subfield>
+      <slim:subfield code="q">DE-101</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">050</slim:subfield>
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Hi Hello Salut</slim:subfield>
+      <slim:subfield code="b">Schülermagazin in Englisch und Französisch</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Berlin</slim:subfield>
+      <slim:subfield code="b">Volk u. Wissen Verl. GmbH</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">1990 - 2000,4; damit Ersch. eingest.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="365" ind1=" " ind2=" ">
+      <slim:subfield code="b">: DM 9.80 (Einzelh., zzgl. Porto), sfr 9.80 (Einzelh., zzgl. Porto), S 72.00 (Einzelh., zzgl. Porto), DM 8.25 (Einzelh., für Klassensätze), DM 33.00 (jährl., für Abonnenten, zzgl. Porto), sfr 30.70 (jährl., für Abonnenten, zzgl. Porto), S 241.00 (jährl., für Abonnenten, zzgl. Porto)</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="591" ind1=" " ind2=" ">
+      <slim:subfield code="a">109!(16-02-01)</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="889" ind1=" " ind2=" ">
+      <slim:subfield code="w">(DE-101)551859881</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="925" ind1="r" ind2=" ">
+      <slim:subfield code="a">ra</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>6</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00554nas a2200217 c 4500</slim:leader>
+    <slim:controlfield tag="001">015221466</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20081129163624.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">991120d19681969|||u||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">015221466</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">983060-1</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB983060-1</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">9001</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9001</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">370</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Hello</slim:subfield>
+      <slim:subfield code="b">unabhängige Schülerzeitschrift Frankfurts</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Frankfurt a.M.</slim:subfield>
+      <slim:subfield code="b">[s.n.]</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">1968/1969</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="591" ind1=" " ind2=" ">
+      <slim:subfield code="a">120783</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>7</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>01028nas a2200301 c 4500</slim:leader>
+    <slim:controlfield tag="001">017479215</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20081129165534.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">991121d19611975gw u||p|  ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">017479215</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">1221570-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB1221570-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">9001</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9001</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="082" ind1="7" ind2="4">
+      <slim:subfield code="a">800</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">22sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">800</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Inspektor Kennedy</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">Geister-Krimi</slim:subfield>
+      <slim:subfield code="f">Hauptsacht. 212.1973; 216.1973; 220.1973</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">Inspektor John Dean</slim:subfield>
+      <slim:subfield code="f">Hauptsacht. 260.1975</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">Kriminalreporter Toby Gin</slim:subfield>
+      <slim:subfield code="f">Hauptsacht. 265.1975</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">Hello Amboss</slim:subfield>
+      <slim:subfield code="f">Hauptsacht. 266.1975</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="247" ind1="1" ind2="0">
+      <slim:subfield code="a">Jack Hilton</slim:subfield>
+      <slim:subfield code="f">Hauptsacht. 267.1975</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Hamburg</slim:subfield>
+      <slim:subfield code="b">Kelter</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">Nachgewiesen 27.1961 - [267.]1975; damit Ersch. eingest.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="515" ind1=" " ind2=" ">
+      <slim:subfield code="a">267.1975 fälschlich als Bd. 276 bez.</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="780" ind1="0" ind2="0">
+      <slim:subfield code="i">165.1972 - 209.1973 ersch. alternierend mit u. Vorg.</slim:subfield>
+      <slim:subfield code="t">Blaulicht</slim:subfield>
+      <slim:subfield code="w">(DE-600)1221522-3</slim:subfield>
+      <slim:subfield code="w">(DE-101)017478758</slim:subfield>
+    </slim:datafield>
+  </slim:record></recordData><recordPosition>8</recordPosition></record></records><nextRecordPosition>9</nextRecordPosition><echoedSearchRetrieveRequest><version>1.1</version><query>hello</query><xQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/><startRecord>1</startRecord><maximumRecords>10</maximumRecords><recordSchema>MARC21-xml</recordSchema></echoedSearchRetrieveRequest></searchRetrieveResponse>

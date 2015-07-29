@@ -1,0 +1,3874 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OAI-PMH  xmlns="http://www.openarchives.org/OAI/2.0/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:marc="info:lc/xmlns/marcxchange-v1" 
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/" 
+ xmlns:agls="http://www.naa.gov.au/recordkeeping/gov_online/agls/1.2" 
+ xmlns:ags="http://purl.org/agmes/1.1/" 
+ xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+ xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ 
+                       http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd 
+                       info:lc/xmlns/marcxchange-v1 
+                       http://www.loc.gov/standards/iso25577/marcxchange-1-1.xsd 
+                       http://www.openarchives.org/OAI/2.0/oai_dc/ 
+                       http://www.openarchives.org/OAI/2.0/oai_dc.xsd"> 
+  <responseDate>2015-07-12T21:59:02Z</responseDate>
+<request verb="ListRecords"  from="2015-07-11" until="2015-07-11" metadataPrefix="marcxchange">http://oai.bibsys.no/oai2/repository</request>
+<ListRecords>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:98218834x</identifier>
+ <datestamp>2015-07-10T21:09:39Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">98218834x</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710210939.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s1998    xx#|||||||||||000|u|nob| </marc:controlfield>
+		<marc:datafield tag="015" ind1=" " ind2=" ">
+			<marc:subfield code="a">9906972</marc:subfield>
+			<marc:subfield code="2">nbf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">8200424421</marc:subfield>
+			<marc:subfield code="q">h.</marc:subfield>
+			<marc:subfield code="c">Nkr 98.00</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)98218834x</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-OsNB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="042" ind1=" " ind2=" ">
+			<marc:subfield code="a">norbibl</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="044" ind1=" " ind2=" ">
+			<marc:subfield code="c">no</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="060" ind1="1" ind2="4">
+			<marc:subfield code="a">Q</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">001.3</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="082" ind1="7" ind2="4">
+			<marc:subfield code="a">070.4</marc:subfield>
+			<marc:subfield code="q">NO-OsNB</marc:subfield>
+			<marc:subfield code="2">4/nor</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:10</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:38</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.1</marc:subfield>
+			<marc:subfield code="q">NoBeU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">d</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4490014</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ud</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4495</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">um</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">507</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">un</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4495</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ur</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.44</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ur</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4495</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">uv</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">up</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">302.234</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xh</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">302.234</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xs</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xc</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">070.4495</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">c</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa2504</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="1" ind2=" ">
+			<marc:subfield code="a">Ystenes, Martin</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90147887</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">Sprøytvarsel :</marc:subfield>
+			<marc:subfield code="b">vitenskapelige feil og antivitenskapelig tøv i media</marc:subfield>
+			<marc:subfield code="c">Martin Ystenes</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">Oslo</marc:subfield>
+			<marc:subfield code="b">Universitetsforl.</marc:subfield>
+			<marc:subfield code="c">1998</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">82 s.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="500" ind1=" " ind2=" ">
+			<marc:subfield code="a">"Boken Sprøytvarsel baserer seg i hovedsak på oppslag som har vært publisert på internettspalten Sprøytvarsleren ..." - Forordet</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="2">
+			<marc:subfield code="a">Communications Media</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="2">
+			<marc:subfield code="a">Medical Errors</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="2">
+			<marc:subfield code="a">Science</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="2">
+			<marc:subfield code="a">Research</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Vitenskapelig forklaring</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Journalistikk</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Vitenskap og samfunn</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">massemedier</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">vitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">feil</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">journalistikk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">naturvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">samfunn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">kvasivitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">psevdovitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">vitskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">forsking</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">kildekritikk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Forskningsjournalistikk</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ud</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="776" ind1="0" ind2=" ">
+			<marc:subfield code="w">(NO-TrBIB)101242735</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra Forlagssentralen</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_forlagssentr&amp;isbn=8200424421</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">90</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="913" ind1=" " ind2=" ">
+			<marc:subfield code="a">Norbok</marc:subfield>
+			<marc:subfield code="b">NB</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">98ur07542</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS</marc:subfield>
+			<marc:subfield code="c">UBIS</marc:subfield>
+			<marc:subfield code="h">070.4495 YST</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS</marc:subfield>
+			<marc:subfield code="c">070.4495 YST</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">98ur07542</marc:subfield>
+			<marc:subfield code="d">19981218</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">98ur07542</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00yw00017</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   bu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS</marc:subfield>
+			<marc:subfield code="c">UBIS/PORS Kontorplas</marc:subfield>
+			<marc:subfield code="h">070.44 Y</marc:subfield>
+			<marc:subfield code="z">(Kun til intern bruk)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS/PORS Kontorplas</marc:subfield>
+			<marc:subfield code="c">070.44 Y</marc:subfield>
+			<marc:subfield code="f">2</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00yw00017</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00yw00017</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00c003132</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UIT-UB</marc:subfield>
+			<marc:subfield code="b">UBT/KS</marc:subfield>
+			<marc:subfield code="c">UBT/KS mag3</marc:subfield>
+			<marc:subfield code="h">59680</marc:subfield>
+			<marc:subfield code="x">bos</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBT/KS</marc:subfield>
+			<marc:subfield code="b">UBT/KS mag3</marc:subfield>
+			<marc:subfield code="c">59680</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00c003132</marc:subfield>
+			<marc:subfield code="d">20000331</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00c003132</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99up01706</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH</marc:subfield>
+			<marc:subfield code="b">HH/ELV</marc:subfield>
+			<marc:subfield code="c">HH/Elv</marc:subfield>
+			<marc:subfield code="h">070.4 Yst</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH/ELV</marc:subfield>
+			<marc:subfield code="b">HH/Elv</marc:subfield>
+			<marc:subfield code="c">070.4 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99up01706</marc:subfield>
+			<marc:subfield code="d">19990317</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99up01706</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99d068805</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB</marc:subfield>
+			<marc:subfield code="b">UBB/DEP</marc:subfield>
+			<marc:subfield code="c">UBBDEP</marc:subfield>
+			<marc:subfield code="h">070.1 Yst</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB/DEP</marc:subfield>
+			<marc:subfield code="b">UBBDEP</marc:subfield>
+			<marc:subfield code="c">070.1 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99d068805</marc:subfield>
+			<marc:subfield code="d">19991116</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99d068805</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">98xs07638</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HSF</marc:subfield>
+			<marc:subfield code="b">HISF/FØR</marc:subfield>
+			<marc:subfield code="c">HiSF/Førde</marc:subfield>
+			<marc:subfield code="h">302.234 YST</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HISF/FØR</marc:subfield>
+			<marc:subfield code="b">HiSF/Førde</marc:subfield>
+			<marc:subfield code="c">302.234 YST</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">98xs07638</marc:subfield>
+			<marc:subfield code="d">19981230</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">98xs07638</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">98sa19666</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   bu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/BEV</marc:subfield>
+			<marc:subfield code="c">NB/BEV</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/BEV</marc:subfield>
+			<marc:subfield code="b">NB/BEV</marc:subfield>
+			<marc:subfield code="f">2</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">98sa19666</marc:subfield>
+			<marc:subfield code="d">19990120</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">98sa19666</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99yu00205</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NIFU</marc:subfield>
+			<marc:subfield code="b">NIFU</marc:subfield>
+			<marc:subfield code="c">NIFU</marc:subfield>
+			<marc:subfield code="h">1.06 Yst</marc:subfield>
+			<marc:subfield code="x">forsl/res HS</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NIFU</marc:subfield>
+			<marc:subfield code="b">NIFU</marc:subfield>
+			<marc:subfield code="c">1.06 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99yu00205</marc:subfield>
+			<marc:subfield code="d">19990219</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99yu00205</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">98a018252</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/DOR</marc:subfield>
+			<marc:subfield code="c">DORA</marc:subfield>
+			<marc:subfield code="h">30974</marc:subfield>
+			<marc:subfield code="x">tidligere plassering MARINBIB. sik</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/DOR</marc:subfield>
+			<marc:subfield code="b">DORA</marc:subfield>
+			<marc:subfield code="c">30974</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">98a018252</marc:subfield>
+			<marc:subfield code="d">19990105</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">98a018252</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99a000340</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/TEK</marc:subfield>
+			<marc:subfield code="c">TEK Eske</marc:subfield>
+			<marc:subfield code="h">858</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/TEK</marc:subfield>
+			<marc:subfield code="b">TEK Eske</marc:subfield>
+			<marc:subfield code="c">858</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99a000340</marc:subfield>
+			<marc:subfield code="d">19990112</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99a000340</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99uv00181</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HVO</marc:subfield>
+			<marc:subfield code="b">HVO</marc:subfield>
+			<marc:subfield code="c">HVO</marc:subfield>
+			<marc:subfield code="h">070.4495 Yst</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HVO</marc:subfield>
+			<marc:subfield code="b">HVO</marc:subfield>
+			<marc:subfield code="c">070.4495 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99uv00181</marc:subfield>
+			<marc:subfield code="d">19990125</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99uv00181</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99un00601</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HINT</marc:subfield>
+			<marc:subfield code="b">HINT/STE</marc:subfield>
+			<marc:subfield code="c">HINT/STE</marc:subfield>
+			<marc:subfield code="h">507 Y</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HINT/STE</marc:subfield>
+			<marc:subfield code="b">HINT/STE</marc:subfield>
+			<marc:subfield code="c">507 Y</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99un00601</marc:subfield>
+			<marc:subfield code="d">19990205</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99un00601</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99a004967</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/DOR</marc:subfield>
+			<marc:subfield code="c">DORA mag B</marc:subfield>
+			<marc:subfield code="h">125635</marc:subfield>
+			<marc:subfield code="x">Tidligere plassering: GUNNERUS</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/DOR</marc:subfield>
+			<marc:subfield code="b">DORA mag B</marc:subfield>
+			<marc:subfield code="c">125635</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99a004967</marc:subfield>
+			<marc:subfield code="d">19990203</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99a004967</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99xs01860</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HSF</marc:subfield>
+			<marc:subfield code="b">HISF/FØR</marc:subfield>
+			<marc:subfield code="c">HiSF/Førde</marc:subfield>
+			<marc:subfield code="h">070.4 YST</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HISF/FØR</marc:subfield>
+			<marc:subfield code="b">HiSF/Førde</marc:subfield>
+			<marc:subfield code="c">070.4 YST</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99xs01860</marc:subfield>
+			<marc:subfield code="d">19990225</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99xs01860</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99um00409</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIM</marc:subfield>
+			<marc:subfield code="b">HIMOLDE</marc:subfield>
+			<marc:subfield code="c">HiMolde</marc:subfield>
+			<marc:subfield code="h">070.449 5 Y</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIMOLDE</marc:subfield>
+			<marc:subfield code="b">HiMolde</marc:subfield>
+			<marc:subfield code="c">070.449 5 Y</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99um00409</marc:subfield>
+			<marc:subfield code="d">19990223</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99um00409</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99ga05692</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NB/BRU</marc:subfield>
+			<marc:subfield code="h">NA/A 1999:1824</marc:subfield>
+			<marc:subfield code="z">(h.) (Til bruk på NB Oslos lesesal)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/BRU</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NA/A 1999:1824</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99ga05692</marc:subfield>
+			<marc:subfield code="d">19990323</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99ga05692</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99ud02084</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIN</marc:subfield>
+			<marc:subfield code="b">UBIN</marc:subfield>
+			<marc:subfield code="c">UBIN</marc:subfield>
+			<marc:subfield code="h">070.4490014 Yst</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIN</marc:subfield>
+			<marc:subfield code="b">UBIN</marc:subfield>
+			<marc:subfield code="c">070.4490014 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99ud02084</marc:subfield>
+			<marc:subfield code="d">19990505</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">014526ud0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99ga06781</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NB/BRU</marc:subfield>
+			<marc:subfield code="h">Mag 070.4 Yst</marc:subfield>
+			<marc:subfield code="z">(h.)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/BRU</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">Mag 070.4 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99ga06781</marc:subfield>
+			<marc:subfield code="d">19990413</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99ga06781</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99up06368</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH</marc:subfield>
+			<marc:subfield code="b">HH/EVENS</marc:subfield>
+			<marc:subfield code="c">HH/Evens Blæstad</marc:subfield>
+			<marc:subfield code="h">070.4 Ys</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH/EVENS</marc:subfield>
+			<marc:subfield code="b">HH/Evens Blæstad</marc:subfield>
+			<marc:subfield code="c">070.4 Ys</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99up06368</marc:subfield>
+			<marc:subfield code="d">19990917</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99up06368</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00xh00093</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NITH</marc:subfield>
+			<marc:subfield code="b">NITH</marc:subfield>
+			<marc:subfield code="c">NITH</marc:subfield>
+			<marc:subfield code="h">302.234 Ys</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NITH</marc:subfield>
+			<marc:subfield code="b">NITH</marc:subfield>
+			<marc:subfield code="c">302.234 Ys</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00xh00093</marc:subfield>
+			<marc:subfield code="d">20000225</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00xh00093</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00sd07261</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00sd07261</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00sd07261</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">01xn00939</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HINESNA</marc:subfield>
+			<marc:subfield code="b">HNE</marc:subfield>
+			<marc:subfield code="c">HNE</marc:subfield>
+			<marc:subfield code="h">070.4 Yst</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HNE</marc:subfield>
+			<marc:subfield code="b">HNE</marc:subfield>
+			<marc:subfield code="c">070.4 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">01xn00939</marc:subfield>
+			<marc:subfield code="d">20010320</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">01xn00939</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">01xc02227</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIB</marc:subfield>
+			<marc:subfield code="b">HIB</marc:subfield>
+			<marc:subfield code="c">HiB</marc:subfield>
+			<marc:subfield code="h">070.4 Yst</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIB</marc:subfield>
+			<marc:subfield code="b">HiB</marc:subfield>
+			<marc:subfield code="c">070.4 Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">01xc02227</marc:subfield>
+			<marc:subfield code="d">20010608</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">01xc02227</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99a002663</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120n||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL x-saml</marc:subfield>
+			<marc:subfield code="h">001.3 Ys8s</marc:subfield>
+			<marc:subfield code="x">Tidligere eier: KJEMIBIB</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL x-saml</marc:subfield>
+			<marc:subfield code="c">001.3 Ys8s</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99a002663</marc:subfield>
+			<marc:subfield code="d">19990120</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99a002663</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99ns00520</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 2504</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 2504</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99ns00520</marc:subfield>
+			<marc:subfield code="d">19990614</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99ns00520</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99up01237</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH</marc:subfield>
+			<marc:subfield code="b">HH/RENA</marc:subfield>
+			<marc:subfield code="c">HH/Rena</marc:subfield>
+			<marc:subfield code="h">070.4 Ys</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HH/RENA</marc:subfield>
+			<marc:subfield code="b">HH/Rena</marc:subfield>
+			<marc:subfield code="c">070.4 Ys</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99up01237</marc:subfield>
+			<marc:subfield code="d">19990301</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">99up01237</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">07a000468</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/BMH</marc:subfield>
+			<marc:subfield code="c">NTNU/BMH</marc:subfield>
+			<marc:subfield code="h">Q Yst</marc:subfield>
+			<marc:subfield code="x">gave fra Solveig</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/BMH</marc:subfield>
+			<marc:subfield code="b">NTNU/BMH</marc:subfield>
+			<marc:subfield code="c">Q Yst</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">07a000468</marc:subfield>
+			<marc:subfield code="d">20070104</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">07a000468</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">76g091948</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP a</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP a</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">76g091948</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">76g091948</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">76g159905</marc:controlfield>
+		<marc:controlfield tag="004">98218834x</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">98218834x</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP a</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+			<marc:subfield code="z">(2. oppl. 1999)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP a</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">76g159905</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">76g159905</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:020800231</identifier>
+ <datestamp>2015-07-10T21:12:32Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">020800231</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710211232.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s2002    xx#|||||||||||000|u|eng|d</marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0309076412</marc:subfield>
+			<marc:subfield code="q">ib.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)020800231</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-TrBIB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">53.01</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">001</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:4</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:15</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">530.09</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">c</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">306.45</marc:subfield>
+			<marc:subfield code="q">NoBeU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">d</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">530.09</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ur</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa3278</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="1" ind2=" ">
+			<marc:subfield code="a">Peat, F. David</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90137925</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">From certainty to uncertainty :</marc:subfield>
+			<marc:subfield code="b">the story of science and ideas in the twentieth century</marc:subfield>
+			<marc:subfield code="c">F. David Peat</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">Washington, D.C.</marc:subfield>
+			<marc:subfield code="b">Joseph Henry Press</marc:subfield>
+			<marc:subfield code="c">c2002</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">XIV, 230 s.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Physics</marc:subfield>
+			<marc:subfield code="x">Philosophy</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Certainty</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Chaotic behavior in systems</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Physics</marc:subfield>
+			<marc:subfield code="x">History</marc:subfield>
+			<marc:subfield code="y">20th century</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Fysikk</marc:subfield>
+			<marc:subfield code="x">Filosofi</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">naturvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">fysikk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">historie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">filosofi</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">vitenskapshistorie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">idehistorie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">vitenskapsfilosofi</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">tjuende</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">århundre</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="776" ind1="0" ind2=" ">
+			<marc:subfield code="w">(NO-TrBIB)040496929</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra forlaget (kort)</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_publ_brief&amp;isbn=0309076412</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra forlaget (lang)</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_publ_full&amp;isbn=0309076412</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">02ns00526</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 3278</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 3278</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">02ns00526</marc:subfield>
+			<marc:subfield code="d">20020813</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">02ns00526</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">02d021710</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB</marc:subfield>
+			<marc:subfield code="b">UBB/DEP</marc:subfield>
+			<marc:subfield code="c">UBBDEP</marc:subfield>
+			<marc:subfield code="h">306.45 Pea</marc:subfield>
+			<marc:subfield code="x">tj</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB/DEP</marc:subfield>
+			<marc:subfield code="b">UBBDEP</marc:subfield>
+			<marc:subfield code="c">306.45 Pea</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">02d021710</marc:subfield>
+			<marc:subfield code="d">20020528</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">02d021710</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">02uk12846</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP 20140903uk</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP 20140903uk</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">02uk12846</marc:subfield>
+			<marc:subfield code="d">20021202</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">02uk12846</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">02ur08951</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS</marc:subfield>
+			<marc:subfield code="c">UBIS Magasin</marc:subfield>
+			<marc:subfield code="h">530.09 PEA</marc:subfield>
+			<marc:subfield code="x">IG</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS Magasin</marc:subfield>
+			<marc:subfield code="c">530.09 PEA</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">02ur08951</marc:subfield>
+			<marc:subfield code="d">20021108</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">02ur08951</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">02a041703</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL</marc:subfield>
+			<marc:subfield code="h">53.01 P32f</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL</marc:subfield>
+			<marc:subfield code="c">53.01 P32f</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">02a041703</marc:subfield>
+			<marc:subfield code="d">20020821</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">02a041703</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">05c021594</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UIT-UB</marc:subfield>
+			<marc:subfield code="b">UBT/KS</marc:subfield>
+			<marc:subfield code="c">UBT/KS</marc:subfield>
+			<marc:subfield code="h">001 Pea</marc:subfield>
+			<marc:subfield code="x">vb</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBT/KS</marc:subfield>
+			<marc:subfield code="b">UBT/KS</marc:subfield>
+			<marc:subfield code="c">001 Pea</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">05c021594</marc:subfield>
+			<marc:subfield code="d">20051114</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">134517ca0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">05c024939</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UIT-UB</marc:subfield>
+			<marc:subfield code="b">UBT/NH</marc:subfield>
+			<marc:subfield code="c">UBT/NH</marc:subfield>
+			<marc:subfield code="h">530.09 PEA</marc:subfield>
+			<marc:subfield code="x">MF</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBT/NH</marc:subfield>
+			<marc:subfield code="b">UBT/NH</marc:subfield>
+			<marc:subfield code="c">530.09 PEA</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">05c024939</marc:subfield>
+			<marc:subfield code="d">20060106</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">066122ca0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">06c015359</marc:controlfield>
+		<marc:controlfield tag="004">020800231</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">020800231</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UIT-UB</marc:subfield>
+			<marc:subfield code="b">UBT/KS</marc:subfield>
+			<marc:subfield code="c">UBT/KS</marc:subfield>
+			<marc:subfield code="h">001 Pea</marc:subfield>
+			<marc:subfield code="x">RH/mas</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBT/KS</marc:subfield>
+			<marc:subfield code="b">UBT/KS</marc:subfield>
+			<marc:subfield code="c">001 Pea</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">06c015359</marc:subfield>
+			<marc:subfield code="d">20060526</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">125166ca0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:922377669</identifier>
+ <datestamp>2015-07-10T21:06:40Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">922377669</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710210640.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s1992    xx#|||||||||||000|u|dan| </marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">8757113858</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)922377669</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-OsNB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">621.16(489)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">6(091)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">621.11(489)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">621.1(09)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:6</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:38</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">621.109</marc:subfield>
+			<marc:subfield code="q">NoOU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa1937</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="0" ind2="0">
+			<marc:subfield code="a">I røg og damp :</marc:subfield>
+			<marc:subfield code="b">dampmaskinens indførelse i Danmark 1760-1840</marc:subfield>
+			<marc:subfield code="c">redaktion: Helge Kragh</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">København</marc:subfield>
+			<marc:subfield code="b">Teknisk Forlag</marc:subfield>
+			<marc:subfield code="c">1992</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">111 s.</marc:subfield>
+			<marc:subfield code="b">ill.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">historikk</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">1760 - 1840</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">[dampmaskiner]</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">teknikk</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">tekniske / industrielle kulturminner</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">danmark</marc:subfield>
+			<marc:subfield code="2">ordnok</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Dampmaskiner</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Danmark</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Energi</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Teknologi</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">1700-tallet</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">1800-tallet</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Historisk framstilling</marc:subfield>
+			<marc:subfield code="2">humord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Dampmaskiner</marc:subfield>
+			<marc:subfield code="v">Historie</marc:subfield>
+			<marc:subfield code="z">Danmark</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">danmark</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">dampmaskiner</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">1700-tallet</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">1800-tallet</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">energi</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">teknologihistorie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">historie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Dampmaskiner</marc:subfield>
+			<marc:subfield code="v">Historie</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Teknikkhistorie</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Danmark</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Dampmaskiner</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Teknologi. Historie</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Industrihistorie. Danmark</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">wg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="700" ind1="1" ind2=" ">
+			<marc:subfield code="a">Kragh, Helge</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90168538</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95a014372</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/DOR</marc:subfield>
+			<marc:subfield code="c">DORA</marc:subfield>
+			<marc:subfield code="h">64195</marc:subfield>
+			<marc:subfield code="x">Tidligere plassering TEK</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/DOR</marc:subfield>
+			<marc:subfield code="b">DORA</marc:subfield>
+			<marc:subfield code="c">64195</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95a014372</marc:subfield>
+			<marc:subfield code="d">19950726</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95a014372</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">76g152374</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP a</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP a</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">76g152374</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">76g152374</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">93ka09435</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UHS</marc:subfield>
+			<marc:subfield code="c">UHS</marc:subfield>
+			<marc:subfield code="h">621.109 I</marc:subfield>
+			<marc:subfield code="x">PN</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UHS</marc:subfield>
+			<marc:subfield code="b">UHS</marc:subfield>
+			<marc:subfield code="c">621.109 I</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">93ka09435</marc:subfield>
+			<marc:subfield code="d">19931005</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">067529kj0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">96ns00036</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 1937</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 1937</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">96ns00036</marc:subfield>
+			<marc:subfield code="d">19960228</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">96ns00036</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">99wa08391</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">RIKSANT</marc:subfield>
+			<marc:subfield code="b">RIKSANT</marc:subfield>
+			<marc:subfield code="c">RIKSANT</marc:subfield>
+			<marc:subfield code="h">G6 Irø</marc:subfield>
+			<marc:subfield code="x">fra Danmark, gave;</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">RIKSANT</marc:subfield>
+			<marc:subfield code="b">RIKSANT</marc:subfield>
+			<marc:subfield code="c">G6 Irø</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">99wa08391</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">99wa08391</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00wf03938</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">TEKNMUS</marc:subfield>
+			<marc:subfield code="b">TEKNMUS</marc:subfield>
+			<marc:subfield code="c">TEKNMUS</marc:subfield>
+			<marc:subfield code="h">621.16(091)(489) Kra</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">TEKNMUS</marc:subfield>
+			<marc:subfield code="b">TEKNMUS</marc:subfield>
+			<marc:subfield code="c">621.16(091)(489) Kra</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00wf03938</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">00wf03938</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">03wg20343</marc:controlfield>
+		<marc:controlfield tag="004">922377669</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">922377669</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">STAVMUS</marc:subfield>
+			<marc:subfield code="b">STAVMUS</marc:subfield>
+			<marc:subfield code="c">STAVMUS bibl</marc:subfield>
+			<marc:subfield code="h">621.11(489) Irø</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="x">1:207/95. Selskabet til bevaring av industrimiljøe. fått som abonn. på Fabrik og bolig</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">STAVMUS</marc:subfield>
+			<marc:subfield code="b">STAVMUS bibl</marc:subfield>
+			<marc:subfield code="c">621.11(489) Irø</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">03wg20343</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">014279wg0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:951012134</identifier>
+ <datestamp>2015-07-10T21:02:26Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">951012134</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710210226.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s1995    xx#|||||||||||000|u|eng|d</marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0471306061</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)951012134</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-TrBIB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">53(075)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">53(09)(07)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:24</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:25</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">530</marc:subfield>
+			<marc:subfield code="q">NoBeU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">d</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa1849</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="1" ind2=" ">
+			<marc:subfield code="a">Spielberg, Nathan</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90827322</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">Seven ideas that shook the universe</marc:subfield>
+			<marc:subfield code="c">Nathan Spielberg, Bryon D. Anderson</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="250" ind1=" " ind2=" ">
+			<marc:subfield code="a">2nd ed.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">New York</marc:subfield>
+			<marc:subfield code="b">Wiley</marc:subfield>
+			<marc:subfield code="c">c1995</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">XI, 355 s.</marc:subfield>
+			<marc:subfield code="b">ill.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Physics</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Mechanics</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Astronomy</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Fysikk</marc:subfield>
+			<marc:subfield code="v">Lærebøker</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">naturvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">fysikk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">historie</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">populærfysikk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">populærvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">lærebøker</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="700" ind1="1" ind2=" ">
+			<marc:subfield code="a">Anderson, Bryon D.</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90827323</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra forlaget (kort)</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_publ_brief&amp;isbn=0471306061</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra forlaget (lang)</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_publ_full&amp;isbn=0471306061</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Innholdsfortegnelse</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=toc&amp;isbn=0471306061</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Omslagsbilde</marc:subfield>
+			<marc:subfield code="u">http://innhold.bibsys.no/bilde/forside/?size=mini&amp;id=0471306061.JPG</marc:subfield>
+			<marc:subfield code="q">image/jpeg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95ns00572</marc:controlfield>
+		<marc:controlfield tag="004">951012134</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">951012134</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 1849</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 1849</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95ns00572</marc:subfield>
+			<marc:subfield code="d">19950901</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95ns00572</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95a009794</marc:controlfield>
+		<marc:controlfield tag="004">951012134</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">951012134</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL</marc:subfield>
+			<marc:subfield code="h">53(075) Sp4s</marc:subfield>
+			<marc:subfield code="x">Tidligere eier: TEK</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL</marc:subfield>
+			<marc:subfield code="c">53(075) Sp4s</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95a009794</marc:subfield>
+			<marc:subfield code="d">19950523</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95a009794</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95d029449</marc:controlfield>
+		<marc:controlfield tag="004">951012134</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">951012134</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB</marc:subfield>
+			<marc:subfield code="b">UBB/MN</marc:subfield>
+			<marc:subfield code="c">UBBRB</marc:subfield>
+			<marc:subfield code="h">530 Spi</marc:subfield>
+			<marc:subfield code="x">DV</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB/MN</marc:subfield>
+			<marc:subfield code="b">UBBRB</marc:subfield>
+			<marc:subfield code="c">530 Spi</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95d029449</marc:subfield>
+			<marc:subfield code="d">19950808</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95d029449</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">97b009931</marc:controlfield>
+		<marc:controlfield tag="004">951012134</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">951012134</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL</marc:subfield>
+			<marc:subfield code="h">53(09) Spi</marc:subfield>
+			<marc:subfield code="x">Tidligere eier: LADE/FYS. MV</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL</marc:subfield>
+			<marc:subfield code="c">53(09) Spi</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">4</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">97b009931</marc:subfield>
+			<marc:subfield code="d">19970528</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">97b009931</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:874176522</identifier>
+ <datestamp>2015-07-10T21:02:50Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">874176522</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710210250.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s1987    xx#|||||||||||000|u|nob|d</marc:controlfield>
+		<marc:datafield tag="015" ind1=" " ind2=" ">
+			<marc:subfield code="a">8701633</marc:subfield>
+			<marc:subfield code="2">nbf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">8200033252</marc:subfield>
+			<marc:subfield code="q">h.</marc:subfield>
+			<marc:subfield code="c">Nkr 85.00</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)874176522</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-TrBIB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="044" ind1=" " ind2=" ">
+			<marc:subfield code="c">no</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2-77</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.873</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.21</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.816</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="082" ind1="7" ind2="4">
+			<marc:subfield code="a">620.004</marc:subfield>
+			<marc:subfield code="q">NO-OsNB</marc:subfield>
+			<marc:subfield code="2">4/nor</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:12</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:16</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">62N05</marc:subfield>
+			<marc:subfield code="2">msc</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">60</marc:subfield>
+			<marc:subfield code="2">msc</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Qa 22</marc:subfield>
+			<marc:subfield code="2">ubtkl/2</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">a0175</marc:subfield>
+			<marc:subfield code="q">NoOU</marc:subfield>
+			<marc:subfield code="2">inspec</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">a0250</marc:subfield>
+			<marc:subfield code="q">NoOU</marc:subfield>
+			<marc:subfield code="2">inspec</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">300.1519287</marc:subfield>
+			<marc:subfield code="q">NoBeU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">d</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">uf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">um</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ur</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">620.004</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">620.004</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xs</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ux</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">333.79</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ux</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">001.422</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ua</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">363.1</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ua</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ud</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">515.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">un</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">620.004</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xb</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">uk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">c</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">519.2</marc:subfield>
+			<marc:subfield code="q">NoOU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">0.2nat</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">a0175</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">a0250</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">60</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa2809</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="1" ind2=" ">
+			<marc:subfield code="a">Natvig, Bent</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90072081</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">Sannsynlighetsvurderinger i atomalderen</marc:subfield>
+			<marc:subfield code="c">Bent Natvig</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">Oslo</marc:subfield>
+			<marc:subfield code="b">Universitetsforlaget</marc:subfield>
+			<marc:subfield code="c">cop. 1987</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">104 s.</marc:subfield>
+			<marc:subfield code="c">22 cm</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Statistisk teori</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Risikoanalyse</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Matematisk risikoanalyse</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Sikkerhet</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Kjernekraft</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Pålitelighetsanalyse</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Meningsmålinger</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Sannsynlighetsregning</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Risikoanalyser</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Sannsynlighetsregning</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Pålitelighet (Matematikk)</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Risikoanalyse</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="651" ind1=" " ind2="7">
+			<marc:subfield code="a">Tsjernobyl</marc:subfield>
+			<marc:subfield code="2">no-ubo-mn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="655" ind1=" " ind2="7">
+			<marc:subfield code="a">Populærvitenskap</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Sannsynlighetsteori : Anvendt matematikk</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">ud</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="776" ind1="0" ind2=" ">
+			<marc:subfield code="w">(NO-TrBIB)102579342</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra Forlagssentralen</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_forlagssentr&amp;isbn=8200033252</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="913" ind1=" " ind2=" ">
+			<marc:subfield code="a">Norbok</marc:subfield>
+			<marc:subfield code="b">NB</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">93ux02181</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIST</marc:subfield>
+			<marc:subfield code="b">HIST/ALT</marc:subfield>
+			<marc:subfield code="c">HIST/ALT</marc:subfield>
+			<marc:subfield code="h">519.2 Nat</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIST/ALT</marc:subfield>
+			<marc:subfield code="b">HIST/ALT</marc:subfield>
+			<marc:subfield code="c">519.2 Nat</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">93ux02181</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">93ux02181</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">91uf01990</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIN</marc:subfield>
+			<marc:subfield code="b">HIN</marc:subfield>
+			<marc:subfield code="c">HIN</marc:subfield>
+			<marc:subfield code="h">519.2 Na</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIN</marc:subfield>
+			<marc:subfield code="b">HIN</marc:subfield>
+			<marc:subfield code="c">519.2 Na</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">91uf01990</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">91uf01990</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">88b010253</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/TEK</marc:subfield>
+			<marc:subfield code="c">TEK</marc:subfield>
+			<marc:subfield code="h">519.2-77 Nat</marc:subfield>
+			<marc:subfield code="x">Tidligere eier: LADE/MF</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/TEK</marc:subfield>
+			<marc:subfield code="b">TEK</marc:subfield>
+			<marc:subfield code="c">519.2-77 Nat</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">88b010253</marc:subfield>
+			<marc:subfield code="d">19881010</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">88b010253</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">92ur34072</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS</marc:subfield>
+			<marc:subfield code="c">UBIS Magasin</marc:subfield>
+			<marc:subfield code="h">519.2 NAT</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIS</marc:subfield>
+			<marc:subfield code="b">UBIS Magasin</marc:subfield>
+			<marc:subfield code="c">519.2 NAT</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">92ur34072</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">92ur34072</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">91um01583</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIM</marc:subfield>
+			<marc:subfield code="b">HIMOLDE</marc:subfield>
+			<marc:subfield code="c">HiMolde</marc:subfield>
+			<marc:subfield code="h">519.2 N</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIMOLDE</marc:subfield>
+			<marc:subfield code="b">HiMolde</marc:subfield>
+			<marc:subfield code="c">519.2 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">91um01583</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">91um01583</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">89nm00336</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Mat.</marc:subfield>
+			<marc:subfield code="h">60 NAT</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Mat.</marc:subfield>
+			<marc:subfield code="c">60 NAT</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">89nm00336</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">89nm00336</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">94ud00894</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIN</marc:subfield>
+			<marc:subfield code="b">UBIN</marc:subfield>
+			<marc:subfield code="c">UBIN magasin</marc:subfield>
+			<marc:subfield code="h">519.2 N</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBIN</marc:subfield>
+			<marc:subfield code="b">UBIN magasin</marc:subfield>
+			<marc:subfield code="c">519.2 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">94ud00894</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">028889ud0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">93uk46527</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBA</marc:subfield>
+			<marc:subfield code="b">UBA/KRIS</marc:subfield>
+			<marc:subfield code="c">UBA/KRIS Matematikk</marc:subfield>
+			<marc:subfield code="h">62N05 Na</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+			<marc:subfield code="z">(Magasin-II)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBA/KRIS</marc:subfield>
+			<marc:subfield code="b">UBA/KRIS Matematikk</marc:subfield>
+			<marc:subfield code="c">62N05 Na</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">93uk46527</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">93uk46527</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95ub06515</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HBV</marc:subfield>
+			<marc:subfield code="b">HBV/RING</marc:subfield>
+			<marc:subfield code="c">HBV/RING</marc:subfield>
+			<marc:subfield code="h">519.2 N</marc:subfield>
+			<marc:subfield code="t">1</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HBV/RING</marc:subfield>
+			<marc:subfield code="b">HBV/RING</marc:subfield>
+			<marc:subfield code="c">519.2 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95ub06515</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95ub06515</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">96nm00078</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Mat.</marc:subfield>
+			<marc:subfield code="h">60 NAT</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Mat.</marc:subfield>
+			<marc:subfield code="c">60 NAT</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">96nm00078</marc:subfield>
+			<marc:subfield code="d">19960205</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">96nm00078</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">91un11764</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HINT</marc:subfield>
+			<marc:subfield code="b">HINT/LEV</marc:subfield>
+			<marc:subfield code="c">HINT/LEV Mag</marc:subfield>
+			<marc:subfield code="h">519.5 N</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HINT/LEV</marc:subfield>
+			<marc:subfield code="b">HINT/LEV Mag</marc:subfield>
+			<marc:subfield code="c">519.5 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">91un11764</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">91un11764</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">74up10073</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP 20080522up</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP 20080522up</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">74up10073</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">74up10073</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95xs15961</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HSF</marc:subfield>
+			<marc:subfield code="b">HISF/SOG</marc:subfield>
+			<marc:subfield code="c">HiSF/SOGN</marc:subfield>
+			<marc:subfield code="h">620.004 N</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HISF/SOG</marc:subfield>
+			<marc:subfield code="b">HiSF/SOGN</marc:subfield>
+			<marc:subfield code="c">620.004 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95xs15961</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">95xs15961</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">89xb03724</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HÅL</marc:subfield>
+			<marc:subfield code="b">HÅL</marc:subfield>
+			<marc:subfield code="c">HÅL TF</marc:subfield>
+			<marc:subfield code="h">620.004 N</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HÅL</marc:subfield>
+			<marc:subfield code="b">HÅL TF</marc:subfield>
+			<marc:subfield code="c">620.004 N</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">89xb03724</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">89xb03724</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00nf00392</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Fys.</marc:subfield>
+			<marc:subfield code="h">0.2 NAT</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Fys.</marc:subfield>
+			<marc:subfield code="c">0.2 NAT</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00nf00392</marc:subfield>
+			<marc:subfield code="d">20001208</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00nf00392</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00ns02479</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 2809</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 2809</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00ns02479</marc:subfield>
+			<marc:subfield code="d">20001208</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">00ns02479</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">82ga12735</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NB/BRU</marc:subfield>
+			<marc:subfield code="h">NA Nat</marc:subfield>
+			<marc:subfield code="z">(ib.)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/BRU</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NA Nat</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">82ga12735</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">82ga12735</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">00kj45662</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UHS</marc:subfield>
+			<marc:subfield code="c">UHS</marc:subfield>
+			<marc:subfield code="h">519.2 Nat</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UHS</marc:subfield>
+			<marc:subfield code="b">UHS</marc:subfield>
+			<marc:subfield code="c">519.2 Nat</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">00kj45662</marc:subfield>
+			<marc:subfield code="d">20001215</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">637618kj0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">04ua07797</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIT</marc:subfield>
+			<marc:subfield code="b">HIT/BØ</marc:subfield>
+			<marc:subfield code="c">BØ Mat</marc:subfield>
+			<marc:subfield code="h">62 NAT</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIT/BØ</marc:subfield>
+			<marc:subfield code="b">BØ Mat</marc:subfield>
+			<marc:subfield code="c">62 NAT</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">04ua07797</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">04ua07797</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">87b016073</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120l||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/GUN</marc:subfield>
+			<marc:subfield code="c">GUNNERUS B</marc:subfield>
+			<marc:subfield code="h">82703</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/GUN</marc:subfield>
+			<marc:subfield code="b">GUNNERUS B</marc:subfield>
+			<marc:subfield code="c">82703</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">87b016073</marc:subfield>
+			<marc:subfield code="d">19871001</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">87b016073</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">93ut01058</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIST</marc:subfield>
+			<marc:subfield code="b">HIST/HHIT</marc:subfield>
+			<marc:subfield code="c">HIST/HHIT</marc:subfield>
+			<marc:subfield code="h">519 Na</marc:subfield>
+			<marc:subfield code="t">2</marc:subfield>
+			<marc:subfield code="x">eks. 1 ipp.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIST/HHIT</marc:subfield>
+			<marc:subfield code="b">HIST/HHIT</marc:subfield>
+			<marc:subfield code="c">519 Na</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">93ut01058</marc:subfield>
+			<marc:subfield code="d">19930816</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">93ut01058</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">87a015364</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120g||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/TEK</marc:subfield>
+			<marc:subfield code="c">TEK</marc:subfield>
+			<marc:subfield code="h">519.873 N21s</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/TEK</marc:subfield>
+			<marc:subfield code="b">TEK</marc:subfield>
+			<marc:subfield code="c">519.873 N21s</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">87a015364</marc:subfield>
+			<marc:subfield code="d">19871110</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">87a015364</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">76sd92359</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/DEP</marc:subfield>
+			<marc:subfield code="c">NB/DEP a</marc:subfield>
+			<marc:subfield code="h">-</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/DEP</marc:subfield>
+			<marc:subfield code="b">NB/DEP a</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">76sd92359</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">76sd92359</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">14g149558</marc:controlfield>
+		<marc:controlfield tag="004">874176522</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">874176522</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NB/BRU</marc:subfield>
+			<marc:subfield code="h">NA/A 1987:7262</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NB/BRU</marc:subfield>
+			<marc:subfield code="b">NB/BRU</marc:subfield>
+			<marc:subfield code="c">NA/A 1987:7262</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">14g149558</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">14g149558</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:834102765</identifier>
+ <datestamp>2015-07-10T21:03:20Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">834102765</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710210320.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s1982    xx#|||||||||||000|u|eng|d</marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0716714094</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0716715007</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0716760037</marc:subfield>
+			<marc:subfield code="q">h.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)834102765</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-TrBIB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">113/119</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">524.8</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">50</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">523.1</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">xc</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa1233</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="1" ind2=" ">
+			<marc:subfield code="a">Morrison, Philip</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90244855</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">Powers of ten :</marc:subfield>
+			<marc:subfield code="b">a book about the relative size of things in the universe and the effect of adding another zero</marc:subfield>
+			<marc:subfield code="c">Philip and Phylis Morrison and the Office of Charles and Ray Eames</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">New York</marc:subfield>
+			<marc:subfield code="b">Scientific American Library</marc:subfield>
+			<marc:subfield code="c">c1982</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">150 s.</marc:subfield>
+			<marc:subfield code="b">ill.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="500" ind1=" " ind2=" ">
+			<marc:subfield code="a">"Based on the film Powers of ten by the Office of Charles and Ray Eames"</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Cosmology</marc:subfield>
+			<marc:subfield code="x">Miscellanea.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Kosmologi</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">naturvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">universet</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">kosmologi</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">populærvitenskap</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">potenser</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">ti</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">størrelse</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">struktur</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">relativ</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="653" ind1=" " ind2=" ">
+			<marc:subfield code="a">romforsking</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Kosmologi</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">yf</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="690" ind1=" " ind2=" ">
+			<marc:subfield code="a">Kosmologi (Filosofi)</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">tk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="700" ind1="1" ind2=" ">
+			<marc:subfield code="a">Morrison, Phylis</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90391260</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="710" ind1="2" ind2=" ">
+			<marc:subfield code="a">Office of Charles and Ray Eames</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90391261</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">86b015784</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL mag</marc:subfield>
+			<marc:subfield code="h">50 Mor</marc:subfield>
+			<marc:subfield code="x">Tidligere eier: ROSENB/KF</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL mag</marc:subfield>
+			<marc:subfield code="c">50 Mor</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">86b015784</marc:subfield>
+			<marc:subfield code="d">19870421</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">86b015784</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">83d010276</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB</marc:subfield>
+			<marc:subfield code="b">UBB/MN</marc:subfield>
+			<marc:subfield code="c">UBBRB</marc:subfield>
+			<marc:subfield code="h">500 Mor</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBB/MN</marc:subfield>
+			<marc:subfield code="b">UBBRB</marc:subfield>
+			<marc:subfield code="c">500 Mor</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">83d010276</marc:subfield>
+			<marc:subfield code="d">19840209</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">83d010276</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">90tk00166</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">mini</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">AHO</marc:subfield>
+			<marc:subfield code="b">AHO</marc:subfield>
+			<marc:subfield code="c">AHO</marc:subfield>
+			<marc:subfield code="h">113/119 MOR</marc:subfield>
+			<marc:subfield code="x">Ex.1-89:268</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">AHO</marc:subfield>
+			<marc:subfield code="b">AHO</marc:subfield>
+			<marc:subfield code="c">113/119 MOR</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">90tk00166</marc:subfield>
+			<marc:subfield code="j">mini</marc:subfield>
+			<marc:subfield code="p">90tk00166</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">84a007320</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/DOR</marc:subfield>
+			<marc:subfield code="c">DORA m</marc:subfield>
+			<marc:subfield code="h">524.8 M83p</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/DOR</marc:subfield>
+			<marc:subfield code="b">DORA m</marc:subfield>
+			<marc:subfield code="c">524.8 M83p</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">84a007320</marc:subfield>
+			<marc:subfield code="d">19840425</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">84a007320</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">95yf01206</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">FFI-BIBL</marc:subfield>
+			<marc:subfield code="b">FFI</marc:subfield>
+			<marc:subfield code="c">FFI</marc:subfield>
+			<marc:subfield code="h">524.8</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">FFI</marc:subfield>
+			<marc:subfield code="b">FFI</marc:subfield>
+			<marc:subfield code="c">524.8</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">4</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">95yf01206</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">95yf01206</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">90ns00480</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 1233</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 1233</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">90ns00480</marc:subfield>
+			<marc:subfield code="d">19901022</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">90ns00480</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">14xc18705</marc:controlfield>
+		<marc:controlfield tag="004">834102765</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120|||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">834102765</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIB</marc:subfield>
+			<marc:subfield code="b">HIB</marc:subfield>
+			<marc:subfield code="c">HiB Populærvit</marc:subfield>
+			<marc:subfield code="h">523.1 Mor</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">HIB</marc:subfield>
+			<marc:subfield code="b">HiB Populærvit</marc:subfield>
+			<marc:subfield code="c">523.1 Mor</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">14xc18705</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">14xc18705</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+<record>
+<header>
+ <identifier>oai:bibsys.no:collection:biblioholding:060350636</identifier>
+ <datestamp>2015-07-10T22:18:31Z</datestamp>
+<setSpec>urealSamling42</setSpec>
+</header>
+<metadata>
+<marc:collection>
+	<marc:record format="MARC21" type="Bibliographic"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999cam a2299999 u 4500</marc:leader>
+		<marc:controlfield tag="001">060350636</marc:controlfield>
+		<marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+		<marc:controlfield tag="005">20150710221831.0</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">150710s2005    xx#|||||||||||000|u|eng|d</marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">076792066X</marc:subfield>
+			<marc:subfield code="q">ib.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+			<marc:subfield code="a">0767920813</marc:subfield>
+			<marc:subfield code="q">h.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="035" ind1=" " ind2=" ">
+			<marc:subfield code="a">(NO-TrBIB)060350636</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="040" ind1=" " ind2=" ">
+			<marc:subfield code="a">NO-TrBIB</marc:subfield>
+			<marc:subfield code="b">nob</marc:subfield>
+			<marc:subfield code="e">katreg</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="080" ind1=" " ind2=" ">
+			<marc:subfield code="a">215</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:12</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="084" ind1=" " ind2=" ">
+			<marc:subfield code="a">Fa:16</marc:subfield>
+			<marc:subfield code="2">utk</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">294.3365</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">vm</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="092" ind1=" " ind2=" ">
+			<marc:subfield code="a">294.3365</marc:subfield>
+			<marc:subfield code="q">NoOU</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="097" ind1=" " ind2=" ">
+			<marc:subfield code="a">fa3807</marc:subfield>
+			<marc:subfield code="9">LOCAL</marc:subfield>
+			<marc:subfield code="BIBLIOTEK">k</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="100" ind1="0" ind2=" ">
+			<marc:subfield code="a">Dalai Lama</marc:subfield>
+			<marc:subfield code="b">XIV</marc:subfield>
+			<marc:subfield code="d">1935-</marc:subfield>
+			<marc:subfield code="0">(NO-TrBIB)x90293815</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="245" ind1="1" ind2="0">
+			<marc:subfield code="a">The universe in a single atom :</marc:subfield>
+			<marc:subfield code="b">the convergence of science and spirituality</marc:subfield>
+			<marc:subfield code="c">His Holiness The Dalai Lama</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="260" ind1=" " ind2=" ">
+			<marc:subfield code="a">New York</marc:subfield>
+			<marc:subfield code="b">Morgan Road Books</marc:subfield>
+			<marc:subfield code="c">c2005</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="300" ind1=" " ind2=" ">
+			<marc:subfield code="a">216 s.</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="0">
+			<marc:subfield code="a">Buddhism and science</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Buddhisme</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Metafysikk</marc:subfield>
+			<marc:subfield code="2">noubomn</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Buddhisme</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="650" ind1=" " ind2="7">
+			<marc:subfield code="a">Religion og vitenskap</marc:subfield>
+			<marc:subfield code="2">tekord</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="856" ind1="4" ind2="2">
+			<marc:subfield code="3">Beskrivelse fra forlaget (kort)</marc:subfield>
+			<marc:subfield code="u">http://content.bibsys.no/content/?type=descr_publ_brief&amp;isbn=076792066x</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="901" ind1=" " ind2=" ">
+			<marc:subfield code="a">80</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">06ns00239</marc:controlfield>
+		<marc:controlfield tag="004">060350636</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">060350636</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">UBO</marc:subfield>
+			<marc:subfield code="b">UREAL</marc:subfield>
+			<marc:subfield code="c">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="h">FA 3807</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">UREAL</marc:subfield>
+			<marc:subfield code="b">UREAL Samling 42</marc:subfield>
+			<marc:subfield code="c">FA 3807</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">06ns00239</marc:subfield>
+			<marc:subfield code="d">20060320</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">024677na0</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">06vm01036</marc:controlfield>
+		<marc:controlfield tag="004">060350636</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">060350636</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">MF</marc:subfield>
+			<marc:subfield code="b">MF</marc:subfield>
+			<marc:subfield code="c">MF</marc:subfield>
+			<marc:subfield code="h">294.336 5 Da</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">MF</marc:subfield>
+			<marc:subfield code="b">MF</marc:subfield>
+			<marc:subfield code="c">294.336 5 Da</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">06vm01036</marc:subfield>
+			<marc:subfield code="d">20060606</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">06vm01036</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+	<marc:record format="MARC21" type="Holdings"  xmlns:marc="info:lc/xmlns/marcxchange-v1">
+		<marc:leader>99999nx  a2299999ui 4500</marc:leader>
+		<marc:controlfield tag="001">06a053484</marc:controlfield>
+		<marc:controlfield tag="004">060350636</marc:controlfield>
+		<marc:controlfield tag="007">ta</marc:controlfield>
+		<marc:controlfield tag="008">1507120p||||||||4   uu</marc:controlfield>
+		<marc:controlfield tag="009">kat</marc:controlfield>
+		<marc:datafield tag="014" ind1="1" ind2=" ">
+			<marc:subfield code="a">060350636</marc:subfield>
+			<marc:subfield code="b">(NO-TrBIB)</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="852" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU-UB</marc:subfield>
+			<marc:subfield code="b">NTNU/REA</marc:subfield>
+			<marc:subfield code="c">REAL</marc:subfield>
+			<marc:subfield code="h">215 D15u</marc:subfield>
+			<marc:subfield code="x">REAL/TK</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="859" ind1=" " ind2=" ">
+			<marc:subfield code="a">NTNU/REA</marc:subfield>
+			<marc:subfield code="b">REAL</marc:subfield>
+			<marc:subfield code="c">215 D15u</marc:subfield>
+			<marc:subfield code="f">7</marc:subfield>
+			<marc:subfield code="h">0</marc:subfield>
+			<marc:subfield code="x">2015-07-12</marc:subfield>
+		</marc:datafield>
+		<marc:datafield tag="876" ind1=" " ind2=" ">
+			<marc:subfield code="a">06a053484</marc:subfield>
+			<marc:subfield code="d">20060627</marc:subfield>
+			<marc:subfield code="j">kat</marc:subfield>
+			<marc:subfield code="p">06a053484</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection></metadata>
+</record>
+</ListRecords>
+</OAI-PMH>
+
+<!-- timeUsed runRequest 1684 ms. -->

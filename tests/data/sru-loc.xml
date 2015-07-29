@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.2</zs:version><zs:numberOfRecords>2525</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01745cjm a22003493a 4500</leader>
+  <controlfield tag="001">14254861</controlfield>
+  <controlfield tag="005">20060213135241.0</controlfield>
+  <controlfield tag="007">sd fsngnnmmneu</controlfield>
+  <controlfield tag="008">060206s1996    cauppn|           | roa  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2006570295</subfield>
+  </datafield>
+  <datafield tag="024" ind1="1" ind2=" ">
+    <subfield code="a">096297010327</subfield>
+  </datafield>
+  <datafield tag="028" ind1="0" ind2="2">
+    <subfield code="a">CD-103</subfield>
+    <subfield code="b">Arhoolie</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">n-us-la</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">SDB 32336</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">15 Louisiana cajun classics</subfield>
+    <subfield code="h">[sound recording].</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2=" ">
+    <subfield code="a">Fifteen Louisiana cajun classics</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="0">
+    <subfield code="a">Louisiana cajun classics</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">El Cerrito, CA :</subfield>
+    <subfield code="b">Arhoolie,</subfield>
+    <subfield code="c">p1996.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 sound disc :</subfield>
+    <subfield code="b">digital ;</subfield>
+    <subfield code="c">4 3/4 in.</subfield>
+  </datafield>
+  <datafield tag="440" ind1=" " ind2="0">
+    <subfield code="a">American masters series ;</subfield>
+    <subfield code="v">vol. 3</subfield>
+  </datafield>
+  <datafield tag="546" ind1=" " ind2=" ">
+    <subfield code="a">Sung in Cajun French and English.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Various performers.</subfield>
+  </datafield>
+  <datafield tag="508" ind1=" " ind2=" ">
+    <subfield code="a">Produced by Chris Strachwitz and Tom Diamant.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Compact disc.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Some selections previously released.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Le jig francais (Beausoleil) -- Chere te mon (Nathan Abshire) -- Port Arthur blues (Wade Fruge) -- J'ai passe&#x301; devant ta porte (Dewey Balfa, Marc Savoy &amp; D.L. Menard) -- Fiddle stomp (Wallace "Cheese" Read) -- Chicot two-step (California Cajun Orchestra) -- Poor hobo (Harry Choates) -- Jolie blonde (Hackberry Ramblers) -- Two step D'Ame&#x301;de&#x301; (Savoy-Doucet Cajun Band) -- Bernadette (Canray Fontenot) -- Bosco stomp (Austin Pitre) -- La robe barre&#x301;e = The striped dress (Magnolia Sisters) -- Basile breakdown (Dewey Balfa with Nathan Abshire) -- Grand tasso (Michael Doucet) -- Flames De'Enfer (Joe Falcon).</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Brief record.</subfield>
+  </datafield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">origres</subfield>
+    <subfield code="d">3</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-genmusic</subfield>
+  </datafield>
+  <datafield tag="925" ind1="0" ind2=" ">
+    <subfield code="a">acquire</subfield>
+    <subfield code="b">2 shelf copies</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="h">2006-02-06</subfield>
+    <subfield code="e">2006-02-06 to MBRS</subfield>
+    <subfield code="e">vb23 2006-02-13 copy 2 to MBRS</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">smcd</subfield>
+    <subfield code="e">cdmv2</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>03571cjm a2200733 a 4500</leader>
+  <controlfield tag="001">5775647</controlfield>
+  <controlfield tag="005">20130502110655.0</controlfield>
+  <controlfield tag="007">sdubsmennmplue</controlfield>
+  <controlfield tag="008">810515s1969    caumun              eng d</controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">copycat</subfield>
+    <subfield code="d">3</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">19</subfield>
+    <subfield code="g">y-genmusic</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">vn23</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   96789301 </subfield>
+  </datafield>
+  <datafield tag="028" ind1="0" ind2="2">
+    <subfield code="a">PRO 331</subfield>
+    <subfield code="b">Warner Bros. Records</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="9">(DLC)   96789301</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)07422248</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">MdBE</subfield>
+    <subfield code="c">MdBE</subfield>
+    <subfield code="d">OBgU</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="042" ind1=" " ind2=" ">
+    <subfield code="a">lccopycat</subfield>
+  </datafield>
+  <datafield tag="047" ind1=" " ind2=" ">
+    <subfield code="a">pp</subfield>
+    <subfield code="a">rc</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">Warner Bros. Records PRO 331</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="4">
+    <subfield code="a">The 1969 Warner/Reprise songbook</subfield>
+    <subfield code="h">[sound recording].</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Burbank, Calif. :</subfield>
+    <subfield code="b">Warner Bros. Records,</subfield>
+    <subfield code="c">[1969]</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 sound discs (72 min.) :</subfield>
+    <subfield code="b">analog, 33 1/3 rpm, stereo. ;</subfield>
+    <subfield code="c">12 in.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Popular and rock songs.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Performed by various performers.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"Promotion, not for sale."</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Songs for sale (Wild Man Fischer) -- My Sunday feeling (Jethro Tull) -- Sweet child (the Pentangle) -- Slim slow slider (Van Morrison) -- Second generation woman (Family) -- I've been waiting for you (Neil Young) -- Sunny Goodge (Tom Northcott) -- Songs for sale (Wild Man Fischer) -- T for Texas (the Everly Brothers) -- The all golden (Van Dyke Parks) -- Music for Datsun TV commercial (Van Dyke Parks) -- Alligator man (Sal Valentino) -- Deep water (the Beau Brummels) -- Davy the fat boy (Randy Newman) -- Mr. Tim laughs (Tiny Tim) -- The voice of cheese (the Mothers of Invention) -- The air (the Mothers of Invention) -- The divine toe (part I) ; Grope need ; Tuli ; Visited by the ghost of Platinus ; More grope need ; The national haiku contest ; The divine toe (part II) (the Mothers of Invention) -- Wide, wide river (the Fugs) -- The pause of Mr. Claus (Arlo Guthrie) -- Why oh why (Sweetwater) -- Nathan La Franeer (Joni Mitchell) -- So good to be with you (Eric Andersen) -- Finders keepers (the Electric Prunes) -- Picture book (the Kinks) -- Red house (Jimi Hendrix) -- I shall be released (Miriam Makeba) -- Lord of the manor (the Everly Brothers) -- Louie, Louie ; Our bizarre relationship (the Mothers of Invention).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Popular music</subfield>
+    <subfield code="y">1961-1970.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Rock music</subfield>
+    <subfield code="y">1961-1970.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Fischer, Wild Man.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Morrison, Van,</subfield>
+    <subfield code="d">1945-</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Hendrix, Jimi.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Young, Neil,</subfield>
+    <subfield code="d">1945-</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Northcott, Tom.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Mitchell, Joni.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Andersen, Eric.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Makeba, Miriam.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Parks, Van Dyke.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Valentino, Sal.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Newman, Randy.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="0" ind2=" ">
+    <subfield code="a">Tiny Tim,</subfield>
+    <subfield code="d">-1996.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Guthrie, Arlo.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Jethro Tull (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Pentangle (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Family (Rock group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Sweetwater (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Electric Prunes (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Kinks (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Everly Brothers.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Beau Brummels (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Mothers of Invention.</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Fugs (Musical group)</subfield>
+    <subfield code="4">prf</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Songs for sale.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">My Sunday feeling.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Sweet child.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Slim slow slider.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Second generation woman.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">I've been waiting for you.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Sunny Goodge.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">T for Texas.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">All golden.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Alligator man.</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">TA28</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">9602</subfield>
+  </datafield>
+  <datafield tag="991" ind1=" " ind2=" ">
+    <subfield code="b">c-RecSound</subfield>
+    <subfield code="h">Warner Bros. Records PRO 331</subfield>
+    <subfield code="w">MUSIC</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>2</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>03000cam a2200301 a 4500</leader>
+  <controlfield tag="001">16158426</controlfield>
+  <controlfield tag="005">20110617133320.0</controlfield>
+  <controlfield tag="008">100329s2010    nju      b    001 0 eng  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">1</subfield>
+    <subfield code="e">ecip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-gencatlg</subfield>
+  </datafield>
+  <datafield tag="925" ind1="0" ind2=" ">
+    <subfield code="a">acquire</subfield>
+    <subfield code="b">2 shelf copies</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="b">rc13 2010-03-29</subfield>
+    <subfield code="c">rc13 2010-03-29</subfield>
+    <subfield code="d">rg13 2010-04-01 to DEWEY</subfield>
+    <subfield code="w">rd61 2010-04-01</subfield>
+    <subfield code="a">xe09 2010-12-14 1 copy rec'd., to CIP ver.</subfield>
+    <subfield code="f">rc02 2011-01-20 CIP VER to BCCD</subfield>
+    <subfield code="t">rc11 2011-06-17 copy 2 added</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2010013143</subfield>
+  </datafield>
+  <datafield tag="015" ind1=" " ind2=" ">
+    <subfield code="a">GBB052552</subfield>
+    <subfield code="2">bnb</subfield>
+  </datafield>
+  <datafield tag="016" ind1="7" ind2=" ">
+    <subfield code="a">015535100</subfield>
+    <subfield code="2">Uk</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">9780470575581 (pbk.)</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">0470575581 (pbk.)</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)ocn503076042</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">BTCTA</subfield>
+    <subfield code="d">YDXCP</subfield>
+    <subfield code="d">UKM</subfield>
+    <subfield code="d">MOF</subfield>
+    <subfield code="d">C#P</subfield>
+    <subfield code="d">BWX</subfield>
+    <subfield code="d">MOF</subfield>
+    <subfield code="d">CDX</subfield>
+    <subfield code="d">CS1</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">PN1992.77.A216</subfield>
+    <subfield code="b">A15 2010</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">30 Rock and philosophy :</subfield>
+    <subfield code="b">we want to go to there /</subfield>
+    <subfield code="c">edited by J. Jeremy Wisnewski.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Hoboken, N.J. :</subfield>
+    <subfield code="b">Wiley,</subfield>
+    <subfield code="c">c2010.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">ix, 230 p. ;</subfield>
+    <subfield code="c">24 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">The Blackwell philosophy and pop culture series</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references and index.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2="0">
+    <subfield code="g">Introduction : platonic fantasies and Tina Fey-losophy --</subfield>
+    <subfield code="g">What would Oprah do? ethics and the good life at 30 Rock.</subfield>
+    <subfield code="t">Being Kenneth : some moral lessons /</subfield>
+    <subfield code="r">P. Sue Dohnimm --</subfield>
+    <subfield code="t">Sour lemon : Liz's workaholism and the meaning of life /</subfield>
+    <subfield code="r">Jeffrey A. Hinzmann --</subfield>
+    <subfield code="t">Friendship on 30 Rock : what a Greek philosopher can teach us about companionship /</subfield>
+    <subfield code="r">Dan Yim --</subfield>
+    <subfield code="t">A Confucian-Aristotelian critique of 30 Rock's "semi-virtuous path" /</subfield>
+    <subfield code="r">Adam Barkman --</subfield>
+    <subfield code="g">The girlie show : gender, race, and sexual orientation at 30 Rock.</subfield>
+    <subfield code="t">Race at the Rock : race cards, white myths, and postracial America /</subfield>
+    <subfield code="r">J. Jeremy Wisnewski --</subfield>
+    <subfield code="t">Getting gay : how 30 Rock helps us understand sexuality /</subfield>
+    <subfield code="r">J. Jeremy Wisnewski --</subfield>
+    <subfield code="t">And the followship award goes to... third wave feminism? /</subfield>
+    <subfield code="r">Ashley Barkman --</subfield>
+    <subfield code="g">Dealbreaker! : corporations, professions, and politics.</subfield>
+    <subfield code="t">Medicine's not a science : Dr. Leo Spaceman and the role of the incompetent professional in today's America /</subfield>
+    <subfield code="r">Kevin S. Decker --</subfield>
+    <subfield code="t">Is there a difference between East Coast television and microwave ovens? moral questions about corporate management /</subfield>
+    <subfield code="r">Andrew Terjesen --</subfield>
+    <subfield code="t">The emancipation corporation : loving and loathing the Shinehardt wigs of the world /</subfield>
+    <subfield code="r">Nick Michaud --</subfield>
+    <subfield code="t">Liz and Jack can't be friends! : communitarianism, libertarianism, and politics at 30 Rock /</subfield>
+    <subfield code="r">Nicholas Michaud --</subfield>
+    <subfield code="g">Mind grapes (to nourish your thinking).</subfield>
+    <subfield code="t">"The bubble," the cave and Samsara : being deluded at 30 Rock /</subfield>
+    <subfield code="r">Adam Barkman --</subfield>
+    <subfield code="t">Of cookie jars and CEOs : time and self on 30 Rock /</subfield>
+    <subfield code="r">Tyler Shores --</subfield>
+    <subfield code="t">One city's cheese curl addict is another city's model : a question of taste /</subfield>
+    <subfield code="r">Michael Da Silva and Melina Found --</subfield>
+    <subfield code="t">"I'm straight up mentally ill" : Tracy Jordan and true, justified belief /</subfield>
+    <subfield code="r">Robert Arp --</subfield>
+    <subfield code="t">Performing at 30 Rock (and everywhere else) /</subfield>
+    <subfield code="r">Marc E. Shaw.</subfield>
+  </datafield>
+  <datafield tag="630" ind1="0" ind2="0">
+    <subfield code="a">30 Rock (Television program)</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Wisnewski, Jeremy.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Blackwell philosophy and popculture series.</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>3</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>00724cam a22001937a 4500</leader>
+  <controlfield tag="001">16175770</controlfield>
+  <controlfield tag="005">20110609144602.0</controlfield>
+  <controlfield tag="008">100407s2009    ci a          000 0 hrv  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">3</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-gencatlg</subfield>
+  </datafield>
+  <datafield tag="925" ind1="0" ind2=" ">
+    <subfield code="a">acquire</subfield>
+    <subfield code="b">1 shelf copy</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="b">fg04 2010-4-7</subfield>
+    <subfield code="a">fg00 2010-04-13 to GS/SEE;</subfield>
+    <subfield code="h">fg10 2011-06-09; to BCCD</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2010361959</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">MLCS 2011/42157(S)</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">4. dani sira u gradu sira :</subfield>
+    <subfield code="b">me&#x111;unarodni festival sira : Bjelovar, 3. i 4. listopada 2009.</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2=" ">
+    <subfield code="a">C&#x30C;etvrti dani sira u gradu sira</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Bjelovar :</subfield>
+    <subfield code="b">[s..n.],</subfield>
+    <subfield code="c">2009.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 v. (unpaged) :</subfield>
+    <subfield code="b">col. ill. ;</subfield>
+    <subfield code="c">21 cm.</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">Cheese;</subfield>
+    <subfield code="a">Festivals;</subfield>
+    <subfield code="a">Bjelovar, Croatia.</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>4</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02439cjm a22002773a 4500</leader>
+  <controlfield tag="001">14257481</controlfield>
+  <controlfield tag="005">20060208081652.0</controlfield>
+  <controlfield tag="007">sd fsngnnmmned</controlfield>
+  <controlfield tag="008">060208s2002    xxuppn|           | eng  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">3</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-genmusic</subfield>
+  </datafield>
+  <datafield tag="925" ind1="0" ind2=" ">
+    <subfield code="a">acquire</subfield>
+    <subfield code="b">2 copies</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">vn00 2006-02-08</subfield>
+    <subfield code="h">vn47 2006-02-08</subfield>
+    <subfield code="e">vn47 2006-02-08 to MBRS/RS</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">SMCD</subfield>
+    <subfield code="e">cdpop</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2006571359</subfield>
+  </datafield>
+  <datafield tag="024" ind1="1" ind2=" ">
+    <subfield code="a">733792399228</subfield>
+  </datafield>
+  <datafield tag="028" ind1="0" ind2="2">
+    <subfield code="a">BR CD 005</subfield>
+    <subfield code="b">Brookhurst Records</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">SDB 31605</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">50 years of yodeling with Janet McBride</subfield>
+    <subfield code="h">[sound recording].</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[United States] :</subfield>
+    <subfield code="b">Brookhurst Records,</subfield>
+    <subfield code="c">p2002.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 sound discs :</subfield>
+    <subfield code="b">digital ;</subfield>
+    <subfield code="c">4 3/4 in.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Janet McBride.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Compact disc.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">CD One. He taught me to yodel -- My echo and I -- Cannon ball yodel -- Chime bells -- Swiss cheese yodeling song -- I want to be a cowboys's sweetheart -- He taught me to yodel -- Yodeling Jan -- Yodeling tribute -- Alpine yodel polka -- This one's for daddy -- Just a yodel for me -- The ballad of North Whitefield, Maine -- The cowboy yodel -- Yodeler's lament -- Best dern yodeler -- The Grand Ole Opry -- The Smoky Mountain yodeler -- The happy yodeler -- Yodeling at the Grand Ole Opry -- The yodeling tribute -- Where the yodel began -- Looking for a yodeling man -- The yodelers hall of fame -- They taught me to yodel -- Texas yodel lady -- The gospel yodel -- A yodeling lesson -- A yodeling addiction -- I think I heard a yodeling bird -- I'm gonna' dream my way to a swiss chalet -- Montana cowboy.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">CD Two. A yodeler's dream (with Mark McBride) -- I want to bea cowboy's sweetheart -- Chime bells -- If I could only learn to yodel -- Wide rollin' plains -- Ding dong polka -- He taught me to yodel -- Swiss moonlight lullabye -- Rockin' over river -- My last old yodeling song -- I'm a cowgirl at heart (aka Out where the west wind blows) -- Texas plains -- The cowboy yodel -- Pinto pal -- Yodeling mad -- Swing time cowgirl -- Pride of the prairie -- Yodel your troubles away -- Cowboy rhythm -- I want to be a cowboy's dream girl -- The Texas cowgirl -- When a cowgirl is happy -- Daddy was a yodeling cowboy -- Daddy's yodel -- Columbus stockade blues -- Yodel sweet Molly (with John Ingram) -- There's a love knot in my lariat -- Betcha' my heart I love ya' -- Santa's yodeling song.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Brief record.</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>5</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01468cam a2200349 a 4500</leader>
+  <controlfield tag="001">2827384</controlfield>
+  <controlfield tag="005">19910207145519.3</controlfield>
+  <controlfield tag="008">840224s1982    sz a     b    000 0 ger  </controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="9">(DLC)   83116547</subfield>
+  </datafield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">4</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">19</subfield>
+    <subfield code="g">y-gencatlg</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   83116547 </subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">3909230016</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+    <subfield code="d">OCoLC</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">gerfreitaeng</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">e-sz---</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">HD9282.S9</subfield>
+    <subfield code="b">A15 1982</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">338.1/77/09494</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">75 Jahre ZVSM, 1907-1982 :</subfield>
+    <subfield code="b">die Schweizerische Milchwirtschaft zu Beginn der achtziger Jahre = 75 ans UCPL, 1907-1982 : l'e&#x301;conomie laitie&#x300;re suisse au seuil de la de&#x301;cennie 80 /</subfield>
+    <subfield code="c">Herausgeber, Zentralverband Schweizerischer Milchproduzenten.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Bern :</subfield>
+    <subfield code="b">ZVSM,</subfield>
+    <subfield code="c">c1982.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">571 p. :</subfield>
+    <subfield code="b">ill. (some col.) ;</subfield>
+    <subfield code="c">25 cm.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">English, French, German, and Italian.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Milk trade</subfield>
+    <subfield code="z">Switzerland.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Cheese industry</subfield>
+    <subfield code="z">Switzerland.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Milk trade</subfield>
+    <subfield code="z">Switzerland</subfield>
+    <subfield code="x">History</subfield>
+    <subfield code="y">20th century.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Cheese industry</subfield>
+    <subfield code="z">Switzerland</subfield>
+    <subfield code="x">History</subfield>
+    <subfield code="y">20th century.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Zentralverband Schweizerischer Milchproduzenten.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Fu&#x308;nfundsiebzig Jahre ZVSM, 1907-1982.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Schweizerische Milchwirtschaft zu Beginn der achtziger Jahre.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">75 ans UCPL, 1907-1982.</subfield>
+  </datafield>
+  <datafield tag="740" ind1="0" ind2=" ">
+    <subfield code="a">Soixante-quinze ans UCPL, 1907-1982.</subfield>
+  </datafield>
+  <datafield tag="991" ind1=" " ind2=" ">
+    <subfield code="b">c-GenColl</subfield>
+    <subfield code="h">HD9282.S9</subfield>
+    <subfield code="i">A15 1982</subfield>
+    <subfield code="t">Copy 1</subfield>
+    <subfield code="w">BOOKS</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>6</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01719cgm a22003133a 4500</leader>
+  <controlfield tag="001">13846406</controlfield>
+  <controlfield tag="005">20130815081955.0</controlfield>
+  <controlfield tag="007">vf ||||||</controlfield>
+  <controlfield tag="008">050120r19921952xxu028        |   vleng  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">0</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">u</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-movingim</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2005640269</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="e">amim</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">VAD 7045 (viewing copy)</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="4">
+    <subfield code="a">The Abbott and Costello show.</subfield>
+    <subfield code="p">Actor's home /</subfield>
+    <subfield code="c">director/producer, Jean Yarbrough.</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="0">
+    <subfield code="a">Actor's home</subfield>
+  </datafield>
+  <datafield tag="257" ind1=" " ind2=" ">
+    <subfield code="a">United States.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">United States :</subfield>
+    <subfield code="b">[s.n.,</subfield>
+    <subfield code="c">1953] ;</subfield>
+    <subfield code="a">United States :</subfield>
+    <subfield code="b">Shanachie,</subfield>
+    <subfield code="c">1992.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 videocassette of 1 (VHS) (ca. 28 min.) :</subfield>
+    <subfield code="b">sd., b&amp;w ;</subfield>
+    <subfield code="c">1/2 in.</subfield>
+    <subfield code="3">viewing copy.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="1" ind2=" ">
+    <subfield code="a">Bud Abbott, Lou Costello, Sid Fields, Joe Kirk, Joe Besser.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Lou tends Bacciagalupe's ice cream push cart and Stinky throws Limburger cheese into it. Soon thereafter a nutty millionaire gives the boys a $500 bill which Bud tears up thinking it's counterfeit. When he finds out it was real money, Bud goes completely crazy and is carted away to the old actors' home, where after convincing them he's not nuts, he and Lou entertain the folks with a brilliant performance of their famous "Who's on First" routine.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">On one cassette with Duck dinner; Hillary's birthday; Million dollar refund.</subfield>
+    <subfield code="5">DLC</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Not viewed.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Sources used: video container.</subfield>
+  </datafield>
+  <datafield tag="541" ind1=" " ind2=" ">
+    <subfield code="d">Received: 12/15/1994;</subfield>
+    <subfield code="3">viewing copy;</subfield>
+    <subfield code="c">copyright deposit--407;</subfield>
+    <subfield code="a">Copyright Collection.</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="7">
+    <subfield code="a">Television comedies.</subfield>
+    <subfield code="2">lcgft</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Yarbrough, Jean,</subfield>
+    <subfield code="e">direction,</subfield>
+    <subfield code="e">production.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Abbott, Bud,</subfield>
+    <subfield code="d">1895-1974,</subfield>
+    <subfield code="e">cast.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Costello, Lou,</subfield>
+    <subfield code="e">cast.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Copyright Collection (Library of Congress)</subfield>
+    <subfield code="5">DLC</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>7</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>00558cam a2200193u  4500</leader>
+  <controlfield tag="001">8899317</controlfield>
+  <controlfield tag="005">20100625134043.0</controlfield>
+  <controlfield tag="008">810202s1961    xx            000 0 ger  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">0</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">premunv</subfield>
+    <subfield code="d">u</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">19</subfield>
+    <subfield code="g">y-gencatlg</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   61002066 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="9">(DLC)   61002066</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">CarP</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">TX759</subfield>
+    <subfield code="b">.A22</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="4">
+    <subfield code="a">The ABC of cheese cookery.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Mount Vernon,</subfield>
+    <subfield code="b">N.Y., Peter Pauper Press</subfield>
+    <subfield code="c">[1961]</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">p. cm.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Cooking (Cheese)</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Peter Pauper Press.</subfield>
+  </datafield>
+  <datafield tag="991" ind1=" " ind2=" ">
+    <subfield code="b">c-GenColl</subfield>
+    <subfield code="h">TX759</subfield>
+    <subfield code="i">.A22</subfield>
+    <subfield code="t">Copy 1</subfield>
+    <subfield code="w">PREM</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>8</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01289ckc a22002772a 4500</leader>
+  <controlfield tag="001">13963182</controlfield>
+  <controlfield tag="005">20050512141100.0</controlfield>
+  <controlfield tag="007">ki |||</controlfield>
+  <controlfield tag="008">050512i19601960|||nnn            kn|||  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">0</subfield>
+    <subfield code="b">ibc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">u</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-printpho</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">qw05, 2005-05</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2005684687</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">LOT 8942</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">ABECEDA, statni nakladatelstvi detske&#x301; knihy</subfield>
+    <subfield code="h">[graphic].</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="c">1960.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">25 cards :</subfield>
+    <subfield code="b">color, in folder ;</subfield>
+    <subfield code="c">3 3/4 x 6 in.</subfield>
+  </datafield>
+  <datafield tag="520" ind1="0" ind2=" ">
+    <subfield code="a">Picture cards for teaching letters of the alphabet, illustrated with simple words and various objects. Snake, grapes, snail, frog, fish, scissors, cheese, insects, etc.</subfield>
+  </datafield>
+  <datafield tag="540" ind1=" " ind2=" ">
+    <subfield code="a">Rights status of individual images not evaluated. For general information see: "Copyright and Other Restrictions ...,"</subfield>
+    <subfield code="u">http://www.loc.gov/rr/print/195_copr.html</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">This record contains unverified, old data from shelflist card.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Main entry on shelflist card: Seydl, Zdenek.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Text in Czech.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Library of Congress</subfield>
+    <subfield code="b">Prints and Photographs Division</subfield>
+    <subfield code="e">Washington, D.C. 20540 USA</subfield>
+    <subfield code="n">dcu</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="1">
+    <subfield code="z">Search for images in Prints &amp; Photographs Online Catalog</subfield>
+    <subfield code="u">http://lcweb2.loc.gov/pp/cphquery.html</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">pp/coll</subfield>
+    <subfield code="e">reconlot2</subfield>
+  </datafield>
+  <datafield tag="991" ind1=" " ind2=" ">
+    <subfield code="b">c-P&amp;P</subfield>
+    <subfield code="m">(F)</subfield>
+    <subfield code="v">obj.</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>9</zs:recordPosition></zs:record><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>00990cjm a22002653a 4500</leader>
+  <controlfield tag="001">14544116</controlfield>
+  <controlfield tag="005">20060911174716.0</controlfield>
+  <controlfield tag="007">sd fsngnnmmned</controlfield>
+  <controlfield tag="008">060909s2000    xxcppn|           | eng  </controlfield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">3</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-genmusic</subfield>
+  </datafield>
+  <datafield tag="925" ind1="0" ind2=" ">
+    <subfield code="a">acquire</subfield>
+    <subfield code="b">2 copies</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">to MBRS/RS</subfield>
+    <subfield code="h">vm34 2006-09-09</subfield>
+    <subfield code="e">vm34 2006-09-09 to MBRS</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">SMCD</subfield>
+    <subfield code="e">cdpop</subfield>
+  </datafield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2006585968</subfield>
+  </datafield>
+  <datafield tag="024" ind1="1" ind2=" ">
+    <subfield code="a">724596913727</subfield>
+  </datafield>
+  <datafield tag="028" ind1="0" ind2="2">
+    <subfield code="a">9137-2</subfield>
+    <subfield code="b">Mute</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">SDB 44154</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Add insult to injury</subfield>
+    <subfield code="h">[sound recording].</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[S.l.] :</subfield>
+    <subfield code="b">Mute,</subfield>
+    <subfield code="c">p2000.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 sound disc :</subfield>
+    <subfield code="b">digital ;</subfield>
+    <subfield code="c">4 3/4 in.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Add N to (X).</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Compact disc.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Adding N to X -- Brothel charge -- You must create -- Kingdom of shades -- Monster Bobby -- Poek 'er 'ole -- Plug me in -- Hit for cheese -- MDMH : Miami dust mite harvest -- B.P. Perino -- Incinerator No. 1 -- The regent is dead.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Brief record.</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>10</zs:recordPosition></zs:record></zs:records><zs:nextRecordPosition>11</zs:nextRecordPosition><zs:echoedSearchRetrieveRequest><zs:version>1.2</zs:version><zs:query>cheese</zs:query><zs:startRecord>1</zs:startRecord><zs:maximumRecords>10</zs:maximumRecords><zs:recordPacking>xml</zs:recordPacking><zs:recordSchema>marcxml</zs:recordSchema></zs:echoedSearchRetrieveRequest></zs:searchRetrieveResponse>
