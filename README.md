@@ -1,3 +1,8 @@
+[![Build Status](https://img.shields.io/travis/scriptotek/marc.svg?style=flat-square)](https://travis-ci.org/scriptotek/marc)
+[![StyleCI](https://styleci.io/repos/41363199/shield)](https://styleci.io/repos/41363199)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/scriptotek/marc.svg?style=flat-square)](https://scrutinizer-ci.com/g/scriptotek/marc/?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/github/scriptotek/marc.svg?style=flat-square)](https://codeclimate.com/github/scriptotek/marc)
+
 # scriptotek/marc
 
 This is a small package that provides a simple interface to parsing
