@@ -10,17 +10,17 @@
             "email": "d.m.heggo@ub.uio.no"
         }
     ],
-    "repositories": [{
-        "type": "pear",
-        "url": "http://pear.php.net"
-    }],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pear/File_MARC"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3",
         "ck/File_MARC_Reference": "dev-master",
-        "pear-pear.php.net/File_MARC": "*",
-        "pear-pear.php.net/validate_ispn": "*",
-        "pear/pear_exception": "1.0.0"
+        "pear/file_marc": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
