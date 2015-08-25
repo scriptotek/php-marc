@@ -4,7 +4,6 @@ use Scriptotek\Marc\Importers\SruResponse;
 
 class SubjectFieldTest extends \PHPUnit_Framework_TestCase
 {
-
     protected function getNthrecord($n)
     {
         $response = new SruResponse('tests/data/sru-alma.xml');
@@ -15,7 +14,6 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
             $records->next();
         }
         return $records->current();
-
     }
 
     public function testSubjectString()
@@ -61,5 +59,4 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $this->assertCount(2, $noubomn_topic);
         $this->assertCount(0, $noubomn_place);
     }
-
 }

@@ -4,7 +4,6 @@ use Scriptotek\Marc\Record;
 
 class IsbnFieldTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testIsbn()
     {
         $source = '<?xml version="1.0" encoding="UTF-8" ?>
@@ -21,5 +20,4 @@ class IsbnFieldTest extends \PHPUnit_Framework_TestCase
         $record = Record::fromString($source);
         $this->assertEquals(array('8200424421'), $record->isbns);
     }
-
 }

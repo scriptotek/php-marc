@@ -2,8 +2,8 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Title extends Field {
-
+class Title extends Field
+{
     public function __toString()
     {
         $a = $this->field->getSubfield('a');
@@ -19,5 +19,4 @@ class Title extends Field {
 
         return $a;
     }
-
 }

@@ -2,8 +2,8 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Field {
-
+class Field
+{
     protected $field;
 
     public function __construct(\File_MARC_Field $field)
@@ -24,5 +24,4 @@ class Field {
         }
         // TODO: Throw something!
     }
-
 }

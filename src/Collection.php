@@ -8,7 +8,6 @@ use Scriptotek\Marc\Importers\SruResponse;
 
 class Collection
 {
-
     protected $parser;
     protected $_records;
 
@@ -36,7 +35,7 @@ class Collection
         return $importer->getCollection();
     }
 
-    function __construct(\Factory $factory = null)
+    public function __construct(\Factory $factory = null)
     {
         $this->factory = $factory ?: new Factory();
     }
@@ -48,7 +47,6 @@ class Collection
         } else {
             $this->parser = $this->factory->make('File_MARC', $source, \File_MARC::SOURCE_STRING);
         }
-
     }
 
     public function __get($key='')
@@ -69,5 +67,4 @@ class Collection
     {
         return call_user_func_array(array($this->parser, $name), $arguments);
     }
-
 }

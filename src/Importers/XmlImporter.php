@@ -68,7 +68,7 @@ class XmlImporter
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
         $pprefix = empty($prefix) ? '' : "$prefix:";
 
-        $records = array_map(function($record) {
+        $records = array_map(function ($record) {
             $x = $record->asXML();
 
             // Strip away XML declaration.
@@ -95,5 +95,4 @@ class XmlImporter
         $this->collection->parse($marcCollection, true, $prefix);
         return $this->collection;
     }
-
 }

@@ -4,7 +4,6 @@ use Scriptotek\Marc\Importers\SruResponse;
 
 class SruResponseTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testLocSample()
     {
         $response = new SruResponse('tests/data/sru-loc.xml');
@@ -39,5 +38,4 @@ class SruResponseTest extends \PHPUnit_Framework_TestCase
 
         $this->assertCount(3, $response->getRecords());
     }
-
 }

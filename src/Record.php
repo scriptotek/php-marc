@@ -13,13 +13,13 @@ class Record
         $this->factory = $factory ?: new Factory();
     }
 
-    static function fromFile($filename)
+    public static function fromFile($filename)
     {
         $collection = Collection::fromFile($filename);
         return $collection->records->toArray()[0];
     }
 
-    static function fromString($data)
+    public static function fromString($data)
     {
         $collection = Collection::fromString($data);
         return $collection->records->toArray()[0];
@@ -66,7 +66,7 @@ class Record
                 $fields[] = $f;
             }
         }
-        return array_filter($fields, function($s) use ($vocabulary, $type) {
+        return array_filter($fields, function ($s) use ($vocabulary, $type) {
             $a = is_null($vocabulary) || $vocabulary == $s->vocabulary;
             $b = is_null($type) || $type == $s->type;
             return $a && $b;
@@ -82,7 +82,7 @@ class Record
     public function get($spec)
     {
         $reference = new \File_MARC_Reference($spec, $this->record);
-        return $reference ?: [];
+        return $reference ?: array();
     }
 
     public function __call($name, $args)
@@ -98,5 +98,4 @@ class Record
         }
         // TODO: Throw something!
     }
-
 }

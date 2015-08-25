@@ -3,4 +3,3 @@ preset: psr2
 enabled:
   - long_array_syntax
   - concat_with_spaces
-

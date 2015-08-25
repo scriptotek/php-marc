@@ -41,11 +41,10 @@ $collection = Collection::from($source);
 // }
 //echo "---\n";
 foreach ($collection->records as $record) {
-  foreach ($record->subjects as $subject) {
-    echo "- $subject->vocabulary : $subject \n";
-  }
+    foreach ($record->subjects as $subject) {
+        echo "- $subject->vocabulary : $subject \n";
+    }
 }
 
 // $record = Record::from($source);
 // echo $record->isbn();
-

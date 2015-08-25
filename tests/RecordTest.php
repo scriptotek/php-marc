@@ -61,5 +61,4 @@ class RecordTest extends \PHPUnit_Framework_TestCase
         $record = Record::fromFile('tests/data/binary-marc.mrc');
         $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
     }
-
 }

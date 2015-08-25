@@ -2,17 +2,16 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Isbn extends Field {
+class Isbn extends Field
+{
+    public function __toString()
+    {
+        $a = $this->field->getSubfield('a');
+        if (!$a) {
+            return null;
+        }
 
-	public function __toString()
-	{
-		$a = $this->field->getSubfield('a');
-		if (!$a) {
-			return null;
-		}
-
-		// TODO: Other subfields?
-		return $a->getData();
-	}
-
+        // TODO: Other subfields?
+        return $a->getData();
+    }
 }

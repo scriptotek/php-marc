@@ -4,15 +4,14 @@ namespace Scriptotek\Marc;
 
 class Records implements \Iterator //, \Countable
 {
-
-	protected $parser;
+    protected $parser;
     protected $records;
     protected $useCache = false;
 
-    function __construct($parser)
+    public function __construct($parser)
     {
-    	$this->parser = $parser;
-    	$this->_current = null;
+        $this->parser = $parser;
+        $this->_current = null;
     }
 
     public function toArray()
@@ -31,11 +30,11 @@ class Records implements \Iterator //, \Countable
      *********************************************************/
 
     protected $position = 0;
-	protected $_current;
+    protected $_current;
 
     public function current()
     {
-    	return $this->_current;
+        return $this->_current;
     }
 
     public function key()
@@ -45,7 +44,7 @@ class Records implements \Iterator //, \Countable
 
     public function next()
     {
-    	$this->position++;
+        $this->position++;
         if ($this->useCache) {
             $rec = isset($this->records[$this->position]) ? $this->records[$this->position] : false;
         } else {
@@ -62,7 +61,7 @@ class Records implements \Iterator //, \Countable
     {
         $this->position = -1;
         if (is_null($this->records)) {
-            $this->records = [];
+            $this->records = array();
         } else {
             $this->useCache = true;
         }
@@ -77,5 +76,4 @@ class Records implements \Iterator //, \Countable
     // public function count()
     // {
     // }
-
 }
