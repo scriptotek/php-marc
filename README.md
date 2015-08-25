@@ -1,7 +1,9 @@
-[![Build Status](https://img.shields.io/travis/scriptotek/marc.svg?style=flat-square)](https://travis-ci.org/scriptotek/marc)
+[![Build Status](https://img.shields.io/travis/scriptotek/php-marc.svg?style=flat-square)](https://travis-ci.org/scriptotek/php-marc)
 [![StyleCI](https://styleci.io/repos/41363199/shield)](https://styleci.io/repos/41363199)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/scriptotek/marc.svg?style=flat-square)](https://scrutinizer-ci.com/g/scriptotek/marc/?branch=master)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/scriptotek/php-marc.svg?style=flat-square)](https://scrutinizer-ci.com/g/scriptotek/php-marc/?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/github/scriptotek/marc.svg?style=flat-square)](https://codeclimate.com/github/scriptotek/marc)
+[![Latest Stable Version](http://img.shields.io/packagist/v/scriptotek/marc.svg?style=flat-square)](https://packagist.org/packages/scriptotek/marc)
+[![Total Downloads](http://img.shields.io/packagist/dt/scriptotek/marc.svg?style=flat-square)](https://packagist.org/packages/scriptotek/marc)
 
 # scriptotek/marc
 
