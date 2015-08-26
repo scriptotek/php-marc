@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Isbn extends Field
+class Isbn extends Field implements FieldInterface
 {
     public function __toString()
     {

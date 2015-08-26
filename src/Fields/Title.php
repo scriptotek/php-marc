@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Title extends Field
+class Title extends Field implements FieldInterface
 {
 
     /**

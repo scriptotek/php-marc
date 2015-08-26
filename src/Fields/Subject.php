@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class Subject extends Field
+class Subject extends Field implements FieldInterface
 {
     public static $glue = ' : ';
 
