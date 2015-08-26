@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 class Subject extends Field
 {
-    public $stringGlue = ' : ';
+    public static $glue = ' : ';
 
     protected $vocabularies = array(
         '0' => 'lcsh',  // 0: Library of Congress Subject Headings
@@ -38,6 +38,6 @@ class Subject extends Field
                 $parts[] = $c->getData();
             }
         }
-        return implode($this->stringGlue, $parts);
+        return implode(Subject::$glue, $parts);
     }
 }
