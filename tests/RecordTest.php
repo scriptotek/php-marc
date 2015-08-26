@@ -1,7 +1,6 @@
 <?php
 
 use Scriptotek\Marc\Record;
-use Scriptotek\Marc\Collection;
 
 class RecordTest extends \PHPUnit_Framework_TestCase
 {

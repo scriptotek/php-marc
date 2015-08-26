@@ -22,6 +22,7 @@ class Records implements \Iterator //, \Countable
             $records[] = $this->current();
             $this->next();
         }
+
         return $records;
     }
 
@@ -44,7 +45,7 @@ class Records implements \Iterator //, \Countable
 
     public function next()
     {
-        $this->position++;
+        ++$this->position;
         if ($this->useCache) {
             $rec = isset($this->records[$this->position]) ? $this->records[$this->position] : false;
         } else {

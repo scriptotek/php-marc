@@ -21,10 +21,12 @@ class Importer
         $isXml = (substr($this->data, 0, 1) == '<');
         if ($isXml) {
             $importer = new XmlImporter($this->data);
+
             return $importer->getCollection();
         } else {
             $c = new Collection();
             $c->parse($this->data, false);
+
             return $c;
         }
     }

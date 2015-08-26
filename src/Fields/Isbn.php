@@ -8,7 +8,7 @@ class Isbn extends Field implements FieldInterface
     {
         $a = $this->field->getSubfield('a');
         if (!$a) {
-            return null;
+            return;
         }
 
         // TODO: Other subfields?

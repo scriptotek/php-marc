@@ -29,6 +29,7 @@ class XmlImporter
                 return array($prefix, $ns);
             }
         }
+
         return array('', '');
     }
 
@@ -54,6 +55,7 @@ class XmlImporter
         if (count($marcRecords)) {
             return $marcRecords;
         }
+
         return array();
     }
 
@@ -63,7 +65,6 @@ class XmlImporter
         if (!count($records)) {
             throw new \ErrorException("Uh oh, didn't find any records");
         }
-
 
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
         $pprefix = empty($prefix) ? '' : "$prefix:";
@@ -93,6 +94,7 @@ class XmlImporter
             '</' . $pprefix . 'collection>';
 
         $this->collection->parse($marcCollection, true, $prefix);
+
         return $this->collection;
     }
 }

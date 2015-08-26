@@ -14,24 +14,28 @@ class Collection
     public static function fromFile($filename)
     {
         $importer = new Importer($filename, true);
+
         return $importer->getCollection();
     }
 
     public static function fromString($data)
     {
         $importer = new Importer($data, false);
+
         return $importer->getCollection();
     }
 
     public static function fromOaiPmhResponse($data)
     {
         $importer = new OaiPmhResponse($data);
+
         return $importer->getCollection();
     }
 
     public static function fromSruResponse($data)
     {
         $importer = new SruResponse($data);
+
         return $importer->getCollection();
     }
 
@@ -49,7 +53,7 @@ class Collection
         }
     }
 
-    public function __get($key='')
+    public function __get($key = '')
     {
         if ($key == 'records') {
             // re-instantiaces..
@@ -59,6 +63,7 @@ class Collection
             if (is_null($this->_records)) {
                 $this->_records = new Records($this->parser);
             }
+
             return $this->_records;
         }
     }

@@ -13,6 +13,7 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         foreach (range(1, $n) as $i) {
             $records->next();
         }
+
         return $records->current();
     }
 

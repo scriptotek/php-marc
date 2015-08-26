@@ -8,6 +8,7 @@ class Factory
     {
         $reflectionClass = new \ReflectionClass($className);
         $instance = $reflectionClass->newInstanceArgs($args);
+
         return $instance;
     }
 
@@ -15,6 +16,7 @@ class Factory
     {
         $args = func_get_args();
         $className = array_shift($args);
+
         return $this->_make($className, $args);
     }
 
@@ -22,6 +24,7 @@ class Factory
     {
         $args = func_get_args();
         $className = 'Scriptotek\\Marc\\Fields\\' . array_shift($args);
+
         return $this->_make($className, $args);
     }
 }

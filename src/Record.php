@@ -16,12 +16,14 @@ class Record
     public static function fromFile($filename)
     {
         $collection = Collection::fromFile($filename);
+
         return $collection->records->toArray()[0];
     }
 
     public static function fromString($data)
     {
         $collection = Collection::fromString($data);
+
         return $collection->records->toArray()[0];
     }
 
@@ -58,7 +60,7 @@ class Record
             case 'y': // Serial item holdings
                 return 'Holdings';
             default:
-                throw new \ErrorException("Unknown record type.");
+                throw new \ErrorException('Unknown record type.');
         }
     }
 
@@ -73,10 +75,11 @@ class Record
         foreach ($this->record->getFields('020') as $field) {
             $fields[] = $this->makeField('Isbn', $field);
         }
+
         return $fields;
     }
 
-    public function getSubjects($vocabulary=null, $type=null)
+    public function getSubjects($vocabulary = null, $type = null)
     {
         $fields = array();
         $saf = array(
@@ -103,9 +106,11 @@ class Record
                 $fields[] = $f;
             }
         }
+
         return array_filter($fields, function ($s) use ($vocabulary, $type) {
             $a = is_null($vocabulary) || $vocabulary == $s->vocabulary;
             $b = is_null($type) || $type == $s->type;
+
             return $a && $b;
         });
     }
@@ -113,6 +118,7 @@ class Record
     public function getTitle()
     {
         $field = $this->record->getField('245');
+
         return $field ? $this->makeField('Title', $field) : null;
     }
 
@@ -128,6 +134,7 @@ class Record
     public function get($spec)
     {
         $reference = new \File_MARC_Reference($spec, $this->record);
+
         return $reference ?: array();
     }
 

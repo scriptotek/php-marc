@@ -1,6 +1,5 @@
 <?php
 
-use Scriptotek\Marc\Record;
 use Scriptotek\Marc\Fields\Title;
 
 class TitleFieldTest extends \PHPUnit_Framework_TestCase
@@ -125,5 +124,4 @@ class TitleFieldTest extends \PHPUnit_Framework_TestCase
         $title = new Title($field);
         $this->assertEquals('Zentralblatt für Bakteriologie. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.', strval($title));
     }
-
 }

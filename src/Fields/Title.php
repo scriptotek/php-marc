@@ -4,7 +4,6 @@ namespace Scriptotek\Marc\Fields;
 
 class Title extends Field implements FieldInterface
 {
-
     /**
      * See tests/TitleFieldTest.php for more info.
      */
@@ -13,14 +12,14 @@ class Title extends Field implements FieldInterface
         // $a is not repeated
         $a = $this->field->getSubfield('a');
         if (!$a) {
-            return null;
+            return;
         }
         $title = trim($a->getData());
 
         // $b is not repeated
         $b = $this->field->getSubfield('b');
         if ($b) {
-            if (!in_array(substr($title, strlen($title) -1), array(':', ';', '=', '.'))) {
+            if (!in_array(substr($title, strlen($title) - 1), array(':', ';', '=', '.'))) {
                 // Add colon if no ISBD marker present ("British style")
                 $title .= ' :';
             }

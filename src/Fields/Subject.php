@@ -27,7 +27,8 @@ class Subject extends Field implements FieldInterface
         if ($sf2) {
             return $sf2->getData();
         }
-        return null;
+
+        return;
     }
 
     public function __toString()
@@ -38,6 +39,7 @@ class Subject extends Field implements FieldInterface
                 $parts[] = $c->getData();
             }
         }
-        return implode(Subject::$glue, $parts);
+
+        return implode(self::$glue, $parts);
     }
 }
