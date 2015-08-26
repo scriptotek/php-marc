@@ -61,4 +61,26 @@ class RecordTest extends \PHPUnit_Framework_TestCase
         $record = Record::fromFile('tests/data/binary-marc.mrc');
         $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
     }
+
+    public function testRecordTypeBiblio()
+    {
+        $source = '<?xml version="1.0" encoding="UTF-8" ?>
+          <record>
+            <leader>99999cam a2299999 u 4500</leader>
+          </record>';
+
+        $record = Record::fromString($source);
+        $this->assertEquals('Bibliographic', $record->type);
+    }
+
+    public function testRecordTypeAuthority()
+    {
+        $source = '<?xml version="1.0" encoding="UTF-8" ?>
+         <record>
+            <leader>99999nz  a2299999n  4500</leader>
+         </record>';
+
+        $record = Record::fromString($source);
+        $this->assertEquals('Authority', $record->type);
+    }
 }

@@ -25,10 +25,47 @@ class Record
         return $collection->records->toArray()[0];
     }
 
-    protected function makeField($model, \File_MARC_Field $field)
+    /*************************************************************************
+     * Determine if record is a bibliographic, authority or holdings record
+     *************************************************************************/
+
+    public function getType()
     {
-        return $this->factory->makeField($model, $field);
+        $leader = $this->record->getLeader();
+        $recordType = substr($leader, 6, 1);
+
+        switch ($recordType) {
+            case 'a': // Language material
+            case 'c': // Notated music
+            case 'd': // Manuscript notated music
+            case 'e': // Cartographic material
+            case 'f': // Manuscript cartographic material
+            case 'g': // Projected medium
+            case 'i': // Nonmusical sound recording
+            case 'j': // Musical sound recording
+            case 'k': // Two-dimensional nonprojectable graphic
+            case 'm': // Computer file
+            case 'o': // Kit
+            case 'p': // Mixed materials
+            case 'r': // Three-dimensional artifact or naturally occurring object
+            case 't': // Manuscript language material
+                return 'Bibliographic';
+            case 'z':
+                return 'Authority';
+            case 'u': // Unknown
+            case 'v': // Multipart item holdings
+            case 'x': // Single-part item holdings
+            case 'y': // Serial item holdings
+                return 'Holdings';
+            default:
+                throw new \ErrorException("Unknown record type.");
+        }
     }
+
+    /*************************************************************************
+     * Helper methods for specific fields. Each of these are supported by
+     * a class in src/Fields/
+     *************************************************************************/
 
     public function getIsbns()
     {
@@ -77,6 +114,15 @@ class Record
     {
         $field = $this->record->getField('245');
         return $field ? $this->makeField('Title', $field) : null;
+    }
+
+    /*************************************************************************
+     * Support methods
+     *************************************************************************/
+
+    protected function makeField($model, \File_MARC_Field $field)
+    {
+        return $this->factory->makeField($model, $field);
     }
 
     public function get($spec)
