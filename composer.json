@@ -10,12 +10,6 @@
             "email": "d.m.heggo@ub.uio.no"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/pear/File_MARC"
-        }
-    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3",
