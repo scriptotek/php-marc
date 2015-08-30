@@ -8,7 +8,7 @@ class Records implements \Iterator //, \Countable
     protected $records;
     protected $useCache = false;
 
-    public function __construct($parser)
+    public function __construct($parser = null)
     {
         $this->parser = $parser;
         $this->_current = null;
@@ -27,7 +27,7 @@ class Records implements \Iterator //, \Countable
     }
 
     /*********************************************************
-     * Iterator + Countable
+     * Iterator
      *********************************************************/
 
     protected $position = 0;
@@ -49,7 +49,7 @@ class Records implements \Iterator //, \Countable
         if ($this->useCache) {
             $rec = isset($this->records[$this->position]) ? $this->records[$this->position] : false;
         } else {
-            $rec = $this->parser->next();
+            $rec = $this->parser ? $this->parser->next() : null;
             if ($rec) {
                 $rec = new Record($rec);
                 $this->records[] = $rec;

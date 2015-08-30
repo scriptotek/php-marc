@@ -2,7 +2,7 @@
 
 use Scriptotek\Marc\Importers\XmlImporter;
 
-class XmlImporterTest extends \PHPUnit_Framework_TestCase
+class SruResponseImporterTest extends \PHPUnit_Framework_TestCase
 {
     public function testLocSample()
     {

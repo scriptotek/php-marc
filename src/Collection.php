@@ -56,9 +56,8 @@ class Collection
     public function __get($key = '')
     {
         if ($key == 'records') {
-            // re-instantiaces..
             if (is_null($this->parser)) {
-                return array();
+                $this->_records = new Records();
             }
             if (is_null($this->_records)) {
                 $this->_records = new Records($this->parser);

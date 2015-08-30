@@ -63,7 +63,7 @@ class XmlImporter
     {
         $records = $this->getRecords();
         if (!count($records)) {
-            throw new \ErrorException("Uh oh, didn't find any records");
+            return $this->collection;
         }
 
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
