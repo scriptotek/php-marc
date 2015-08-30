@@ -151,4 +151,9 @@ class Record
         }
         // TODO: Throw something!
     }
+
+    public function __toString()
+    {
+        return strval($this->record);
+    }
 }
