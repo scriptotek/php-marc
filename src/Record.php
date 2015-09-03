@@ -93,11 +93,11 @@ class Record
             '653' => 'uncontrolled',   # Index Term - Uncontrolled
              // 654 :  Subject Added Entry - Faceted Topical Terms
             '655' => 'form',           # Index Term - Genre/Form
-             // 656 - Index Term - Occupation (R) Full | Concise
              // 657 - Index Term - Function (R) Full | Concise
              // 658 - Index Term - Curriculum Objective (R) Full | Concise
              // 662 - Subject Added Entry - Hierarchical Place Name (R) Full | Concise
              // 69X - Local Subject Access Fields (R) Full | Concise
+            '656' => 'occupation',     # Index Term - Occupation
         );
         foreach ($saf as $k => $v) {
             foreach ($this->record->getFields($k) as $field) { // or 655, 648, etc.
