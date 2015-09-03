@@ -24,7 +24,12 @@ class Record
     {
         $collection = Collection::fromString($data);
 
-        return $collection->records->toArray()[0];
+        $recs = $collection->records->toArray();
+        if (!count($recs)) {
+            throw new \ErrorException('Record not found');
+        }
+
+        return $recs[0];
     }
 
     /*************************************************************************
@@ -93,11 +98,11 @@ class Record
             '653' => 'uncontrolled',   # Index Term - Uncontrolled
              // 654 :  Subject Added Entry - Faceted Topical Terms
             '655' => 'form',           # Index Term - Genre/Form
-             // 657 - Index Term - Function (R) Full | Concise
-             // 658 - Index Term - Curriculum Objective (R) Full | Concise
-             // 662 - Subject Added Entry - Hierarchical Place Name (R) Full | Concise
-             // 69X - Local Subject Access Fields (R) Full | Concise
             '656' => 'occupation',     # Index Term - Occupation
+             // 657 - Index Term - Function
+             // 658 - Index Term - Curriculum Objective
+             // 662 - Subject Added Entry - Hierarchical Place Name
+             // 69X - Local Subject Access Fields
         );
         foreach ($saf as $k => $v) {
             foreach ($this->record->getFields($k) as $field) { // or 655, 648, etc.
@@ -156,4 +161,5 @@ class Record
     {
         return strval($this->record);
     }
+
 }

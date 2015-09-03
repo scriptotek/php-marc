@@ -39,6 +39,12 @@ class Subject extends Field implements FieldInterface
         return $this->field->getSubfield('0');
     }
 
+    /**
+     * Returns the title of the record (245 $a, $b, $n and $p).
+     *  - Joins the subfields by colon if no ISBD marker present at the end of $a
+     *  - Removes trailing '/'
+     *  - See tests/TitleFieldTest.php for more info.
+     */
     public function __toString()
     {
         $parts = array();

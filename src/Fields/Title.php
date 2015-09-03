@@ -4,8 +4,12 @@ namespace Scriptotek\Marc\Fields;
 
 class Title extends Field implements FieldInterface
 {
+
     /**
-     * See tests/TitleFieldTest.php for more info.
+     * Returns the string representation $a, $b, $n and $p).
+     *  - Joins the subfields by colon if no ISBD marker present at the end of $a
+     *  - Removes trailing '/'
+     *  - See tests/TitleFieldTest.php for more info.
      */
     public function __toString()
     {
