@@ -31,6 +31,14 @@ class Subject extends Field implements FieldInterface
         return;
     }
 
+    /**
+     * Return the Authority record control number
+     */
+    public function getControlNumber($value='')
+    {
+        return $this->field->getSubfield('0');
+    }
+
     public function __toString()
     {
         $parts = array();
