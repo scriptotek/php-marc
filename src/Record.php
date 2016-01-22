@@ -140,7 +140,7 @@ class Record
     {
         $reference = new \File_MARC_Reference($spec, $this->record);
 
-        return $reference ?: array();
+        return $reference->content ?: array();
     }
 
     public function __call($name, $args)

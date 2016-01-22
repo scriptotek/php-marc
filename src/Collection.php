@@ -3,7 +3,7 @@
 namespace Scriptotek\Marc;
 
 use Scriptotek\Marc\Importers\Importer;
-use Scriptotek\Marc\Importers\OaiPmhResponse;
+use Scriptotek\Marc\Importers\XmlImporter;
 use Scriptotek\Marc\Importers\SruResponse;
 
 class Collection
@@ -27,7 +27,7 @@ class Collection
 
     public static function fromOaiPmhResponse($data)
     {
-        $importer = new OaiPmhResponse($data);
+        $importer = new XmlImporter($data);
 
         return $importer->getCollection();
     }
