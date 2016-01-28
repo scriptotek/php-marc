@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3",
-        "ck/File_MARC_Reference": "dev-master",
+        "ck/file_marc_reference": "~1.0",
         "pear/file_marc": "*"
     },
     "require-dev": {
