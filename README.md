@@ -22,7 +22,7 @@ composer require scriptotek/marc dev-master
 ## Reading records
 
 Records are loaded into a `Collection` object using
-`Collection::fromFile` or `Collection::fromString`,
+`Collection::frrcle` or `Collection::fromStringString`,
 which autodetects if the data is Binary MARC or XML:
 
 ```php
@@ -61,7 +61,7 @@ syntax provided by the [php-marc-spec package](https://github.com/MARCspec/php-m
 ```php
 use Scriptotek\Marc\Collection;
 
-$collection = Collection::from($someMarcDataOrFile);
+$collection = Collection::fromFile($someMarcFile);
 
 foreach ($collection->records as $record) {
   echo $record->get('250$a');
@@ -94,7 +94,7 @@ for presentation purpose, like so:
 ```php
 use Scriptotek\Marc\Record;
 
-$record = Record::from('<?xml version="1.0" encoding="UTF-8" ?>
+$record = Record::fromString('<?xml version="1.0" encoding="UTF-8" ?>
   <record xmlns="""http://www.loc.gov/MARC21/slim">
     <leader>99999cam a2299999 u 4500</leader>
     <controlfield tag="001">98218834x</controlfield>
