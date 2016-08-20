@@ -12,9 +12,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3",
-        "ck/file_marc_reference": "~1.0",
-        "pear/file_marc": "*"
+        "php": ">=5.4",
+        "ck/File_MARC_Reference": "^1.0",
+        "pear/file_marc": "^1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
