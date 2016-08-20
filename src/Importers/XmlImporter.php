@@ -3,6 +3,7 @@
 namespace Scriptotek\Marc\Importers;
 
 use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Exceptions\XmlException;
 
 class XmlImporter
 {
@@ -17,7 +18,11 @@ class XmlImporter
             $data = file_get_contents($data);
         }
 
+        libxml_use_internal_errors(true);
         $this->source = simplexml_load_string($data, 'SimpleXMLElement', 0, $ns, $isPrefix);
+        if (false === $this->source) {
+            throw new XmlException(libxml_get_errors());
+        }
     }
 
     public function getMarcNamespace($namespaces)
