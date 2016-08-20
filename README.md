@@ -23,7 +23,7 @@ composer require scriptotek/marc dev-master
 ## Reading records
 
 Records are loaded into a `Collection` object using
-`Collection::frrcle` or `Collection::fromStringString`,
+`Collection::fromFile` or `Collection::fromStringString`,
 which autodetects if the data is Binary MARC or XML:
 
 ```php
