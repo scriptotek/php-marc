@@ -38,6 +38,7 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('noubomn', $subject->vocabulary);
         $this->assertEquals('Elementærpartikler', strval($subject));
         $this->assertEquals('650', $subject->getTag('650'));
+        $this->assertNull($subject->getControlNumber());
 
         $subject = $record->subjects[3];
         $this->assertInstanceOf('Scriptotek\Marc\Fields\Subject', $subject);

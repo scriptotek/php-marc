@@ -15,10 +15,7 @@ class Title extends Field implements FieldInterface
     {
         // $a is not repeated
         $a = $this->field->getSubfield('a');
-        if (!$a) {
-            return;
-        }
-        $title = trim($a->getData());
+        $title = $a ? trim($a->getData()) : '';
 
         // $b is not repeated
         $b = $this->field->getSubfield('b');

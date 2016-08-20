@@ -2,6 +2,11 @@
 	<testsuites>
 		<testsuite name="TestSuite">
 			<directory>tests/</directory>
-		</testsuite>
-	</testsuites>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src/</directory>
+    </whitelist>
+  </filter>
 </phpunit>

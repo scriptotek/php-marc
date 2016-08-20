@@ -154,12 +154,10 @@ class Record
         if (method_exists($this, $method)) {
             return call_user_func(array($this, $method));
         }
-        // TODO: Throw something!
     }
 
     public function __toString()
     {
         return strval($this->record);
     }
-
 }

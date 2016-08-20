@@ -22,6 +22,5 @@ class Field
         if (method_exists($this, $method)) {
             return call_user_func(array($this, $method));
         }
-        // TODO: Throw something!
     }
 }
