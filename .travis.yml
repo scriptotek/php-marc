@@ -11,7 +11,7 @@ before_script:
  - composer install --dev -o -n
 
 script:
- - vendor/bin/phpunit --testdox # --coverage-clover build/logs/clover.xml
+ - vendor/bin/phpunit --testdox --coverage-clover=coverage.xml
 
-# after_script:
-#  - php vendor/bin/coveralls -v
+after_success:
+ - bash <(curl -s https://codecov.io/bash)
