@@ -127,6 +127,13 @@ class Record
         return $field ? $this->makeField('Title', $field) : null;
     }
 
+    public function getId()
+    {
+        $field = $this->record->getField('001');
+
+        return $field ? $this->makeField('ControlField', $field) : null;
+    }
+
     /*************************************************************************
      * Support methods
      *************************************************************************/
