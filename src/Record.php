@@ -14,18 +14,19 @@ use Scriptotek\Marc\Fields\Title;
 class Record
 {
     protected $record;
-    protected $factory;
 
     /**
      * Record constructor.
      * @param File_MARC_Record $record
-     * @param Factory|null $factory
      */
-    public function __construct(File_MARC_Record $record, Factory $factory = null)
+    public function __construct(File_MARC_Record $record)
     {
         $this->record = $record;
-        $this->factory = $factory ?: new Factory();
     }
+
+    /*************************************************************************
+     * Data loading
+     *************************************************************************/
 
     /**
      * Returns the first record found in the file $filename, or null if no records found.
@@ -62,7 +63,20 @@ class Record
     }
 
     /*************************************************************************
-     * Determine if record is a bibliographic, authority or holdings record
+     * Query
+     *************************************************************************/
+
+    /**
+     * @param string $spec  The MARCspec string
+     * @return QueryResult
+     */
+    public function query($spec)
+    {
+        return new QueryResult(new File_MARC_Reference($spec, $this->record));
+    }
+
+    /*************************************************************************
+     * Helper methods for LDR
      *************************************************************************/
 
     /**
@@ -129,7 +143,7 @@ class Record
     /**
      * Get the value of the 001 field as a `ControlField` object.
      *
-     * @return Title
+     * @return ControlField
      */
     public function getId()
     {
@@ -177,20 +191,6 @@ class Record
     /*************************************************************************
      * Support methods
      *************************************************************************/
-
-    protected function makeField($model, \File_MARC_Field $field)
-    {
-        return $this->factory->makeField($model, $field);
-    }
-
-    /**
-     * @param string $spec  The MARCspec string
-     * @return QueryResult
-     */
-    public function query($spec)
-    {
-        return new QueryResult(new File_MARC_Reference($spec, $this->record));
-    }
 
     public function __call($name, $args)
     {

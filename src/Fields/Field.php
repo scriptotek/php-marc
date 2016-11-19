@@ -43,7 +43,7 @@ class Field
 
     public static function makeFieldObjects(Record $record, $tag, $pcre=false)
     {
-        return array_map(function($field) {
+        return array_map(function ($field) {
             return new self($field);
         }, $record->getFields($tag, $pcre));
     }

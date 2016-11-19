@@ -35,7 +35,8 @@ class Subject extends Field implements FieldInterface
         // 7: Source specified in subfield $2
     );
 
-    public static function get(Record $record) {
+    public static function get(Record $record)
+    {
         return parent::makeFieldObjects($record, '6..', true);
     }
 
