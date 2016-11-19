@@ -68,5 +68,4 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $record->subjects[0]->delete();
         $this->assertCount(0, $record->subjects);
     }
-
 }

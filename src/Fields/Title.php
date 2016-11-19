@@ -6,7 +6,6 @@ use Scriptotek\Marc\Record;
 
 class Title extends Field implements FieldInterface
 {
-
     public static function get(Record $record)
     {
         return parent::makeFieldObject($record, '245');
