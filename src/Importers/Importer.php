@@ -2,32 +2,34 @@
 
 namespace Scriptotek\Marc\Importers;
 
+use File_MARC;
 use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Factory;
 
 class Importer
 {
-    protected $data;
-
-    public function __construct($data, $isFile)
+    public function __construct(Factory $factory = null)
     {
-        if ($isFile) {
-            $data = file_get_contents($data);
-        }
-        $this->data = trim($data);
+        $this->factory = isset($factory) ? $factory : new Factory();
     }
 
-    public function getCollection()
+    public function fromFile($filename)
     {
-        $isXml = (substr($this->data, 0, 1) == '<');
+        $data = file_get_contents($filename);
+
+        return $this->fromString($data);
+    }
+
+    public function fromString($data)
+    {
+        $isXml = (substr($data, 0, 1) == '<');
         if ($isXml) {
-            $importer = new XmlImporter($this->data);
+            $importer = new XmlImporter($data);
 
             return $importer->getCollection();
         } else {
-            $c = new Collection();
-            $c->parse($this->data, false);
-
-            return $c;
+            $parser = $this->factory->make('File_MARC', $data, File_MARC::SOURCE_STRING);
+            return new Collection($parser);
         }
     }
 }

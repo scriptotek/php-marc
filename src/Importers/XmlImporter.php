@@ -2,17 +2,19 @@
 
 namespace Scriptotek\Marc\Importers;
 
+use File_MARCXML;
 use Scriptotek\Marc\Collection;
 use Scriptotek\Marc\Exceptions\XmlException;
+use Scriptotek\Marc\Factory;
 
 class XmlImporter
 {
+    protected $factory;
     protected $source;
-    protected $collection;
 
-    public function __construct($data, $ns = '', $isPrefix = false, Collection $collection = null)
+    public function __construct($data, $ns = '', $isPrefix = false, $factory = null)
     {
-        $this->collection = $collection ?: new Collection();
+        $this->factory = isset($factory) ? $factory : new Factory();
 
         if (strlen($data) < 256 && file_exists($data)) {
             $data = file_get_contents($data);
@@ -68,7 +70,7 @@ class XmlImporter
     {
         $records = $this->getRecords();
         if (!count($records)) {
-            return $this->collection;
+            return new Collection();
         }
 
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
@@ -98,8 +100,8 @@ class XmlImporter
             implode('', $records) .
             '</' . $pprefix . 'collection>';
 
-        $this->collection->parse($marcCollection, true, $prefix);
+        $parser = $this->factory->make('File_MARCXML', $marcCollection, File_MARCXML::SOURCE_STRING, $prefix, true);
 
-        return $this->collection;
+        return new Collection($parser);
     }
 }

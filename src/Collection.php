@@ -3,69 +3,113 @@
 namespace Scriptotek\Marc;
 
 use Scriptotek\Marc\Importers\Importer;
-use Scriptotek\Marc\Importers\XmlImporter;
-use Scriptotek\Marc\Importers\SruResponse;
 
-class Collection
+class Collection implements \Iterator
 {
     protected $parser;
     protected $_records;
+    protected $useCache = false;
+    protected $position = 0;
+    protected $_current;
 
+    /**
+     * Collection constructor.
+     *
+     * @param \File_MARC|\File_MARCXML $parser
+     */
+    public function __construct($parser = null)
+    {
+        $this->parser = $parser;
+    }
+
+    /**
+     * Load records from a file (Binary MARC or XML).
+     *
+     * @param string $filename
+     * @return Collection
+     */
     public static function fromFile($filename)
     {
-        $importer = new Importer($filename, true);
+        $importer = new Importer();
 
-        return $importer->getCollection();
+        return $importer->fromFile($filename);
     }
 
+    /**
+     * Load records from a string (Binary MARC or XML).
+     *
+     * @param string $data
+     * @return Collection
+     */
     public static function fromString($data)
     {
-        $importer = new Importer($data, false);
+        $importer = new Importer();
 
-        return $importer->getCollection();
+        return $importer->fromString($data);
     }
 
-    public static function fromOaiPmhResponse($data)
+    /**
+     * Returns an array representation of the collection.
+     *
+     * @return Collection[]
+     */
+    public function toArray()
     {
-        $importer = new XmlImporter($data);
-
-        return $importer->getCollection();
+        return iterator_to_array($this);
     }
 
-    public static function fromSruResponse($data)
-    {
-        $importer = new SruResponse($data);
+    /*********************************************************
+     * Iterator
+     *********************************************************/
 
-        return $importer->getCollection();
+    public function valid()
+    {
+        return !is_null($this->_current);
     }
 
-    public function __construct(\Factory $factory = null)
+    public function current()
     {
-        $this->factory = $factory ?: new Factory();
+        return $this->_current;
     }
 
-    public function parse($source, $isXml, $ns = '', $isPrefix = true)
+    public function key()
     {
-        if ($isXml) {
-            $this->parser = $this->factory->make('File_MARCXML', $source, \File_MARCXML::SOURCE_STRING, $ns, $isPrefix);
+        return $this->position;
+    }
+
+    public function next()
+    {
+        ++$this->position;
+        if ($this->useCache) {
+            $rec = isset($this->_records[$this->position]) ? $this->_records[$this->position] : false;
         } else {
-            $this->parser = $this->factory->make('File_MARC', $source, \File_MARC::SOURCE_STRING);
+            $rec = isset($this->parser) ? $this->parser->next() : null;
+            if ($rec) {
+                $rec = new Record($rec);
+                $this->_records[] = $rec;
+            }
         }
+        $this->_current = $rec ?: null;
     }
 
-    public function __get($key = '')
+    public function rewind()
     {
-        if ($key == 'records') {
-            if (is_null($this->parser)) {
-                $this->_records = new Records();
-            }
-            if (is_null($this->_records)) {
-                $this->_records = new Records($this->parser);
-            }
-
-            return $this->_records;
+        $this->position = -1;
+        if (is_null($this->_records)) {
+            $this->_records = [];
+        } else {
+            $this->useCache = true;
         }
+        $this->next();
     }
+
+    // public function count()
+    // {
+    // }
+
+    /*********************************************************
+     * Magic
+     *********************************************************/
 
     public function __call($name, $arguments)
     {

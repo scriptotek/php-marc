@@ -8,6 +8,6 @@ class XmlImporterTest extends \PHPUnit_Framework_TestCase
     {
         $response = new XmlImporter('<records></records>');
 
-        $this->assertCount(0, $response->getCollection()->records);
+        $this->assertCount(0, $response->getCollection()->toArray());
     }
 }

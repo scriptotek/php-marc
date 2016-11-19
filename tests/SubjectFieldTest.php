@@ -7,14 +7,9 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
     protected function getNthrecord($n)
     {
         $response = new XmlImporter('tests/data/sru-alma.xml');
-        $collection = $response->getCollection();
+        $records = $response->getCollection()->toArray();
 
-        $records = $collection->records;
-        foreach (range(1, $n) as $i) {
-            $records->next();
-        }
-
-        return $records->current();
+        return $records[$n - 1];
     }
 
     public function testSubjectString()

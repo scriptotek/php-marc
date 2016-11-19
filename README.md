@@ -30,7 +30,7 @@ Binary MARC or XML (namespaced or not).
 use Scriptotek\Marc\Collection;
 
 $collection = Collection::fromFile($someFileName);
-foreach ($collection->records as $record) {
+foreach ($collection as $record) {
     echo $record->getField('250')->getSubfield('a')->getData() . "\n";
 }
 ```
@@ -47,8 +47,8 @@ $response = file_get_contents('http://lx2.loc.gov:210/lcdb?' . http_build_query(
     'query'          => 'bath.isbn=0761532692',
 ]));
 
-$collection = Collection::fromString($response);
-foreach ($collection->records as $record) {
+$records = Collection::fromString($response);
+foreach ($records as $record) {
     ...
 }
 

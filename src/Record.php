@@ -2,36 +2,58 @@
 
 namespace Scriptotek\Marc;
 
+use File_MARC_Record;
 use File_MARC_Reference;
+use Scriptotek\Marc\Exceptions\RecordNotFound;
 
 class Record
 {
     protected $record;
     protected $factory;
 
-    public function __construct(\File_MARC_Record $record, Factory $factory = null)
+    /**
+     * Record constructor.
+     * @param File_MARC_Record $record
+     * @param Factory|null $factory
+     */
+    public function __construct(File_MARC_Record $record, Factory $factory = null)
     {
         $this->record = $record;
         $this->factory = $factory ?: new Factory();
     }
 
+    /**
+     * Returns the first record found in the file $filename, or null if no records found.
+     *
+     * @param $filename
+     * @return null|Collection
+     */
     public static function fromFile($filename)
     {
-        $collection = Collection::fromFile($filename);
+        $records = Collection::fromFile($filename)->toArray();
 
-        return $collection->records->toArray()[0];
-    }
-
-    public static function fromString($data)
-    {
-        $collection = Collection::fromString($data);
-
-        $recs = $collection->records->toArray();
-        if (!count($recs)) {
-            throw new \ErrorException('Record not found');
+        if (!count($records)) {
+            throw new RecordNotFound();
         }
 
-        return $recs[0];
+        return $records[0];
+    }
+
+    /**
+     * Returns the first record found in the string $data, or null if no records found.
+     *
+     * @param $data
+     * @return null|Collection
+     */
+    public static function fromString($data)
+    {
+        $records = Collection::fromString($data)->toArray();
+
+        if (!count($records)) {
+            throw new RecordNotFound();
+        }
+
+        return $records[0];
     }
 
     /*************************************************************************
