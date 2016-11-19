@@ -5,6 +5,7 @@ namespace Scriptotek\Marc;
 use File_MARC_Record;
 use File_MARC_Reference;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
+use Scriptotek\Marc\Exceptions\UnknownRecordType;
 
 class Record
 {
@@ -97,7 +98,7 @@ class Record
             case 'y': // Serial item holdings
                 return Marc21::HOLDINGS;
             default:
-                throw new \ErrorException('Unknown record type.');
+                throw new UnknownRecordType();
         }
     }
 
