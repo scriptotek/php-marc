@@ -56,4 +56,17 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $this->assertCount(2, $noubomn_topic);
         $this->assertCount(0, $noubomn_place);
     }
+
+    public function testEdit()
+    {
+        $record = $this->getNthrecord(2);
+        $this->assertCount(2, $record->subjects);
+
+        $record->subjects[0]->delete();
+        $this->assertCount(1, $record->subjects);
+
+        $record->subjects[0]->delete();
+        $this->assertCount(0, $record->subjects);
+    }
+
 }
