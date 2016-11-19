@@ -1,13 +1,12 @@
 <?php
 
-use Scriptotek\Marc\Importers\XmlImporter;
+use Scriptotek\Marc\Collection;
 
 class SubjectFieldTest extends \PHPUnit_Framework_TestCase
 {
     protected function getNthrecord($n)
     {
-        $response = new XmlImporter('tests/data/sru-alma.xml');
-        $records = $response->getCollection()->toArray();
+        $records = Collection::fromFile('tests/data/sru-alma.xml')->toArray();
 
         return $records[$n - 1];
     }
