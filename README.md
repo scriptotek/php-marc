@@ -22,34 +22,34 @@ composer require scriptotek/marc dev-master
 
 ## Reading records
 
-Records are loaded into a `Collection` object using
-`Collection::fromFile` or `Collection::fromStringString`,
-which autodetects if the data is Binary MARC or XML:
+Use `Collection::fromFile` or `Collection::fromString` to read one or more
+MARC records from a file or string. The methods autodetect if the data is
+Binary MARC or XML (namespaced or not).
 
 ```php
 use Scriptotek\Marc\Collection;
 
 $collection = Collection::fromFile($someFileName);
 foreach ($collection->records as $record) {
-  echo $record->getField('250')->getSubfield('a') . "\n";
+    echo $record->getField('250')->getSubfield('a')->getData() . "\n";
 }
 ```
 
-The package will extract MARC records from any container XML,
-so you can load an SRU or OAI-PMH response directly:
+The package can extract MARC records from any container XML, so you can load
+an SRU or OAI-PMH response directly:
 
 ```php
-$response = file_get_contents('http://lx2.loc.gov:210/lcdb?' . http_build_query(array(
-    'operation' => 'searchRetrieve',
-    'recordSchema' => 'marcxml',
-    'version' => '1.1',
+$response = file_get_contents('http://lx2.loc.gov:210/lcdb?' . http_build_query([
+    'operation'      => 'searchRetrieve',
+    'recordSchema'   => 'marcxml',
+    'version'        => '1.1',
     'maximumRecords' => '10',
-    'query' => 'bath.isbn=0761532692',
-)));
+    'query'          => 'bath.isbn=0761532692',
+]));
 
 $collection = Collection::fromString($response);
 foreach ($collection->records as $record) {
-  echo $record->getField('245')->getSubfield('a') . "\n";
+    ...
 }
 
 ```
