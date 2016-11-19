@@ -31,13 +31,13 @@ class XmlImporter
     {
         foreach ($namespaces as $prefix => $ns) {
             if ($ns == 'info:lc/xmlns/marcxchange-v1') {
-                return array($prefix, $ns);
+                return [$prefix, $ns];
             } elseif ($ns == 'http://www.loc.gov/MARC21/slim') {
-                return array($prefix, $ns);
+                return [$prefix, $ns];
             }
         }
 
-        return array('', '');
+        return ['', ''];
     }
 
     public function getRecords()
@@ -47,7 +47,7 @@ class XmlImporter
 
         // If root node is record:
         if ($this->source->getName() == 'record') {
-            return array($this->source);
+            return [$this->source];
         }
 
         $marcRecords = $this->source->xpath('.//x:record');
@@ -63,7 +63,7 @@ class XmlImporter
             return $marcRecords;
         }
 
-        return array();
+        return [];
     }
 
     public function getCollection()

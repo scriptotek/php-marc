@@ -194,14 +194,14 @@ class Record
 
     public function __call($name, $args)
     {
-        return call_user_func_array(array($this->record, $name), $args);
+        return call_user_func_array([$this->record, $name], $args);
     }
 
     public function __get($key)
     {
         $method = 'get' . ucfirst($key);
         if (method_exists($this, $method)) {
-            return call_user_func(array($this, $method));
+            return call_user_func([$this, $method]);
         }
     }
 

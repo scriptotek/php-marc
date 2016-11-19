@@ -113,6 +113,6 @@ class Collection implements \Iterator
 
     public function __call($name, $arguments)
     {
-        return call_user_func_array(array($this->parser, $name), $arguments);
+        return call_user_func_array([$this->parser, $name], $arguments);
     }
 }

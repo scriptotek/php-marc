@@ -24,7 +24,7 @@ class Subject extends Field implements FieldInterface
     const CURRICULUM_OBJECTIVE = '658';
     const HIERARCHICAL_PLACE_NAME = '662';
 
-    protected $vocabularies = array(
+    protected $vocabularies = [
         '0' => 'lcsh',  // 0: Library of Congress Subject Headings
         '1' => 'lccsh', // 1: LC subject headings for children's literature
         '2' => 'mesh',  // 2: Medical Subject Headings
@@ -33,7 +33,7 @@ class Subject extends Field implements FieldInterface
         '5' => 'cash',  // 5: Canadian Subject Headings
         '6' => 'rvm',   // 6: Répertoire de vedettes-matière
         // 7: Source specified in subfield $2
-    );
+    ];
 
     public static function get(Record $record)
     {
@@ -70,9 +70,9 @@ class Subject extends Field implements FieldInterface
 
     public function getParts()
     {
-        $parts = array();
+        $parts = [];
         foreach ($this->field->getSubfields() as $c) {
-            if (in_array($c->getCode(), array('a', 'b', 'x', 'y', 'z'))) {
+            if (in_array($c->getCode(), ['a', 'b', 'x', 'y', 'z'])) {
                 $parts[] = $c->getData();
             }
         }

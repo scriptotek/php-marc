@@ -27,7 +27,7 @@ class Title extends Field implements FieldInterface
         // $b is not repeated
         $b = $this->field->getSubfield('b');
         if ($b) {
-            if (!in_array(substr($title, strlen($title) - 1), array(':', ';', '=', '.'))) {
+            if (!in_array(substr($title, strlen($title) - 1), [':', ';', '=', '.'])) {
                 // Add colon if no ISBD marker present ("British style")
                 $title .= ' :';
             }
@@ -36,7 +36,7 @@ class Title extends Field implements FieldInterface
 
         // Part number and title can be repeated
         foreach ($this->field->getSubfields() as $sf) {
-            if (in_array($sf->getCode(), array('n', 'p'))) {
+            if (in_array($sf->getCode(), ['n', 'p'])) {
                 $title .= ' ' . $sf->getData();
             }
         }
