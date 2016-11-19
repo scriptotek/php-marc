@@ -18,7 +18,8 @@ class IsbnFieldTest extends \PHPUnit_Framework_TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertEquals(array('8200424421'), $record->isbns);
+        $this->assertEquals(['8200424421'], $record->isbns);
+        $this->assertEquals('Nkr 98.00', $record->isbns[0]->sf('c'));
     }
 
     public function test020withoutA()

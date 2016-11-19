@@ -23,4 +23,10 @@ class Field
             return call_user_func(array($this, $method));
         }
     }
+
+    public function sf($code)
+    {
+        $x = $this->getSubfield($code);
+        return $x->getData();
+    }
 }
