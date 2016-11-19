@@ -106,6 +106,21 @@ class Record
         }
     }
 
+    /**
+     * Get the descriptive cataloging form value from LDR/18. Returns any of
+     * the constants Marc21::NON_ISBD, Marc21::AACR2, Marc21::ISBD_PUNCTUATION_OMITTED,
+     * Marc21::ISBD_PUNCTUATION_INCLUDED, Marc21::NON_ISBD_PUNCTUATION_OMITTED
+     * or Marc21::UNKNOWN_CATALOGING_FORM.
+     *
+     * @return string
+     * @throws UnknownRecordType
+     */
+    public function getCatalogingForm()
+    {
+        $leader = $this->record->getLeader();
+        return substr($leader, 18, 1);
+    }
+
     /*************************************************************************
      * Helper methods for specific fields. Each of these are supported by
      * a class in src/Fields/

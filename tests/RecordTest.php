@@ -83,4 +83,15 @@ class RecordTest extends \PHPUnit_Framework_TestCase
         $record = Record::fromString($source);
         $this->assertEquals(Marc21::AUTHORITY, $record->type);
     }
+
+    public function testRecordTypeDescriptiveCatalogingForm()
+    {
+        $source = '<?xml version="1.0" encoding="UTF-8" ?>
+          <record>
+            <leader>99999cam a2299999 c 4500</leader>
+          </record>';
+
+        $record = Record::fromString($source);
+        $this->assertEquals(Marc21::ISBD_PUNCTUATION_OMITTED, $record->catalogingForm);
+    }
 }
