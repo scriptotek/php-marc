@@ -54,19 +54,53 @@ foreach ($collection->records as $record) {
 
 ```
 
-## Querying with MARC spec
+If you only have a single record, you can also use `Record::fromFile` or
+`Record::fromString`. These use the `Collection` methods under the hood,
+but returns a single `Record` object.
 
-Using the `Record::get()` method you can query a record using the MARC spec
-syntax provided by the [php-marc-spec package](https://github.com/MARCspec/php-marc-spec):
 
 ```php
-use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Record;
 
-$collection = Collection::fromFile($someMarcFile);
+$record = Record::fromFile($someFileName);
+```
 
-foreach ($collection->records as $record) {
-  echo $record->get('250$a');
+## Querying with MARCspec
+
+Use the `Record::query()` method to query a record using the
+[MARCspec](http://marcspec.github.io/) language as implemented in the
+[php-marc-spec package](https://github.com/MARCspec/php-marc-spec) package.
+The method returns a `QueryResult` object, which is a small wrapper around
+`File_MARC_Reference`.
+
+Example: To loop over all `650` fields having `$2 noubomn`:
+
+```php
+foreach ($record->query('650{2=\noubomn}') as $field) {
+   echo $field->getSubfield('a')->getData();
 }
+```
+
+or we could reference the subfield directly, like so:
+
+```php
+foreach ($record->query('650$a{2=\noubomn}') as $subfield) {
+   echo $subfield->getData();
+}
+```
+
+You can retrieve single results using `first()`, which returns the first match,
+or `null` if no matches were found:
+
+```php
+$record->query('250$a')->first();
+```
+
+In the same way, `text()` returns the data content of the first match, or `null`
+if no matches were found:
+
+```php
+$record->query('250$a')->text();
 ```
 
 ## Convenience methods on the Record class

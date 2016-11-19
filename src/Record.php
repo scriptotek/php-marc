@@ -2,6 +2,8 @@
 
 namespace Scriptotek\Marc;
 
+use File_MARC_Reference;
+
 class Record
 {
     protected $record;
@@ -143,11 +145,13 @@ class Record
         return $this->factory->makeField($model, $field);
     }
 
-    public function get($spec)
+    /**
+     * @param string $spec  The MARCspec string
+     * @return QueryResult
+     */
+    public function query($spec)
     {
-        $reference = new \File_MARC_Reference($spec, $this->record);
-
-        return $reference->content ?: array();
+        return new QueryResult(new File_MARC_Reference($spec, $this->record));
     }
 
     public function __call($name, $args)
