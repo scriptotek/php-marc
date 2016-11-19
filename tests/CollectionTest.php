@@ -15,6 +15,14 @@ class CollectionTest extends PHPUnit_Framework_TestCase
         $this->assertCount(0, $collection->toArray());
     }
 
+    public function testBinaryMarc()
+    {
+        $records = Collection::fromFile('tests/data/sandburg.mrc')->toArray();
+
+        $this->assertCount(1, $records);
+        $this->assertEquals('Arithmetic', $records[0]->title);
+    }
+
     public function testBibsysOaiPmhSample()
     {
         $collection = Collection::fromFile('tests/data/oaipmh-bibsys.xml');
