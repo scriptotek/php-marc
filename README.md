@@ -8,23 +8,30 @@
 
 # scriptotek/marc
 
-This is a small package that provides a simple interface for working with
-MARC records using the [File_MARC package](https://github.com/pear/File_MARC).
-It should work with both Binary MARC and MARCXML (with or without namespaces),
-but not the various Line mode MARC formats. Records can be edited using the
-editing capabilities of File_MARC.
+A small PHP package providing a simple interface to work with MARC21 records
+on top of the excellent [File_MARC package](https://github.com/pear/File_MARC).
+
+Works with both Binary MARC and MARCXML (namespaced or not), but not the various
+Line mode MARC formats. Records can be edited using the editing capabilities of
+File_MARC.
+
+Note that version 0.3.0 introduced a few breaking changes. See
+[releases](https://github.com/scriptotek/php-marc/releases) for more information.
 
 ## Installation using Composer:
 
+If you have [Composer](https://getcomposer.org/) installed, the package can
+be installed by running
+
 ```
-composer require scriptotek/marc dev-master
+composer require scriptotek/marc
 ```
 
 ## Reading records
 
 Use `Collection::fromFile` or `Collection::fromString` to read one or more
-MARC records from a file or string. The methods autodetect if the data is
-Binary MARC or XML (namespaced or not).
+MARC records from a file or string. The methods autodetect the data format
+(Binary XML or MARCXML) and whether the XML is namespaced or not.
 
 ```php
 use Scriptotek\Marc\Collection;
@@ -35,8 +42,12 @@ foreach ($collection as $record) {
 }
 ```
 
-The package can extract MARC records from any container XML, so you can load
-an SRU or OAI-PMH response directly:
+The `$collection` object is an iterator. If you rather want a normal array,
+for instance in order to count the number of records, you can get that from
+`$collection->toArray()`.
+
+The loader can extract MARC records from any container XML, so you can pass
+in an SRU or OAI-PMH response directly:
 
 ```php
 $response = file_get_contents('http://lx2.loc.gov:210/lcdb?' . http_build_query([
@@ -51,13 +62,11 @@ $records = Collection::fromString($response);
 foreach ($records as $record) {
     ...
 }
-
 ```
 
 If you only have a single record, you can also use `Record::fromFile` or
 `Record::fromString`. These use the `Collection` methods under the hood,
 but returns a single `Record` object.
-
 
 ```php
 use Scriptotek\Marc\Record;
@@ -105,26 +114,43 @@ $record->query('250$a')->text();
 
 ## Convenience methods on the Record class
 
-The `Record` class of File_MARC has been extended with a few
-convenience methods to make handling of some everyday tasks easier.
+The `Record` class extends `File_MARC_Record` with a few convenience methods to
+get data from commonly used fields. Each of these methods, except `getType()`,
+returns an object or an array of objects of one of the field classes (located in
+`src/Fields`). For instance `getIsbns()` returns an array of
+`Scriptotek\Marc\Isbn` objects. All the field classes implements at minimum a
+`__toString()` method so you easily can get a string representation of the field
+for presentation purpose.
 
-### getType()
+Note that all the get methods can also be accessed as attributes thanks to a
+little PHP magic (`__get`). So instead of calling `$record->getId()`, you can
+use the shorthand variant `$record->id`.
 
-Returns either 'Bibliographic', 'Authority' or 'Holdings' based on the
-value of the sixth character in the leader.
+### type
 
-### Handlers for specific fields
+`$record->getType()` or `$record->type` returns either 'Bibliographic', 'Authority'
+or 'Holdings' based on the value of the sixth character in the leader.
+See `Marc21.php` for supporting constants.
 
-Hopefully this list will grow larger over time:
+```php
+if ($record->type == Marc21::BIBLIOGRAPHIC) {
+    // ...
+}
+```
 
-* `getIsbns()`
-* `getSubjects()`
-* `getTitle()`
+### catalogingForm
 
-Each of these methods returns an array of one of the corresponding field classes (located in `src/Fields`).
-For instance `getIsbns()` returns an array of `Scriptotek\Marc\Isbn` objects. All the field classes
-implements at minimum a `__toString()` method so you can easily get a string representation of the field
-for presentation purpose, like so:
+`$record->getCatalogingForm()` or `$record->catalogingForm` returns the value
+of LDR/18. See `Marc21.php` for supporting constants.
+
+### id
+
+`$record->getId()` or `$record->id` returns the record id from 001 control field.
+
+### isbns
+
+`$record->getIsbns()` or `$record->isbns` returns an array of `Isbn` objects from
+020 fields.
 
 ```php
 use Scriptotek\Marc\Record;
@@ -139,50 +165,68 @@ $record = Record::fromString('<?xml version="1.0" encoding="UTF-8" ?>
       <subfield code="c">Nkr 98.00</subfield>
     </datafield>
   </record>');
-echo $record->isbns[0];
+$isbn = $record->isbns[0];
+
+// Get the string representation of the field:
+echo $isbn . "\n";  // '8200424421'
+
+// Get the value of $q using the standard FILE_MARC interface:
+echo $isbn->getSubfield('q')->getData() . "\n";  // 'h.'
+
+// or using the shorthand `sf()` method from the Field class:
+echo $isbn->sf('q') . "\n";  // 'h.'
 ```
 
-Notice that we used `isbns` instead of `getIsbns()`. In the same way, you can request `$record->subjects` instead of `$record->getSubjects()`, etc. This is made possible using [a little bit of PHP magic](https://github.com/scriptotek/php-marc/blob/master/src/Fields/Field.php#L19).
+### title
 
-*But* providing a single, *general* string representation that makes sense in all cases
-can sometimes be quite a challenge. The general string representation might not fit your
-specific need.
+`$record->getTitle()` or `$record->title` returns a `Title` objects from 245
+field, or null if no such field is present.
 
-Take the `Title` class based on `245`. The string representation doesn't include data
-from `$h` (medium) or `$c` (statement of responsibility, etc.), since that's probably
-not the kind of info most non-librarians would expect to see in a "title". But it currently
-does include everything contained in `$a` and `$b` (except any final `/` ISBD marker),
-which means it doesn't make any attempt of removing parallel titles.<sup id="a1">[1](#f1)</sup>
-It also includes text from `$n` (part number) and `$p` (part title), but yet some other
-subfields like `$f`, `$g` and `$k` are currently ignored since I haven't really decided
-whether to include them or not.
+Beware that the default string representation may or may not fit your needs.
+It's currently a concatenation of `$a` (title), `$b` (remainder of title),
+`$n`(part number) and `$p` (part title). For the remaining subfields like `$f`,
+`$g` and `$k`, I haven't decided whether to handle them or not.
 
-I would love to remove the ending dot that is present
-in records with explicit ISBD markers, but that's not trivial for the same reason
-identifying parallel titles is not<sup id="a1">[1](#f1)</sup> – there's just no safe
-way to tell if the final dot is an ISBD marker or part of the title.<sup id="a2">[2](#f2)</sup>
-Since explicit ISBD markers are included in records catalogued in the American tradition,
-but not in records catalogued in the British tradition, a mix of records from both traditions
-will look silly.
+Parallel titles are unfortunately encoded in such a way that there's no way I'm
+aware of to identify them in a secure manner, meaning there's also no secure way
+to remove them if you don't want to include them.<sup id="a1">[1](#f1)</sup>
 
-I hope this makes clear that you need to check if the assumptions and simplifications made
-in the string representation methods makes sense to *your* project or not. It's also not
-unlikely that some methods make false assumptions based on (my) incomplete knowledge of
-cataloguing rules/practice. A developer given just a few MARC records might for instance assume
-that `300 $a` is a subfield for "number of pages".<sup id="a3">[3](#f3)</sup> A quick glance
-at e.g. [LC's MARC documentation](https://www.loc.gov/marc/bibliographic/bd300.html) would
-be enough to prove that wrong, but in other cases it's harder to avoid making false assumptions
-without deep familiarity with cataloguing rules and practices.
+I'm trimming off any final '`/`' ISBD marker. I would have loved to be able to
+also trim off final dots, but that's not trivial for the same reason identifying
+parallel titles is not<sup id="a1">[1](#f1)</sup> – there's just no safe way to
+tell if the final dot is an ISBD marker or part of the title.<sup
+id="a2">[2](#f2)</sup> Since explicit ISBD markers are included in records
+catalogued in the American tradition, but not in records catalogued in the
+British tradition, a mix of records from both traditions will look silly.
 
-There's also cases where different traditions conflict, and you just have to make a choice.
-Subject subfields, for instance, have to be joined using some kind of glue.
-[LCSHs](https://en.wikipedia.org/wiki/Library_of_Congress_Subject_Headings) are
-ordinarily presented as strings glued together with em-dashes or double en-dashes
-(`650 $aPhysics $xHistory $yHistory` is presented as `Physics--History--20th century`).
-But in other subject heading systems colons are used as the glue (`Physics : History : 20th century`).
-This package defaults to colon, but you change that by setting `Subject::glue = '--'` or whatever.
+### subjects
+
+`$record->getSubjects($vocabulary, $tag)` or `$record->subjects` returns an array of `Subject`
+objects from all [the 6XX fields](http://www.loc.gov/marc/bibliographic/bd6xx.html).
+The `getSubjects()` method have two optional arguments you can use to limit by
+vocabulary and/or tag.
+
+```php
+foreach ($record->getSubjects('mesh', Subject::TOPICAL_TERM) as $subject) {
+    echo "{$subject->vocabulary} {$subject->type} {$subject}";
+}
+```
+
+The string representation of this field makes use of the constant `Subject::glue`
+to glue subject components together. The default value is a space-padded colon,
+making `Physics : History : 20th century` the string representation of
+`650 $aPhysics $xHistory $yHistory`. If you prefer the "LCSH-way" of
+`Physics--History--20th century`, just set `Subject::glue = '--'`.
 
 ## Notes
+
+It's unfortunately easy to err when trying to present data from MARC records in
+end user applications. A developer learning by example might for instance assume
+that `300 $a` is a subfield for "number of pages".<sup id="a3">[3](#f3)</sup> A
+quick glance at e.g. [LC's MARC
+documentation](https://www.loc.gov/marc/bibliographic/bd300.html) would be
+enough to prove that wrong, but in other cases it's harder to avoid making false
+assumptions without deep familiarity with cataloguing rules and practices.
 
 <b id="f1">1</b> That might change in the future. But even if I decide to remove parallel titles,
 I'm not really sure how to do it in a safe way. Parallel titles are identified by a leading `=`
@@ -191,15 +235,14 @@ but since the `$a` and `$c` subfields are not repeatable, multiple titles are ju
 `$c` subfield. So if we encounter an `=` sign in the middle middle of `$c` somewhere, how can we
 tell if it's an ISBD marker or just an equal sign part of the title (like in the fictive book
 `"$aEating the right way : The 2 + 2 = 5 diet"`)? Some kind of escaping would have made that clear,
-but the ISBD principles doesn't seem to call for that, leaving us completely in the dark!
+but the ISBD principles doesn't seem to call for that, leaving us completely in the dark.
 *That* is seriously annoying :weary: [↩](#a1)
 
 <b id="f2">2</b> [According to](http://www.loc.gov/marc/bibliographic/bd245.html)
 ISBD principles "field 245 ends with a period, even when another mark of punctuation is present,
 unless the last word in the field is an abbreviation, initial/letter, or data that ends with final
 punctuation." Determining if something is "an abbreviation, initial/letter, or data that ends with
-final punctuation" is certainly not trivial, I would guess that machine learning would be needed
-for a highly successful implementation [↩](#a2)
+final punctuation" is certainly not an easy task for anything but humans and AI. [↩](#a2)
 
 <b id="f3">3</b> Our old OPAC used to output something like
 "Number of pages: One video disc (DVD)…" for DVDs – the developers had apparently just assumed that the
