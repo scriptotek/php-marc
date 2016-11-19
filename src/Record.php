@@ -6,6 +6,10 @@ use File_MARC_Record;
 use File_MARC_Reference;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
+use Scriptotek\Marc\Fields\ControlField;
+use Scriptotek\Marc\Fields\Isbn;
+use Scriptotek\Marc\Fields\Subject;
+use Scriptotek\Marc\Fields\Title;
 
 class Record
 {
@@ -67,7 +71,7 @@ class Record
      * constants.
      *
      * @return string
-     * @throws ErrorException
+     * @throws UnknownRecordType
      */
     public function getType()
     {
@@ -107,64 +111,52 @@ class Record
      * a class in src/Fields/
      *************************************************************************/
 
-    public function getIsbns()
+    /**
+     * Get the value of the 001 field as a `ControlField` object.
+     *
+     * @return Title
+     */
+    public function getId()
     {
-        $fields = array();
-        foreach ($this->record->getFields('020') as $field) {
-            $fields[] = $this->makeField('Isbn', $field);
-        }
-
-        return $fields;
+        return ControlField::get($this, '001');
     }
 
-    public function getSubjects($vocabulary = null, $type = null)
+    /**
+     * Get an array of the 020 fields as `Isbn` objects.
+     *
+     * @return Isbn[]
+     */
+    public function getIsbns()
     {
-        $fields = array();
-        $saf = array(
-            '600' => 'person',         # Subject Added Entry - Personal name
-            '610' => 'corporation',    # Subject Added Entry - Corporate name
-            '611' => 'meeting',        # Subject Added Entry - Meeting name
-            '630' => 'uniform-title',  # Subject Added Entry - Uniform title
-            '648' => 'time',           # Subject Added Entry - Chronological Term
-            '650' => 'topic',          # Subject Added Entry - Topical Term
-            '651' => 'place',          # Subject Added Entry - Geographic Name
-            '653' => 'uncontrolled',   # Index Term - Uncontrolled
-             // 654 :  Subject Added Entry - Faceted Topical Terms
-            '655' => 'form',           # Index Term - Genre/Form
-            '656' => 'occupation',     # Index Term - Occupation
-             // 657 - Index Term - Function
-             // 658 - Index Term - Curriculum Objective
-             // 662 - Subject Added Entry - Hierarchical Place Name
-             // 69X - Local Subject Access Fields
-        );
-        foreach ($saf as $k => $v) {
-            foreach ($this->record->getFields($k) as $field) { // or 655, 648, etc.
-                $f = $this->makeField('Subject', $field);
-                $f->type = $v;
-                $fields[] = $f;
-            }
-        }
+        return Isbn::get($this);
+    }
 
-        return array_filter($fields, function ($s) use ($vocabulary, $type) {
-            $a = is_null($vocabulary) || $vocabulary == $s->vocabulary;
-            $b = is_null($type) || $type == $s->type;
+    /**
+     * Get the 245 field as a `Title` object. Returns null if no such field was found.
+     *
+     * @return Title
+     */
+    public function getTitle()
+    {
+        return Title::get($this);
+    }
+
+    /**
+     * Get an array of the 6XX fields as `Subject` objects, optionally filtered by
+     * vocabulary and/or tag.
+     *
+     * @param string $vocabulary
+     * @param string $tag
+     * @return Subject[]
+     */
+    public function getSubjects($vocabulary = null, $tag = null)
+    {
+        return array_filter(Subject::get($this), function ($field) use ($vocabulary, $tag) {
+            $a = is_null($vocabulary) || $vocabulary == $field->vocabulary;
+            $b = is_null($tag) || $tag == $field->type;
 
             return $a && $b;
         });
-    }
-
-    public function getTitle()
-    {
-        $field = $this->record->getField('245');
-
-        return $field ? $this->makeField('Title', $field) : null;
-    }
-
-    public function getId()
-    {
-        $field = $this->record->getField('001');
-
-        return $field ? $this->makeField('ControlField', $field) : null;
     }
 
     /*************************************************************************

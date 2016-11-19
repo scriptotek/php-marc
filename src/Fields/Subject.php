@@ -2,9 +2,27 @@
 
 namespace Scriptotek\Marc\Fields;
 
+use Scriptotek\Marc\Record;
+
 class Subject extends Field implements FieldInterface
 {
     public static $glue = ' : ';
+
+    const PERSONAL_NAME = '600';
+    const CORPORATION_NAME = '601';
+    const MEETING_NAME = '611';
+    const UNIFORM_TITLE = '630';
+    const NAMED_EVENT = '647';
+    const CHRONOLOGICAL_TERM = '648';
+    const TOPICAL_TERM = '650';
+    const GEOGRAPHIC_NAME = '651';
+    const UNCONTROLLED_INDEX_TERM = '653';
+    const FACETED_TOPICAL_TERM = '654';
+    const GENRE_FORM = '655';
+    const OCCUPATION = '656';
+    const FUNCTION_TERM = '657';
+    const CURRICULUM_OBJECTIVE = '658';
+    const HIERARCHICAL_PLACE_NAME = '662';
 
     protected $vocabularies = array(
         '0' => 'lcsh',  // 0: Library of Congress Subject Headings
@@ -17,6 +35,15 @@ class Subject extends Field implements FieldInterface
         // 7: Source specified in subfield $2
     );
 
+    public static function get(Record $record) {
+        return parent::makeFieldObjects($record, '6..', true);
+    }
+
+    public function getType()
+    {
+        return $this->getTag();
+    }
+
     public function getVocabulary()
     {
         $ind2 = $this->field->getIndicator(2);
@@ -28,7 +55,7 @@ class Subject extends Field implements FieldInterface
             return $sf2->getData();
         }
 
-        return;
+        return null;
     }
 
     /**

@@ -1,6 +1,7 @@
 <?php
 
 use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Fields\Subject;
 
 class SubjectFieldTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +19,7 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         # Vocabulary from indicator2
         $sub = $record->subjects[0];
         $this->assertEquals('lcsh', $sub->vocabulary);
-        $this->assertEquals('topic', $sub->type);
+        $this->assertEquals(Subject::TOPICAL_TERM, $sub->type);
         $this->assertEquals('Eightfold way (Nuclear physics) : Addresses, essays, lectures', strval($sub));
     }
 
@@ -31,24 +32,24 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Scriptotek\Marc\Fields\Subject', $subject);
         $this->assertEquals('noubomn', $subject->vocabulary);
         $this->assertEquals('Elementærpartikler', strval($subject));
-        $this->assertEquals('650', $subject->getTag('650'));
+        $this->assertEquals('650', $subject->getTag());
         $this->assertNull($subject->getControlNumber());
 
         $subject = $record->subjects[3];
         $this->assertInstanceOf('Scriptotek\Marc\Fields\Subject', $subject);
         $this->assertNull($subject->vocabulary);
         $this->assertEquals('elementærpartikler', strval($subject));
-        $this->assertEquals('653', $subject->getTag('650'));
+        $this->assertEquals('653', $subject->getTag());
     }
 
-    public function testGetSubjects()
+    public function testGetSubjectsFiltering()
     {
         $record = $this->getNthrecord(3);
 
         $lcsh = $record->getSubjects('lcsh');
         $noubomn = $record->getSubjects('noubomn');
-        $noubomn_topic = $record->getSubjects('noubomn', 'topic');
-        $noubomn_place = $record->getSubjects('noubomn', 'place');
+        $noubomn_topic = $record->getSubjects('noubomn', Subject::TOPICAL_TERM);
+        $noubomn_place = $record->getSubjects('noubomn', Subject::GEOGRAPHIC_NAME);
 
         $this->assertCount(1, $lcsh);
         $this->assertCount(2, $noubomn);
