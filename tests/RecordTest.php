@@ -1,5 +1,6 @@
 <?php
 
+use Scriptotek\Marc\Marc21;
 use Scriptotek\Marc\Record;
 
 class RecordTest extends \PHPUnit_Framework_TestCase
@@ -69,7 +70,7 @@ class RecordTest extends \PHPUnit_Framework_TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertEquals('Bibliographic', $record->type);
+        $this->assertEquals(Marc21::BIBLIOGRAPHIC, $record->type);
     }
 
     public function testRecordTypeAuthority()
@@ -80,6 +81,6 @@ class RecordTest extends \PHPUnit_Framework_TestCase
          </record>';
 
         $record = Record::fromString($source);
-        $this->assertEquals('Authority', $record->type);
+        $this->assertEquals(Marc21::AUTHORITY, $record->type);
     }
 }

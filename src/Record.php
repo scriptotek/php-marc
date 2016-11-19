@@ -60,6 +60,14 @@ class Record
      * Determine if record is a bibliographic, authority or holdings record
      *************************************************************************/
 
+    /**
+     * Get the record type based on the value of LDR/6. Returns any of
+     * the Marc21::BIBLIOGRAPHIC, Marc21::AUTHORITY or Marc21::HOLDINGS
+     * constants.
+     *
+     * @return string
+     * @throws ErrorException
+     */
     public function getType()
     {
         $leader = $this->record->getLeader();
@@ -80,14 +88,14 @@ class Record
             case 'p': // Mixed materials
             case 'r': // Three-dimensional artifact or naturally occurring object
             case 't': // Manuscript language material
-                return 'Bibliographic';
+                return Marc21::BIBLIOGRAPHIC;
             case 'z':
-                return 'Authority';
+                return Marc21::AUTHORITY;
             case 'u': // Unknown
             case 'v': // Multipart item holdings
             case 'x': // Single-part item holdings
             case 'y': // Serial item holdings
-                return 'Holdings';
+                return Marc21::HOLDINGS;
             default:
                 throw new \ErrorException('Unknown record type.');
         }
