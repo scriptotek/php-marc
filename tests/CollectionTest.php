@@ -74,5 +74,4 @@ class CollectionTest extends PHPUnit_Framework_TestCase
 
         $this->assertCount(3, $collection->toArray());
     }
-
 }

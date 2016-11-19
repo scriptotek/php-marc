@@ -5,7 +5,6 @@ use Scriptotek\Marc\QueryResult;
 
 class QueryResultTest extends \PHPUnit_Framework_TestCase
 {
-
     protected $record;
 
     public function setUp()
@@ -55,5 +54,4 @@ class QueryResultTest extends \PHPUnit_Framework_TestCase
         $result = $this->record->query('020$a{$q=\ib.}')->text();
         $this->assertEquals('9788200424420', $result);
     }
-
 }
