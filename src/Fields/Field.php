@@ -44,7 +44,10 @@ class Field
     public static function makeFieldObjects(Record $record, $tag, $pcre=false)
     {
         return array_map(function ($field) {
-            return new self($field);
+
+            // Note: `new static()` is a way of creating a new instance of the
+            // called class using late static binding.
+            return new static($field);
         }, $record->getFields($tag, $pcre));
     }
 }
