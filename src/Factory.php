@@ -4,7 +4,7 @@ namespace Scriptotek\Marc;
 
 class Factory
 {
-    protected function _make($className, $args)
+    protected function genMake($className, $args)
     {
         $reflectionClass = new \ReflectionClass($className);
         $instance = $reflectionClass->newInstanceArgs($args);
@@ -17,7 +17,7 @@ class Factory
         $args = func_get_args();
         $className = array_shift($args);
 
-        return $this->_make($className, $args);
+        return $this->genMake($className, $args);
     }
 
     public function makeField()
@@ -25,6 +25,6 @@ class Factory
         $args = func_get_args();
         $className = 'Scriptotek\\Marc\\Fields\\' . array_shift($args);
 
-        return $this->_make($className, $args);
+        return $this->genMake($className, $args);
     }
 }

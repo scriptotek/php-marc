@@ -6,10 +6,13 @@ use File_MARCXML;
 use Scriptotek\Marc\Collection;
 use Scriptotek\Marc\Exceptions\XmlException;
 use Scriptotek\Marc\Factory;
+use SimpleXMLElement;
 
 class XmlImporter
 {
     protected $factory;
+
+    /* var SimpleXMLElement */
     protected $source;
 
     public function __construct($data, $ns = '', $isPrefix = false, $factory = null)
@@ -76,7 +79,7 @@ class XmlImporter
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
         $pprefix = empty($prefix) ? '' : "$prefix:";
 
-        $records = array_map(function ($record) {
+        $records = array_map(function (SimpleXMLElement $record) {
             $x = $record->asXML();
 
             // Strip away XML declaration.

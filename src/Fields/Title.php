@@ -46,8 +46,6 @@ class Title extends Field implements FieldInterface
         // (for instance when the title is an abbreviation)
         $title = rtrim($title, ' /');
 
-        // TODO: Handle more subfields like $k, $f and $g ?? Probably should...
-
         return $title;
     }
 }

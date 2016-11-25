@@ -180,7 +180,7 @@ class Record
      */
     public function getSubjects($vocabulary = null, $tag = null)
     {
-        return array_filter(Subject::get($this), function ($field) use ($vocabulary, $tag) {
+        return array_filter(Subject::get($this), function (Subject $field) use ($vocabulary, $tag) {
             $a = is_null($vocabulary) || $vocabulary == $field->vocabulary;
             $b = is_null($tag) || $tag == $field->type;
 
