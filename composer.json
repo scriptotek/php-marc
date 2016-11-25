@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Simple interface to parsing MARC records using File_MARC",
     "keywords": ["marc"],
-    "license": "GNU-LGPL",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dan Michael O. Heggø",
