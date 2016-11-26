@@ -12,7 +12,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5",
         "ck/File_MARC_Reference": "^1.0",
         "pear/file_marc": "^1.1"
     },
