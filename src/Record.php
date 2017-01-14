@@ -11,6 +11,15 @@ use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\Fields\Title;
 
+/**
+ * The MARC record wrapper.
+ *
+ * We wrap File_MARC_Record rather than extend it because we would otherwise
+ * have to copy or rewrite the functionality in the `next()` and `_decode()`
+ * methods of File_MARC and File_MARCXML, which are hard-wired to call
+ * `new File_MARC_Record()`. The down-side of the wrapping approach is that we
+ * break static code analysis and IDE code hinting.
+ */
 class Record
 {
     protected $record;
