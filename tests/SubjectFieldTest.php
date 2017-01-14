@@ -68,4 +68,20 @@ class SubjectFieldTest extends \PHPUnit_Framework_TestCase
         $record->subjects[0]->delete();
         $this->assertCount(0, $record->subjects);
     }
+
+    public function testJsonSerialization()
+    {
+        $record = $this->getNthrecord(3);
+        $subject = $record->subjects[1];
+
+        $this->assertJsonStringEqualsJsonString(
+            json_encode([
+                'vocabulary' => 'noubomn',
+                'type' => Subject::TOPICAL_TERM,
+                'id' => null,
+                'term' => 'Elementærpartikler'
+            ]),
+            json_encode($subject)
+        );
+    }
 }

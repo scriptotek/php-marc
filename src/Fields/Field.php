@@ -4,13 +4,18 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Field
+abstract class Field implements \JsonSerializable
 {
     protected $field;
 
     public function __construct(\File_MARC_Field $field)
     {
         $this->field = $field;
+    }
+
+    public function jsonSerialize()
+    {
+        return (string) $this;
     }
 
     public function __call($name, $args)

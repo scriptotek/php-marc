@@ -83,4 +83,14 @@ class Subject extends Field implements FieldInterface
     {
         return implode(self::$glue, $this->getParts());
     }
+
+    public function jsonSerialize()
+    {
+        return [
+            'type' => $this->getType(),
+            'vocabulary' => $this->getVocabulary(),
+            'id' => $this->getControlNumber(),
+            'term' => (string) $this,
+        ];
+    }
 }

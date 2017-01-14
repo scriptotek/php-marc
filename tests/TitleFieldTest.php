@@ -124,4 +124,22 @@ class TitleFieldTest extends \PHPUnit_Framework_TestCase
         $title = new Title($field);
         $this->assertEquals('Zentralblatt für Bakteriologie. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.', strval($title));
     }
+
+    public function testJsonSerialization()
+    {
+        $field = new File_MARC_Data_Field('245', array(
+            new File_MARC_Subfield('a', 'Zentralblatt für Bakteriologie.'),
+            new File_MARC_Subfield('n', '1. Abt. Originale.'),
+            new File_MARC_Subfield('n', 'Reihe B,'),
+            new File_MARC_Subfield('p', 'Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.'),
+        ));
+        $title = new Title($field);
+
+        $this->assertJsonStringEqualsJsonString(
+            json_encode([
+                'title' => 'Zentralblatt für Bakteriologie. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.',
+            ]),
+            json_encode(['title' => $title])
+        );
+    }
 }

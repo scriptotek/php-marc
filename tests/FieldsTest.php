@@ -20,6 +20,10 @@ class IsbnFieldTest extends \PHPUnit_Framework_TestCase
         $record = Record::fromString($source);
         $this->assertEquals(['8200424421'], $record->isbns);
         $this->assertEquals('Nkr 98.00', $record->isbns[0]->sf('c'));
+        $this->assertEquals(
+            json_encode(['isbns' => ['8200424421']]),
+            json_encode(['isbns' => $record->isbns])
+        );
     }
 
     public function test020withoutA()
@@ -35,7 +39,11 @@ class IsbnFieldTest extends \PHPUnit_Framework_TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertEquals(array(''), $record->isbns);
+        $this->assertEquals([''], $record->isbns);
+        $this->assertEquals(
+            json_encode(['isbns' => ['']]),
+            json_encode(['isbns' => $record->isbns])
+        );
     }
 
     public function testId()
@@ -48,5 +56,9 @@ class IsbnFieldTest extends \PHPUnit_Framework_TestCase
 
         $record = Record::fromString($source);
         $this->assertEquals('98218834x', $record->id);
+        $this->assertEquals(
+            json_encode(['id' => '98218834x']),
+            json_encode(['id' => $record->id])
+        );
     }
 }
