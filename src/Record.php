@@ -9,6 +9,7 @@ use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\ControlField;
 use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Subject;
+use Scriptotek\Marc\Fields\SubjectInterface;
 use Scriptotek\Marc\Fields\Title;
 
 /**
@@ -180,18 +181,20 @@ class Record
     }
 
     /**
-     * Get an array of the 6XX fields as `Subject` objects, optionally filtered by
-     * vocabulary and/or tag.
+     * Get an array of the 6XX fields as `SubjectInterface` objects, optionally
+     * filtered by vocabulary and/or tag.
      *
      * @param string $vocabulary
-     * @param string $tag
-     * @return Subject[]
+     * @param string|string[] $tag
+     * @return SubjectInterface[]
      */
     public function getSubjects($vocabulary = null, $tag = null)
     {
-        return array_values(array_filter(Subject::get($this), function (Subject $field) use ($vocabulary, $tag) {
-            $a = is_null($vocabulary) || $vocabulary == $field->vocabulary;
-            $b = is_null($tag) || $tag == $field->type;
+        $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
+
+        return array_values(array_filter(Subject::get($this), function (SubjectInterface $subject) use ($vocabulary, $tag) {
+            $a = is_null($vocabulary) || $vocabulary == $subject->getVocabulary();
+            $b = empty($tag) || in_array($subject->getType(), $tag);
 
             return $a && $b;
         }));

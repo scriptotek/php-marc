@@ -201,8 +201,9 @@ British tradition, a mix of records from both traditions will look silly.
 
 ### subjects
 
-`$record->getSubjects($vocabulary, $tag)` or `$record->subjects` returns an array of `Subject`
-objects from all [the 6XX fields](http://www.loc.gov/marc/bibliographic/bd6xx.html).
+`$record->getSubjects($vocabulary, $tag)` or `$record->subjects` returns an array of
+`Subject` and `UncontrolledSubject` objects from all
+[the 6XX fields](http://www.loc.gov/marc/bibliographic/bd6xx.html).
 The `getSubjects()` method have two optional arguments you can use to limit by
 vocabulary and/or tag.
 

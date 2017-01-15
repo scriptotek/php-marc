@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Subject extends Field implements FieldInterface
+class Subject extends Field implements FieldInterface, SubjectInterface
 {
     public static $glue = ' : ';
 
@@ -37,7 +37,19 @@ class Subject extends Field implements FieldInterface
 
     public static function get(Record $record)
     {
-        return parent::makeFieldObjects($record, '6..', true);
+        $subjects = [];
+
+        foreach (parent::makeFieldObjects($record, '6..', true) as $subject) {
+            if ($subject->getTag() == '653') {
+                foreach ($subject->getSubfields('a') as $sfa) {
+                    $subjects[] = new UncontrolledSubject($subject->getField(), $sfa);
+                }
+            } else {
+                $subjects[] = $subject;
+            }
+        }
+
+        return $subjects;
     }
 
     public function getType()
@@ -79,9 +91,14 @@ class Subject extends Field implements FieldInterface
         return $parts;
     }
 
-    public function __toString()
+    public function getTerm()
     {
         return implode(self::$glue, $this->getParts());
+    }
+
+    public function __toString()
+    {
+        return $this->getTerm();
     }
 
     public function jsonSerialize()

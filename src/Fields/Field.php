@@ -13,6 +13,11 @@ abstract class Field implements \JsonSerializable
         $this->field = $field;
     }
 
+    public function getField()
+    {
+        return $this->field;
+    }
+
     public function jsonSerialize()
     {
         return (string) $this;
@@ -31,6 +36,9 @@ abstract class Field implements \JsonSerializable
         }
     }
 
+    /**
+     * Return the data value of the *first* subfield with a given code.
+     */
     public function sf($code)
     {
         $x = $this->getSubfield($code);
