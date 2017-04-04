@@ -10,7 +10,6 @@
             "email": "d.m.heggo@ub.uio.no"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5",
         "ck/File_MARC_Reference": "^1.0",
