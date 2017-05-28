@@ -2,8 +2,6 @@
 
 namespace Scriptotek\Marc\Fields;
 
-use Scriptotek\Marc\Record;
-
 abstract class Subfield implements \JsonSerializable
 {
     protected $subfield;
