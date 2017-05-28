@@ -2,8 +2,6 @@
 
 namespace Scriptotek\Marc\Fields;
 
-use Scriptotek\Marc\Record;
-
 class UncontrolledSubject extends Subfield implements SubjectInterface
 {
     public function getType()
@@ -31,7 +29,7 @@ class UncontrolledSubject extends Subfield implements SubjectInterface
 
     public function getParts()
     {
-        $parts = [$this->getTerm()];
+        return [$this->getTerm()];
     }
 
     public function __toString()
