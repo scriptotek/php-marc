@@ -42,7 +42,8 @@ class Record
      * Returns the first record found in the file $filename, or null if no records found.
      *
      * @param $filename
-     * @return null|Collection
+     * @return Record
+     * @throws RecordNotFound
      */
     public static function fromFile($filename)
     {
@@ -59,7 +60,8 @@ class Record
      * Returns the first record found in the string $data, or null if no records found.
      *
      * @param $data
-     * @return null|Collection
+     * @return Record
+     * @throws RecordNotFound
      */
     public static function fromString($data)
     {
