@@ -1,9 +1,10 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Marc21;
 use Scriptotek\Marc\Record;
 
-class RecordTest extends \PHPUnit_Framework_TestCase
+class RecordTest extends TestCase
 {
     public function testExampleWithNs()
     {

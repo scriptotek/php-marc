@@ -1,10 +1,11 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Collection;
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\Fields\UncontrolledSubject;
 
-class SubjectFieldTest extends \PHPUnit_Framework_TestCase
+class SubjectFieldTest extends TestCase
 {
     protected function getNthrecord($n)
     {

@@ -2,10 +2,10 @@
 
 namespace Scriptotek\Marc\Record;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Collection;
 
-class CollectionTest extends PHPUnit_Framework_TestCase
+class CollectionTest extends TestCase
 {
     public function testEmptyCollection()
     {

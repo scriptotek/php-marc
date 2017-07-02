@@ -1,8 +1,9 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Record;
 
-class IsbnFieldTest extends \PHPUnit_Framework_TestCase
+class IsbnFieldTest extends TestCase
 {
     public function testIsbn()
     {

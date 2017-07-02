@@ -1,9 +1,10 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Record;
 use Scriptotek\Marc\QueryResult;
 
-class QueryResultTest extends \PHPUnit_Framework_TestCase
+class QueryResultTest extends TestCase
 {
     protected $record;
 

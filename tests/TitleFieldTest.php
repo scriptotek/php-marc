@@ -1,8 +1,9 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\Fields\Title;
 
-class TitleFieldTest extends \PHPUnit_Framework_TestCase
+class TitleFieldTest extends TestCase
 {
     /*
         In records formulated according to ISBD principles, subfield $b contains
