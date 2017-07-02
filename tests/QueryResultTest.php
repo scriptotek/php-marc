@@ -13,7 +13,7 @@ class QueryResultTest extends \PHPUnit_Framework_TestCase
           <record xmlns="http://www.loc.gov/MARC21/slim">
             <leader>99999cam a2299999 u 4500</leader>
             <controlfield tag="001">98218834x</controlfield>
-            <datafield tag="020" ind1=" " ind2=" ">
+            <datafield tag="020" ind1=" " ind2="3">
               <subfield code="a">8200424421</subfield>
               <subfield code="q">h.</subfield>
               <subfield code="c">Nkr 98.00</subfield>
@@ -47,6 +47,12 @@ class QueryResultTest extends \PHPUnit_Framework_TestCase
     {
         $result = $this->record->query('020$a')->text();
         $this->assertEquals('8200424421', $result);
+    }
+
+    public function testIndicator()
+    {
+        $result = $this->record->query('020')->first()->getIndicator(2);
+        $this->assertEquals('3', $result);
     }
 
     public function testTextPattern()
