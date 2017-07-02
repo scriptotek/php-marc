@@ -85,7 +85,7 @@ The method returns a `QueryResult` object, which is a small wrapper around
 Example: To loop over all `650` fields having `$2 noubomn`:
 
 ```php
-foreach ($record->query('650{2=\noubomn}') as $field) {
+foreach ($record->query('650{$2=\noubomn}') as $field) {
    echo $field->getSubfield('a')->getData();
 }
 ```
@@ -93,7 +93,7 @@ foreach ($record->query('650{2=\noubomn}') as $field) {
 or we could reference the subfield directly, like so:
 
 ```php
-foreach ($record->query('650$a{2=\noubomn}') as $subfield) {
+foreach ($record->query('650$a{$2=\noubomn}') as $subfield) {
    echo $subfield->getData();
 }
 ```
