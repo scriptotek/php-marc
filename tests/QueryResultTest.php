@@ -61,4 +61,16 @@ class QueryResultTest extends TestCase
         $result = $this->record->query('020$a{$q=\ib.}')->text();
         $this->assertEquals('9788200424420', $result);
     }
+
+    public function testCount()
+    {
+        $result = $this->record->query('02.');
+        $this->assertCount(2, $result);
+    }
+
+    public function testEmptyCount()
+    {
+        $result = $this->record->query('03.');
+        $this->assertCount(0, $result);
+    }
 }

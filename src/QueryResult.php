@@ -107,6 +107,6 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function count()
     {
-        return count($this->ref->data[$offset]);
+        return count($this->ref->data);
     }
 }
