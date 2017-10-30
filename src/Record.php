@@ -7,10 +7,6 @@ use File_MARC_Reference;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\ControlField;
-use Scriptotek\Marc\Fields\Isbn;
-use Scriptotek\Marc\Fields\Subject;
-use Scriptotek\Marc\Fields\SubjectInterface;
-use Scriptotek\Marc\Fields\Title;
 
 /**
  * The MARC record wrapper.
@@ -42,7 +38,7 @@ class Record
      * Returns the first record found in the file $filename, or null if no records found.
      *
      * @param $filename
-     * @return Record
+     * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
      * @throws RecordNotFound
      */
     public static function fromFile($filename)
@@ -60,7 +56,7 @@ class Record
      * Returns the first record found in the string $data, or null if no records found.
      *
      * @param $data
-     * @return Record
+     * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
      * @throws RecordNotFound
      */
     public static function fromString($data)
@@ -101,50 +97,7 @@ class Record
      */
     public function getType()
     {
-        $leader = $this->record->getLeader();
-        $recordType = substr($leader, 6, 1);
-
-        switch ($recordType) {
-            case 'a': // Language material
-            case 'c': // Notated music
-            case 'd': // Manuscript notated music
-            case 'e': // Cartographic material
-            case 'f': // Manuscript cartographic material
-            case 'g': // Projected medium
-            case 'i': // Nonmusical sound recording
-            case 'j': // Musical sound recording
-            case 'k': // Two-dimensional nonprojectable graphic
-            case 'm': // Computer file
-            case 'o': // Kit
-            case 'p': // Mixed materials
-            case 'r': // Three-dimensional artifact or naturally occurring object
-            case 't': // Manuscript language material
-                return Marc21::BIBLIOGRAPHIC;
-            case 'z':
-                return Marc21::AUTHORITY;
-            case 'u': // Unknown
-            case 'v': // Multipart item holdings
-            case 'x': // Single-part item holdings
-            case 'y': // Serial item holdings
-                return Marc21::HOLDINGS;
-            default:
-                throw new UnknownRecordType();
-        }
-    }
-
-    /**
-     * Get the descriptive cataloging form value from LDR/18. Returns any of
-     * the constants Marc21::NON_ISBD, Marc21::AACR2, Marc21::ISBD_PUNCTUATION_OMITTED,
-     * Marc21::ISBD_PUNCTUATION_INCLUDED, Marc21::NON_ISBD_PUNCTUATION_OMITTED
-     * or Marc21::UNKNOWN_CATALOGING_FORM.
-     *
-     * @return string
-     * @throws UnknownRecordType
-     */
-    public function getCatalogingForm()
-    {
-        $leader = $this->record->getLeader();
-        return substr($leader, 18, 1);
+        return Collection::getRecordType($this->record);
     }
 
     /*************************************************************************
@@ -160,46 +113,6 @@ class Record
     public function getId()
     {
         return ControlField::get($this, '001');
-    }
-
-    /**
-     * Get an array of the 020 fields as `Isbn` objects.
-     *
-     * @return Isbn[]
-     */
-    public function getIsbns()
-    {
-        return Isbn::get($this);
-    }
-
-    /**
-     * Get the 245 field as a `Title` object. Returns null if no such field was found.
-     *
-     * @return Title
-     */
-    public function getTitle()
-    {
-        return Title::get($this);
-    }
-
-    /**
-     * Get an array of the 6XX fields as `SubjectInterface` objects, optionally
-     * filtered by vocabulary and/or tag.
-     *
-     * @param string $vocabulary
-     * @param string|string[] $tag
-     * @return SubjectInterface[]
-     */
-    public function getSubjects($vocabulary = null, $tag = null)
-    {
-        $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
-
-        return array_values(array_filter(Subject::get($this), function (SubjectInterface $subject) use ($vocabulary, $tag) {
-            $a = is_null($vocabulary) || $vocabulary == $subject->getVocabulary();
-            $b = empty($tag) || in_array($subject->getType(), $tag);
-
-            return $a && $b;
-        }));
     }
 
     /*************************************************************************

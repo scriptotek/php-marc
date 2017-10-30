@@ -80,20 +80,9 @@ class Subject extends Field implements FieldInterface, SubjectInterface
         return $value ?: null;
     }
 
-    public function getParts()
-    {
-        $parts = [];
-        foreach ($this->field->getSubfields() as $c) {
-            if (in_array($c->getCode(), ['a', 'b', 'x', 'y', 'z'])) {
-                $parts[] = $c->getData();
-            }
-        }
-        return $parts;
-    }
-
     public function getTerm()
     {
-        return implode(self::$glue, $this->getParts());
+        return $this->toString(['a', 'b', 'x', 'y', 'z'], self::$glue);
     }
 
     public function __toString()

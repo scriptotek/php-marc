@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<record>
+    <leader>00384nx  a2200133ui 4500</leader>
+    <controlfield tag="001">h2051843-47bibsys_ubo</controlfield>
+    <controlfield tag="004">011715073-47bibsys_ubo</controlfield>
+    <controlfield tag="007">ta</controlfield>
+    <controlfield tag="008">1511020|||||||||4   uu</controlfield>
+    <controlfield tag="009">mini</controlfield>
+    <datafield ind1="1" ind2=" " tag="014">
+        <subfield code="a">011715073</subfield>
+        <subfield code="b">(NO-TrBIB)</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+        <subfield code="a">75ns18199-47bibsys_ubo</subfield>
+    </datafield>
+    <datafield ind1="8" ind2=" " tag="852">
+        <subfield code="b">1030310</subfield>
+        <subfield code="c">k00473</subfield>
+        <subfield code="h"> Plv 157 </subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="859">
+        <subfield code="a">1030310</subfield>
+        <subfield code="b">k00445</subfield>
+        <subfield code="c">Plv 157</subfield>
+        <subfield code="f">0</subfield>
+        <subfield code="h">0</subfield>
+        <subfield code="x">2015-11-02</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="876">
+        <subfield code="a">75ns18199</subfield>
+        <subfield code="j">mini</subfield>
+        <subfield code="p">75ns18199</subfield>
+        <subfield code="r">75ns18199</subfield>
+        <subfield code="w">BOOK</subfield>
+        <subfield code="z">(Gammel sign.: Plv 189) (Begrenset utlån)</subfield>
+    </datafield>
+</record>

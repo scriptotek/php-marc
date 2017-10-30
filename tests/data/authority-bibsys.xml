@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:record format="MARC21" type="Authority" id="90081146" xmlns:marc="info:lc/xmlns/marcxchange-v1">
+    <marc:leader>99999nz  a2299999n  4500</marc:leader>
+    <marc:controlfield tag="001">90081146</marc:controlfield>
+    <marc:controlfield tag="003">NO-TrBIB</marc:controlfield>
+    <marc:controlfield tag="005">20170420112705.0</marc:controlfield>
+    <marc:controlfield tag="008">080923n| adz|naabn|         |a|ana|     </marc:controlfield>
+    <marc:datafield tag="024" ind1="7" ind2=" ">
+        <marc:subfield code="a">x90081146</marc:subfield>
+        <marc:subfield code="2">NO-TrBIB</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="024" ind1="7" ind2=" ">
+        <marc:subfield code="a">http://hdl.handle.net/11250/1360467</marc:subfield>
+        <marc:subfield code="2">hdl</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="024" ind1="7" ind2=" ">
+        <marc:subfield code="a">0000000120169813</marc:subfield>
+        <marc:subfield code="2">isni</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="024" ind1="7" ind2=" ">
+        <marc:subfield code="a">http://viaf.org/viaf/803679</marc:subfield>
+        <marc:subfield code="2">viaf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+        <marc:subfield code="a">(NO-TrBIB)90081146</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+        <marc:subfield code="a">NO-TrBIB</marc:subfield>
+        <marc:subfield code="b">nob</marc:subfield>
+        <marc:subfield code="c">NO-TrBIB</marc:subfield>
+        <marc:subfield code="f">noraf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="043" ind1=" " ind2=" ">
+        <marc:subfield code="c">no</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+        <marc:subfield code="a">Hamsun, Marie</marc:subfield>
+        <marc:subfield code="d">1881-1969</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="375" ind1=" " ind2=" ">
+        <marc:subfield code="a">f</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="400" ind1="1" ind2=" ">
+        <marc:subfield code="a">Andersen, Marie</marc:subfield>
+        <marc:subfield code="d">1881-1969</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="400" ind1="1" ind2=" ">
+        <marc:subfield code="a">Gamsun, Marija</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="400" ind1="1" ind2=" ">
+        <marc:subfield code="a">Hamuzun, Marî</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="901" ind1=" " ind2=" ">
+        <marc:subfield code="a">kat3</marc:subfield>
+    </marc:datafield>
+</marc:record>

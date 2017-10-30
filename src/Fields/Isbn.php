@@ -8,12 +8,7 @@ class Isbn extends Field implements FieldInterface
 {
     public function __toString()
     {
-        $a = $this->field->getSubfield('a');
-        if (!$a) {
-            return '';
-        }
-
-        return $a->getData();
+        return $this->sf('a');
     }
 
     public static function get(Record $record)

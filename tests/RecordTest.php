@@ -1,6 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use Scriptotek\Marc\AuthorityRecord;
+use Scriptotek\Marc\BibliographicRecord;
+use Scriptotek\Marc\HoldingsRecord;
 use Scriptotek\Marc\Marc21;
 use Scriptotek\Marc\Record;
 
@@ -20,7 +23,8 @@ class RecordTest extends TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 
     public function testExampleWithoutNs()
@@ -37,7 +41,8 @@ class RecordTest extends TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 
     public function testExampleWithCustomPrefix()
@@ -54,13 +59,14 @@ class RecordTest extends TestCase
           </mx:record>';
 
         $record = Record::fromString($source);
-        $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 
     public function testBinaryMarc()
     {
-        $record = Record::fromFile('tests/data/binary-marc.mrc');
-        $this->assertInstanceOf('Scriptotek\Marc\Record', $record);
+        $record = Record::fromFile(__DIR__ . '/data/binary-marc.mrc');
+        $this->assertInstanceOf(Record::class, $record);
     }
 
     public function testRecordTypeBiblio()
@@ -71,18 +77,24 @@ class RecordTest extends TestCase
           </record>';
 
         $record = Record::fromString($source);
-        $this->assertEquals(Marc21::BIBLIOGRAPHIC, $record->type);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 
     public function testRecordTypeAuthority()
     {
-        $source = '<?xml version="1.0" encoding="UTF-8" ?>
-         <record>
-            <leader>99999nz  a2299999n  4500</leader>
-         </record>';
+        $record = Record::fromFile(__DIR__ . '/data/authority-bibsys.xml');
 
-        $record = Record::fromString($source);
-        $this->assertEquals(Marc21::AUTHORITY, $record->type);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(AuthorityRecord::class, $record);
+    }
+
+    public function testRecordTypeHoldings()
+    {
+        $record = Record::fromFile(__DIR__ . '/data/holdings-alma.xml');
+
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(HoldingsRecord::class, $record);
     }
 
     public function testRecordTypeDescriptiveCatalogingForm()

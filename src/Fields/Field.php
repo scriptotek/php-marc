@@ -37,12 +37,35 @@ abstract class Field implements \JsonSerializable
     }
 
     /**
+     * Return concatenated string of the given subfields.
+     *
+     * @param string[] $codes
+     * @param string   $glue
+     * @return string
+     */
+    protected function toString($codes, $glue = ' ')
+    {
+        $parts = [];
+        foreach ($this->field->getSubfields() as $sf) {
+            if (in_array($sf->getCode(), $codes)) {
+                $parts[] = trim($sf->getData());
+            }
+        }
+
+        return trim(implode($glue, $parts));
+    }
+
+    /**
      * Return the data value of the *first* subfield with a given code.
      */
     public function sf($code)
     {
-        $x = $this->getSubfield($code);
-        return $x->getData();
+        $subfield = $this->getSubfield($code);
+        if (!$subfield) {
+            return null;
+        }
+
+        return trim($subfield->getData());
     }
 
     public static function makeFieldObject(Record $record, $tag, $pcre=false)
