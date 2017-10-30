@@ -95,6 +95,10 @@ class RecordTest extends TestCase
 
         $this->assertInstanceOf(Record::class, $record);
         $this->assertInstanceOf(HoldingsRecord::class, $record);
+
+        $this->assertEquals('1030310', $record->location->sublocation);
+        $this->assertEquals('k00473', $record->location->shelvingLocation);
+        $this->assertEquals('Plv 157', $record->location->callCode);
     }
 
     public function testRecordTypeDescriptiveCatalogingForm()
