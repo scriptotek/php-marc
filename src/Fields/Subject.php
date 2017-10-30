@@ -82,8 +82,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
      */
     public function getId()
     {
-        $value = $this->field->getSubfield('0');
-        return $value ?: null;
+        return $this->sf('0');
     }
 
     public function getParts()
