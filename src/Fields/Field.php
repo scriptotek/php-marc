@@ -37,6 +37,25 @@ abstract class Field implements \JsonSerializable
     }
 
     /**
+     * @param string|string[] $codes
+     * @return array
+     */
+    protected function getSubfieldValues($codes)
+    {
+        if (!is_array($codes)) {
+            $codes = [$codes];
+        }
+        $parts = [];
+        foreach ($this->field->getSubfields() as $sf) {
+            if (in_array($sf->getCode(), $codes)) {
+                $parts[] = trim($sf->getData());
+            }
+        }
+
+        return $parts;
+    }
+
+    /**
      * Return concatenated string of the given subfields.
      *
      * @param string[] $codes
@@ -45,24 +64,21 @@ abstract class Field implements \JsonSerializable
      */
     protected function toString($codes, $glue = ' ')
     {
-        $parts = [];
-        foreach ($this->field->getSubfields() as $sf) {
-            if (in_array($sf->getCode(), $codes)) {
-                $parts[] = trim($sf->getData());
-            }
-        }
-
-        return trim(implode($glue, $parts));
+        return trim(implode($glue, $this->getSubfieldValues($codes)));
     }
 
     /**
      * Return the data value of the *first* subfield with a given code.
+     *
+     * @param string $code
+     * @param mixed $default
+     * @return mixed
      */
-    public function sf($code)
+    public function sf($code, $default = '')
     {
         $subfield = $this->getSubfield($code);
         if (!$subfield) {
-            return null;
+            return $default;
         }
 
         return trim($subfield->getData());

@@ -7,6 +7,7 @@ use Scriptotek\Marc\Record;
 class Subject extends Field implements FieldInterface, SubjectInterface
 {
     public static $glue = ' : ';
+    public static $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
 
     const PERSONAL_NAME = '600';
     const CORPORATION_NAME = '601';
@@ -80,9 +81,14 @@ class Subject extends Field implements FieldInterface, SubjectInterface
         return $value ?: null;
     }
 
+    public function getParts()
+    {
+        return $this->getSubfields(self::$termComponentCodes);
+    }
+
     public function getTerm()
     {
-        return $this->toString(['a', 'b', 'x', 'y', 'z'], self::$glue);
+        return $this->toString(self::$termComponentCodes, self::$glue);
     }
 
     public function __toString()
