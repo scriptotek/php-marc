@@ -2,6 +2,7 @@
 
 namespace Scriptotek\Marc;
 
+use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\Fields\SubjectInterface;
@@ -14,6 +15,10 @@ class BibliographicRecord extends Record
      * the constants Marc21::NON_ISBD, Marc21::AACR2, Marc21::ISBD_PUNCTUATION_OMITTED,
      * Marc21::ISBD_PUNCTUATION_INCLUDED, Marc21::NON_ISBD_PUNCTUATION_OMITTED
      * or Marc21::UNKNOWN_CATALOGING_FORM.
+     *
+     * @property Isbn[] isbns
+     * @property string title
+     * @property SubjectInterface[] subjects
      *
      * @return string
      * @throws UnknownRecordType

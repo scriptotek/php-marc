@@ -16,6 +16,9 @@ use Scriptotek\Marc\Fields\ControlField;
  * methods of File_MARC and File_MARCXML, which are hard-wired to call
  * `new File_MARC_Record()`. The down-side of the wrapping approach is that we
  * break static code analysis and IDE code hinting.
+ *
+ * @property string id
+ * @property string type
  */
 class Record
 {
