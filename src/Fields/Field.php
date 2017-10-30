@@ -91,7 +91,7 @@ abstract class Field implements \JsonSerializable
      * @param mixed $default
      * @return mixed
      */
-    public function sf($code, $default = '')
+    public function sf($code, $default = null)
     {
         $subfield = $this->getSubfield($code);
         if (!$subfield) {
