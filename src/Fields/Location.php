@@ -17,6 +17,11 @@ use Scriptotek\Marc\Record;
  */
 class Location extends Field implements FieldInterface
 {
+    /**
+     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     */
+    public $properties = ['location', 'sublocation', 'shelvinglocation', 'callcode'];
+
     public static function get(Record $record)
     {
         return parent::makeFieldObjects($record, '852');
@@ -32,12 +37,12 @@ class Location extends Field implements FieldInterface
         return $this->sf('b');
     }
 
-    public function getShelvingLocation()
+    public function getShelvinglocation()
     {
         return $this->sf('c');
     }
 
-    public function getCallCode()
+    public function getCallcode()
     {
         return $this->toString([
             'k',    // Call number prefix
@@ -61,5 +66,4 @@ class Location extends Field implements FieldInterface
     {
         return $this->toString(['a', 'b', 'c', 'k', 'l', 'h', 'm']);
     }
-
 }

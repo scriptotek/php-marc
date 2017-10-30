@@ -6,6 +6,11 @@ use Scriptotek\Marc\Record;
 
 abstract class Field implements \JsonSerializable
 {
+    /**
+     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     */
+    public $properties = [];
+
     protected $field;
 
     public function __construct(\File_MARC_Field $field)
@@ -20,6 +25,18 @@ abstract class Field implements \JsonSerializable
 
     public function jsonSerialize()
     {
+        if (count($this->properties)) {
+            $o = [];
+            foreach ($this->properties as $prop) {
+                $value = $this->$prop;
+                if (is_object($value)) {
+                    $o[$prop] = $value->jsonSerialize();
+                } elseif ($value) {
+                    $o[$prop] = $value;
+                }
+            }
+            return $o;
+        }
         return (string) $this;
     }
 
@@ -90,7 +107,7 @@ abstract class Field implements \JsonSerializable
 
         // Note: `new static()` is a way of creating a new instance of the
         // called class using late static binding.
-        return isset($field) ? new static($field) : $field;
+        return $field ? new static($field) : null;
     }
 
     public static function makeFieldObjects(Record $record, $tag, $pcre=false)

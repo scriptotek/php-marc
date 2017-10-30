@@ -20,9 +20,14 @@ use Scriptotek\Marc\Fields\ControlField;
  * @property string id
  * @property string type
  */
-class Record
+class Record implements \JsonSerializable
 {
     protected $record;
+
+    /**
+     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     */
+    public $properties = ['id', 'type'];
 
     /**
      * Record constructor.
@@ -121,6 +126,28 @@ class Record
     /*************************************************************************
      * Support methods
      *************************************************************************/
+
+    public function jsonSerialize()
+    {
+        $o = [];
+        foreach ($this->properties as $prop) {
+            $value = $this->$prop;
+            if (is_null($value)) {
+                $o[$prop] = $value;
+            } elseif (is_array($value)) {
+                $t = [];
+                foreach ($value as $v) {
+                    $t[] = $v->jsonSerialize();
+                }
+                $o[$prop] = $t;
+            } else if (is_object($value)) {
+                $o[$prop] = $value->jsonSerialize();
+            } else {
+                $o[$prop] = $value;
+            }
+        }
+        return $o;
+    }
 
     public function __call($name, $args)
     {

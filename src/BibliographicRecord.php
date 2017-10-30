@@ -11,6 +11,11 @@ use Scriptotek\Marc\Fields\Title;
 class BibliographicRecord extends Record
 {
     /**
+     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     */
+    public $properties = ['id', 'type', 'isbns', 'title', 'subjects'];
+
+    /**
      * Get the descriptive cataloging form value from LDR/18. Returns any of
      * the constants Marc21::NON_ISBD, Marc21::AACR2, Marc21::ISBD_PUNCTUATION_OMITTED,
      * Marc21::ISBD_PUNCTUATION_INCLUDED, Marc21::NON_ISBD_PUNCTUATION_OMITTED

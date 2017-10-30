@@ -8,7 +8,7 @@ interface SubjectInterface
 
     public function getVocabulary();
 
-    public function getControlNumber();
+    public function getId();
 
     public function getParts();
 

@@ -6,6 +6,11 @@ use Scriptotek\Marc\Record;
 
 class Subject extends Field implements FieldInterface, SubjectInterface
 {
+    /**
+     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     */
+    public $properties = ['type', 'vocabulary', 'term', 'id'];
+
     public static $glue = ' : ';
     public static $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
 
@@ -75,7 +80,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
     /**
      * Return the Authority record control number
      */
-    public function getControlNumber()
+    public function getId()
     {
         $value = $this->field->getSubfield('0');
         return $value ?: null;
@@ -94,15 +99,5 @@ class Subject extends Field implements FieldInterface, SubjectInterface
     public function __toString()
     {
         return $this->getTerm();
-    }
-
-    public function jsonSerialize()
-    {
-        return [
-            'type' => $this->getType(),
-            'vocabulary' => $this->getVocabulary(),
-            'id' => $this->getControlNumber(),
-            'term' => (string) $this,
-        ];
     }
 }

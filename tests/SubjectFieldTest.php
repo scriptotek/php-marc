@@ -35,7 +35,7 @@ class SubjectFieldTest extends TestCase
         $this->assertEquals('noubomn', $subject->vocabulary);
         $this->assertEquals('Elementærpartikler', strval($subject));
         $this->assertEquals(Subject::TOPICAL_TERM, $subject->getType());
-        $this->assertNull($subject->getControlNumber());
+        $this->assertNull($subject->getId());
     }
 
     public function testRepeated653a()
@@ -101,7 +101,6 @@ class SubjectFieldTest extends TestCase
             json_encode([
                 'vocabulary' => 'noubomn',
                 'type' => Subject::TOPICAL_TERM,
-                'id' => null,
                 'term' => 'Elementærpartikler'
             ]),
             json_encode($subject)

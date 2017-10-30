@@ -17,7 +17,7 @@ class UncontrolledSubject extends Subfield implements SubjectInterface
     /**
      * Return the Authority record control number
      */
-    public function getControlNumber()
+    public function getId()
     {
         return null;
     }

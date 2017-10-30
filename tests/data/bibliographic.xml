@@ -1,0 +1,115 @@
+<record xmlns="">
+    <leader>00778cam a22002531u 4500</leader>
+    <controlfield tag="001">999401461934702201</controlfield>
+    <controlfield tag="005">20110607103830.0</controlfield>
+    <controlfield tag="007">ta</controlfield>
+    <controlfield tag="008">110607s1964    xx#||||||    |000|u|eng|d</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">940146193-47bibsys_ubo</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(NO-TrBIB)940146193</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(Alma)999401461934702204</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">NO-TrBIB</subfield>
+        <subfield code="b">nob</subfield>
+        <subfield code="e">katreg</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+        <subfield code="a">81</subfield>
+        <subfield code="2">msc</subfield>
+    </datafield>
+    <datafield tag="097" ind1=" " ind2=" ">
+        <subfield code="a">81</subfield>
+        <subfield code="9">LOCAL</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Gell-Mann, Murray</subfield>
+        <subfield code="0">(NO-TrBIB)x90569757</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">The eightfold way</subfield>
+        <subfield code="c">Murray Gell-Mann, Yuval Ne'eman</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">New York</subfield>
+        <subfield code="b">W.A. Benjamin</subfield>
+        <subfield code="c">1964</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">XI, 317 s.</subfield>
+        <subfield code="b">ill.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+        <subfield code="a">Frontiers in physics</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Eightfold way (Nuclear physics)</subfield>
+        <subfield code="x">Addresses, essays, lectures</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Nuclear reactions</subfield>
+        <subfield code="x">Addresses, essays, lectures</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Ne'eman, Yuval</subfield>
+        <subfield code="0">(NO-TrBIB)x90061707</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+        <subfield code="a">Frontiers in physics</subfield>
+    </datafield>
+    <datafield tag="901" ind1=" " ind2=" ">
+        <subfield code="a">konv</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="a">47BIBSYS_UBO</subfield>
+        <subfield code="b">1030310</subfield>
+        <subfield code="c">UREAL Fyssaml</subfield>
+        <subfield code="d">XIa:276</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">2</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">1466</subfield>
+        <subfield code="k">8</subfield>
+        <subfield code="p">1</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="a">47BIBSYS_UBO</subfield>
+        <subfield code="b">1030310</subfield>
+        <subfield code="c">UREAL Fsaml</subfield>
+        <subfield code="d">F 8155 (Etter 1850)</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">1463</subfield>
+        <subfield code="k">8</subfield>
+        <subfield code="p">2</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="a">47BIBSYS_UBO</subfield>
+        <subfield code="b">1030310</subfield>
+        <subfield code="c">UREAL Fyssaml</subfield>
+        <subfield code="d">XIa:276a</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">1466</subfield>
+        <subfield code="k">8</subfield>
+        <subfield code="p">3</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="a">47BIBSYS_UBO</subfield>
+        <subfield code="b">1030310</subfield>
+        <subfield code="c">UREAL Mat</subfield>
+        <subfield code="d">81 GEL</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">1489</subfield>
+        <subfield code="k">8</subfield>
+        <subfield code="p">4</subfield>
+    </datafield>
+</record>
