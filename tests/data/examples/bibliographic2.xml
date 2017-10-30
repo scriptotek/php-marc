@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+ <record>
+  <leader>01167cam a2200373 c 4500</leader>
+  <controlfield tag="001">999217148824702204</controlfield>
+  <controlfield tag="005">20171003030038.0</controlfield>
+  <controlfield tag="007">ta</controlfield>
+  <controlfield tag="008">150604s1992    xx#|||||||||||000|u|eng|d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+   <subfield code="a">0471616389</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">921714882-47bibsys_network</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(NO-TrBIB)921714882</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(EXLNZ-47BIBSYS_NETWORK)999217148824702201</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+   <subfield code="a">NO-TrBIB</subfield>
+   <subfield code="b">nob</subfield>
+   <subfield code="e">katreg</subfield>
+  </datafield>
+  <datafield tag="080" ind1=" " ind2=" ">
+   <subfield code="a">535</subfield>
+  </datafield>
+  <datafield tag="080" ind1=" " ind2=" ">
+   <subfield code="a">681.7</subfield>
+  </datafield>
+  <datafield tag="080" ind1=" " ind2=" ">
+   <subfield code="a">534</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+   <subfield code="a">b4170</subfield>
+   <subfield code="q">NoOU</subfield>
+   <subfield code="2">inspec</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+   <subfield code="a">a7820h</subfield>
+   <subfield code="q">NoOU</subfield>
+   <subfield code="2">inspec</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+   <subfield code="a">a4280</subfield>
+   <subfield code="q">NoOU</subfield>
+   <subfield code="2">inspec</subfield>
+  </datafield>
+  <datafield tag="097" ind1=" " ind2=" ">
+   <subfield code="a">2.6xuj</subfield>
+   <subfield code="9">LOCAL</subfield>
+  </datafield>
+  <datafield tag="097" ind1=" " ind2=" ">
+   <subfield code="a">a4280</subfield>
+   <subfield code="9">LOCAL</subfield>
+  </datafield>
+  <datafield tag="097" ind1=" " ind2=" ">
+   <subfield code="a">a7820h</subfield>
+   <subfield code="9">LOCAL</subfield>
+  </datafield>
+  <datafield tag="097" ind1=" " ind2=" ">
+   <subfield code="a">b4170</subfield>
+   <subfield code="9">LOCAL</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+   <subfield code="a">Xu, Jieping</subfield>
+   <subfield code="0">(NO-TrBIB)90625942</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+   <subfield code="a">Acousto-optic devices :</subfield>
+   <subfield code="b">principles, design, and applications</subfield>
+   <subfield code="c">Jieping Xu, Robert Stroud</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+   <subfield code="a">New York</subfield>
+   <subfield code="b">Wiley</subfield>
+   <subfield code="c">c1992</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+   <subfield code="a">xvii, 652 s.</subfield>
+   <subfield code="b">ill.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+   <subfield code="a">Wiley series in pure and applied optics</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+   <subfield code="a">&quot;A Wiley-Interscience publication&quot;</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+   <subfield code="a">Acoustooptical devices</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+   <subfield code="a">Komponenter</subfield>
+   <subfield code="2">noubomn</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+   <subfield code="a">Akustikk</subfield>
+   <subfield code="2">noubomn</subfield>
+   <subfield code="0">(NO-TrBIB)REAL013572</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+   <subfield code="a">Optikk</subfield>
+   <subfield code="2">tekord</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+   <subfield code="a">Akustikk</subfield>
+   <subfield code="2">tekord</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+   <subfield code="a">Optiske instrumenter</subfield>
+   <subfield code="2">tekord</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+   <subfield code="a">akustooptiske</subfield>
+   <subfield code="a">effekter</subfield>
+   <subfield code="a">komponenter</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+   <subfield code="a">Stroud, Robert</subfield>
+   <subfield code="0">(NO-TrBIB)90625943</subfield>
+  </datafield>
+  <datafield tag="901" ind1=" " ind2=" ">
+   <subfield code="a">80</subfield>
+  </datafield>
+  <datafield tag="AVA" ind1=" " ind2=" ">
+   <subfield code="0">999217148824702204</subfield>
+   <subfield code="8">22113844840002204</subfield>
+   <subfield code="a">47BIBSYS_UBO</subfield>
+   <subfield code="b">1030310</subfield>
+   <subfield code="c">UREAL Fys.</subfield>
+   <subfield code="d">2.6 XUJ</subfield>
+   <subfield code="e">available</subfield>
+   <subfield code="f">1</subfield>
+   <subfield code="g">0</subfield>
+   <subfield code="j">k00440</subfield>
+   <subfield code="k">8</subfield>
+   <subfield code="p">1</subfield>
+   <subfield code="q">UiO Realfagsbiblioteket</subfield>
+  </datafield>
+ </record>
+</collection>

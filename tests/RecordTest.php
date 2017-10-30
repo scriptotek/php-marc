@@ -82,65 +82,6 @@ class RecordTest extends TestCase
         $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 
-    public function testRecordTypeAuthority()
-    {
-        $record = Record::fromFile(__DIR__ . '/data/authority-bibsys.xml');
-
-        $this->assertInstanceOf(Record::class, $record);
-        $this->assertInstanceOf(AuthorityRecord::class, $record);
-    }
-
-    public function testRecordTypeHoldings()
-    {
-        $record = Record::fromFile(__DIR__ . '/data/holdings.xml');
-
-        $this->assertInstanceOf(Record::class, $record);
-        $this->assertInstanceOf(HoldingsRecord::class, $record);
-
-        $this->assertEquals('1030310', $record->location->sublocation);
-        $this->assertEquals('k00473', $record->location->shelvinglocation);
-        $this->assertEquals('Plv 157', $record->location->callcode);
-    }
-
-    public function testHoldingsToJson()
-    {
-        $record = Record::fromFile(__DIR__ . '/data/holdings.xml');
-
-        $this->assertEquals([
-            'type' => MARC21::HOLDINGS,
-            'id' => 'h2051843-47bibsys_ubo',
-            'location' => [
-                'sublocation' => '1030310',
-                'shelvinglocation' => 'k00473',
-                'callcode' => 'Plv 157',
-            ],
-        ], $record->jsonSerialize());
-    }
-
-    public function testBibliographicToJson()
-    {
-        $record = Record::fromFile(__DIR__ . '/data/bibliographic.xml');
-
-        $this->assertEquals([
-            'type' => MARC21::BIBLIOGRAPHIC,
-            'id' => '999401461934702201',
-            'title' => 'The eightfold way',
-            'subjects' => [
-                [
-                    'type' => Subject::TOPICAL_TERM,
-                    'vocabulary' => 'lcsh',
-                    'term' => 'Eightfold way (Nuclear physics) : Addresses, essays, lectures',
-                ],
-                [
-                    'type' => Subject::TOPICAL_TERM,
-                    'vocabulary' => 'lcsh',
-                    'term' => 'Nuclear reactions : Addresses, essays, lectures',
-                ],
-            ],
-            'isbns' => [],
-        ], $record->jsonSerialize());
-    }
-
     public function testRecordTypeDescriptiveCatalogingForm()
     {
         $source = '<?xml version="1.0" encoding="UTF-8" ?>

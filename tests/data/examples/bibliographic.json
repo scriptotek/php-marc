@@ -1,0 +1,17 @@
+{
+    "id": "999401461934702201",
+    "isbns": [],
+    "title": "The eightfold way",
+    "subjects": [
+        {
+            "type": "650",
+            "vocabulary": "lcsh",
+            "term": "Eightfold way (Nuclear physics) : Addresses, essays, lectures"
+        },
+        {
+            "type": "650",
+            "vocabulary": "lcsh",
+            "term": "Nuclear reactions : Addresses, essays, lectures"
+        }
+    ]
+}

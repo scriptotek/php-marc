@@ -1,0 +1,43 @@
+{
+    "id": "999217148824702204",
+    "isbns": [
+        "0471616389"
+    ],
+    "title": "Acousto-optic devices : principles, design, and applications",
+    "subjects": [
+        {
+            "type": "650",
+            "vocabulary": "lcsh",
+            "term": "Acoustooptical devices"
+        },
+        {
+            "type": "650",
+            "vocabulary": "noubomn",
+            "term": "Komponenter"
+        },
+        {
+            "type": "650",
+            "vocabulary": "noubomn",
+            "term": "Akustikk",
+            "id": "(NO-TrBIB)REAL013572"
+        },
+        {
+            "type": "650",
+            "vocabulary": "tekord",
+            "term": "Optikk"
+        },
+        {
+            "type": "650",
+            "vocabulary": "tekord",
+            "term": "Akustikk"
+        },
+        {
+            "type": "650",
+            "vocabulary": "tekord",
+            "term": "Optiske instrumenter"
+        },
+        "akustooptiske",
+        "effekter",
+        "komponenter"
+    ]
+}
