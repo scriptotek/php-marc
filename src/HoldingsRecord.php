@@ -15,7 +15,7 @@ class HoldingsRecord extends Record
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['id', 'type', 'location'];
+    public $properties = ['id', 'location'];
 
     /*************************************************************************
      * Helper methods for specific fields. Each of these are supported by

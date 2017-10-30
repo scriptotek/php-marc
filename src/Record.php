@@ -27,7 +27,7 @@ class Record implements \JsonSerializable
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['id', 'type'];
+    public $properties = ['id'];
 
     /**
      * Record constructor.

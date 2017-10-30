@@ -13,7 +13,7 @@ class BibliographicRecord extends Record
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['id', 'type', 'isbns', 'title', 'subjects'];
+    public $properties = ['id', 'isbns', 'title', 'subjects'];
 
     /**
      * Get the descriptive cataloging form value from LDR/18. Returns any of
