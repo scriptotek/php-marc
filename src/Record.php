@@ -2,11 +2,13 @@
 
 namespace Scriptotek\Marc;
 
+use File_MARC_Field;
 use File_MARC_Record;
 use File_MARC_Reference;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\ControlField;
+use Scriptotek\Marc\Fields\Field;
 
 /**
  * The MARC record wrapper.
@@ -36,6 +38,21 @@ class Record implements \JsonSerializable
     public function __construct(File_MARC_Record $record)
     {
         $this->record = $record;
+    }
+
+    public function getField($spec = null, $pcre = null)
+    {
+        $q = $this->record->getField($spec, $pcre);
+        if ($q) {
+            return new Field($q);
+        }
+    }
+
+    public function getFields($spec = null, $pcre = null)
+    {
+        return array_values(array_map(function(File_MARC_Field $field) {
+            return new Field($field);
+        }, $this->record->getFields($spec, $pcre)));
     }
 
     /*************************************************************************

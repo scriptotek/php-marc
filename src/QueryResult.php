@@ -5,21 +5,34 @@ namespace Scriptotek\Marc;
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
+use File_MARC_Field;
 use File_MARC_Reference;
 use IteratorAggregate;
 use Traversable;
+use Scriptotek\Marc\Fields\Field;
 
 class QueryResult implements IteratorAggregate, ArrayAccess, Countable
 {
     protected $ref;
+    protected $data;
+    protected $content;
 
     /**
      * QueryResult constructor.
-     * @param File_MARC_Reference $spec
+     *
+     * @param File_MARC_Reference $ref
      */
     public function __construct(File_MARC_Reference $ref)
     {
-        $this->ref = $ref;
+        $this->ref = $ref->ref;
+        $this->data = $ref->data;
+        $this->content = $ref->content;
+
+        for ($i=0; $i < count($this->data); $i++) {
+            if (is_a($this->data[$i], File_MARC_Field::class)) {
+                $this->data[$i] = new Field($this->data[$i]);
+            }
+        }
     }
 
     public function getReference()
@@ -34,7 +47,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function first()
     {
-        return isset($this->ref->data[0]) ? $this->ref->data[0] : null;
+        return isset($this->data[0]) ? $this->data[0] : null;
     }
 
     /**
@@ -44,7 +57,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function text()
     {
-        return isset($this->ref->content[0]) ? $this->ref->content[0] : null;
+        return isset($this->content[0]) ? $this->content[0] : null;
     }
 
     /**
@@ -54,7 +67,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function getIterator()
     {
-        return new ArrayIterator($this->ref->data);
+        return new ArrayIterator($this->data);
     }
 
     /**
@@ -65,7 +78,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function offsetExists($offset)
     {
-        return isset($this->ref->data[$offset]);
+        return isset($this->data[$offset]);
     }
 
     /**
@@ -76,7 +89,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function offsetGet($offset)
     {
-        return $this->ref->data[$offset];
+        return $this->data[$offset];
     }
 
     /**
@@ -87,7 +100,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function offsetSet($offset, $value)
     {
-        $this->ref->data[$offset] = $value;
+        $this->data[$offset] = $value;
     }
 
     /**
@@ -97,7 +110,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function offsetUnset($offset)
     {
-        unset($this->ref->data[$offset]);
+        unset($this->data[$offset]);
     }
 
     /**
@@ -107,6 +120,6 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      */
     public function count()
     {
-        return count($this->ref->data);
+        return count($this->data);
     }
 }

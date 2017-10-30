@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-abstract class Field implements \JsonSerializable
+class Field implements \JsonSerializable
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
@@ -107,7 +107,7 @@ abstract class Field implements \JsonSerializable
 
         // Note: `new static()` is a way of creating a new instance of the
         // called class using late static binding.
-        return $field ? new static($field) : null;
+        return $field ? new static($field->getField()) : null;
     }
 
     public static function makeFieldObjects(Record $record, $tag, $pcre=false)
@@ -116,7 +116,7 @@ abstract class Field implements \JsonSerializable
 
             // Note: `new static()` is a way of creating a new instance of the
             // called class using late static binding.
-            return new static($field);
+            return new static($field->getField());
         }, $record->getFields($tag, $pcre));
     }
 }

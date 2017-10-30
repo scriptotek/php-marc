@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Record;
 use Scriptotek\Marc\QueryResult;
 
@@ -35,7 +36,13 @@ class QueryResultTest extends TestCase
     public function testFirstField()
     {
         $result = $this->record->query('020{$a}')->first();
-        $this->assertInstanceOf('File_MARC_Field', $result);
+        $this->assertInstanceOf(Field::class, $result);
+    }
+
+    public function testControlField()
+    {
+        $result = $this->record->query('001')->first();
+        $this->assertInstanceOf(Field::class, $result);
     }
 
     public function testFirstSubfield()

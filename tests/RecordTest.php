@@ -3,6 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use Scriptotek\Marc\AuthorityRecord;
 use Scriptotek\Marc\BibliographicRecord;
+use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\HoldingsRecord;
 use Scriptotek\Marc\Marc21;
@@ -68,6 +69,13 @@ class RecordTest extends TestCase
     {
         $record = Record::fromFile(__DIR__ . '/data/binary-marc.mrc');
         $this->assertInstanceOf(Record::class, $record);
+    }
+
+    public function testThatFieldObjectsAreReturned()
+    {
+        $record = Record::fromFile(__DIR__ . '/data/binary-marc.mrc');
+        $this->assertInstanceOf(Field::class, $record->getField('020'));
+        $this->assertInstanceOf(Field::class, $record->getFields('020')[0]);
     }
 
     public function testRecordTypeBiblio()
