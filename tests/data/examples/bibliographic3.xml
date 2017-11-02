@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="">
+    <leader>01420cam a2200397 c 4500</leader>
+    <controlfield tag="001">990929710914702204</controlfield>
+    <controlfield tag="005">20160622155135.0</controlfield>
+    <controlfield tag="007">ta</controlfield>
+    <controlfield tag="007">cr||||||||||||</controlfield>
+    <controlfield tag="008">130618s2009    no#||||j |||||000|p|nob|</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+        <subfield code="a">9788202308414</subfield>
+        <subfield code="q">ib.</subfield>
+        <subfield code="c">Nkr 279.00</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">092971091-47bibsys_network</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(NO-TrBIB)092971091</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(NO-OsBA)0249171</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(NO-OsBA)0249171</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(NO-TrBIB)122619072</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(EXLNZ-47BIBSYS_NETWORK)990929710914702201</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">NO-OsNB</subfield>
+        <subfield code="b">nob</subfield>
+        <subfield code="e">katreg</subfield>
+    </datafield>
+    <datafield tag="041" ind1="1" ind2=" ">
+        <subfield code="h">eng</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+        <subfield code="a">norbibl</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+        <subfield code="c">no</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+        <subfield code="a">820</subfield>
+    </datafield>
+    <datafield tag="082" ind1="7" ind2="4">
+        <subfield code="a">821</subfield>
+        <subfield code="q">NO-OsNB</subfield>
+        <subfield code="2">5/nor</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+        <subfield code="a">S 13c/US</subfield>
+        <subfield code="2">oosk</subfield>
+    </datafield>
+    <datafield tag="092" ind1=" " ind2=" ">
+        <subfield code="a">820</subfield>
+        <subfield code="q">NoOU</subfield>
+        <subfield code="9">LOCAL</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Eliot, T.S.</subfield>
+        <subfield code="d">1888-1965</subfield>
+        <subfield code="0">(NO-TrBIB)90052479</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">Å nærme seg en katt</subfield>
+        <subfield code="c">T.S. Eliot ; gjendiktet av Paal Brekke ; illustrert av Axel Scheffler</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2=" ">
+        <subfield code="a">Old Possum's book of practical cats</subfield>
+        <subfield code="i">Originaltittel</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">[Oslo]</subfield>
+        <subfield code="b">Cappelen Damm</subfield>
+        <subfield code="c">2009</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">64 s.</subfield>
+        <subfield code="b">ill.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">1. norske utg. Oslo : Grøndahl, 1985</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+        <subfield code="a">regler</subfield>
+        <subfield code="a">dikt</subfield>
+        <subfield code="a">katter</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Brekke, Paal,</subfield>
+        <subfield code="d">1923-1993,</subfield>
+        <subfield code="e">overs.</subfield>
+        <subfield code="4">trl</subfield>
+        <subfield code="0">(NO-TrBIB)90079454</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Scheffler, Axel,</subfield>
+        <subfield code="d">1957-</subfield>
+        <subfield code="e">illustr.</subfield>
+        <subfield code="0">(NO-TrBIB)90983587</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+        <subfield code="3">Beskrivelse fra forlaget (kort)</subfield>
+        <subfield code="u">http://content.bibsys.no/content/?type=descr_publ_brief&amp;isbn=8202308410</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+        <subfield code="3">Beskrivelse fra Forlagssentralen</subfield>
+        <subfield code="u">http://content.bibsys.no/content/?type=descr_forlagssentr&amp;isbn=8202308410</subfield>
+    </datafield>
+    <datafield tag="901" ind1=" " ind2=" ">
+        <subfield code="a">90</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+        <subfield code="a">Norbok</subfield>
+        <subfield code="b">NB</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="0">990929710914702204</subfield>
+        <subfield code="8">22110775660002204</subfield>
+        <subfield code="a">47BIBSYS_UBO</subfield>
+        <subfield code="b">1030300</subfield>
+        <subfield code="c">UHS Mag312</subfield>
+        <subfield code="d">820 Eli:Old</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">k00025</subfield>
+        <subfield code="k">8</subfield>
+        <subfield code="p">1</subfield>
+        <subfield code="q">UiO HumSam-biblioteket</subfield>
+    </datafield>
+</record>

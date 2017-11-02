@@ -2,6 +2,18 @@
     "id": "999401461934702201",
     "isbns": [],
     "title": "The eightfold way",
+    "creators": [
+        {
+            "type": "100",
+            "name": "Gell-Mann, Murray",
+            "id": "(NO-TrBIB)x90569757"
+        },
+        {
+            "type": "700",
+            "name": "Ne'eman, Yuval",
+            "id": "(NO-TrBIB)x90061707"
+        }
+    ],
     "subjects": [
         {
             "type": "650",
