@@ -36,8 +36,17 @@
             "vocabulary": "tekord",
             "term": "Optiske instrumenter"
         },
-        "akustooptiske",
-        "effekter",
-        "komponenter"
+        {
+            "type": "653",
+            "term": "akustooptiske"
+        },
+        {
+            "type": "653",
+            "term": "effekter"
+        },
+        {
+            "type": "653",
+            "term": "komponenter"
+        }
     ]
 }

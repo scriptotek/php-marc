@@ -2,13 +2,8 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class UncontrolledSubject extends Subfield implements SubjectInterface
+class UncontrolledSubject extends Subfield implements SubjectInterface, \JsonSerializable
 {
-    /**
-     * @var array List of properties to be included when serializing the record using the `toArray()` method.
-     */
-    public $properties = ['type', 'vocabulary', 'term', 'id'];
-
     public function getType()
     {
         return Subject::UNCONTROLLED_INDEX_TERM;
@@ -41,4 +36,13 @@ class UncontrolledSubject extends Subfield implements SubjectInterface
     {
         return $this->getTerm();
     }
+
+    public function jsonSerialize()
+    {
+        return [
+            'type' => $this->getType(),
+            'term' => $this->getTerm(),
+        ];
+    }
+
 }
