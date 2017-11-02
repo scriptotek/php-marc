@@ -53,6 +53,11 @@ class Field implements \JsonSerializable
         }
     }
 
+    public function __toString()
+    {
+        return $this->field->__toString();
+    }
+
     /**
      * @param string|string[] $codes
      * @return array
@@ -93,12 +98,35 @@ class Field implements \JsonSerializable
      */
     public function sf($code, $default = null)
     {
+
+        // In PHP, ("a" == 0) will evaluate to TRUE, so it's actually very important that we ensure type here!
+        $code = (string) $code;
+
         $subfield = $this->getSubfield($code);
         if (!$subfield) {
             return $default;
         }
 
         return trim($subfield->getData());
+    }
+
+    public function mapSubFields($map, $includeNullValues = false)
+    {
+        $o = [];
+        foreach ($map as $code => $prop) {
+            $value = $this->sf($code);
+
+            foreach ($this->getSubfields() as $q) {
+                if ($q->getCode() == $code) {
+                    $value = $q->getData();
+                }
+            }
+
+            if (!is_null($value) || $includeNullValues) {
+                $o[$prop] = $value;
+            }
+        }
+        return $o;
     }
 
     public static function makeFieldObject(Record $record, $tag, $pcre=false)

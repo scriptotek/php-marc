@@ -27,6 +27,27 @@ class IsbnFieldTest extends TestCase
         );
     }
 
+    public function testMapSubfields()
+    {
+        $record = Record::fromString('<?xml version="1.0" encoding="UTF-8" ?>
+          <record xmlns="http://www.loc.gov/MARC21/slim">
+            <leader>99999cam a2299999 u 4500</leader>
+            <datafield tag="700" ind1="1" ind2=" ">
+              <subfield code="a">Levy, Silvio</subfield>
+              <subfield code="0">(NO-TrBIB)x90579165</subfield>
+            </datafield>
+          </record>');
+
+        $this->assertEquals([
+            'name' => 'Levy, Silvio',
+            'identifier' => '(NO-TrBIB)x90579165',
+        ], $record->getField('700')->mapSubfields([
+            'a' => 'name',
+            'b' => 'numeration',
+            '0' => 'identifier',
+        ]));
+    }
+
     public function test020withoutA()
     {
         $source = '<?xml version="1.0" encoding="UTF-8" ?>
