@@ -17,7 +17,7 @@ class ExamplesTest extends TestCase
         $record = Record::fromFile($filename);
         $jsonFilename = substr($filename, 0, strrpos($filename, ".")) . '.json';
         if (!file_exists($jsonFilename)) {
-            file_put_contents($jsonFilename, json_encode($record, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+            file_put_contents($jsonFilename, json_encode($record, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
         } else {
             $jsonData = file_get_contents($jsonFilename);
             $this->assertJsonStringEqualsJsonString($jsonData, json_encode($record));

@@ -4,10 +4,10 @@ namespace Scriptotek\Marc\Fields;
 
 abstract class Subfield implements \JsonSerializable
 {
-    protected $subfield;
     protected $field;
+    protected $subfield;
 
-    public function __construct(\File_MARC_Data_Field $field, \File_MARC_Subfield $subfield)
+    public function __construct(Field $field, \File_MARC_Subfield $subfield)
     {
         $this->field = $field;
         $this->subfield = $subfield;

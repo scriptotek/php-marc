@@ -6,6 +6,8 @@ use Scriptotek\Marc\Record;
 
 class Field implements \JsonSerializable
 {
+    use SerializableField;
+
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */

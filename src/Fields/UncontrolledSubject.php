@@ -44,5 +44,4 @@ class UncontrolledSubject extends Subfield implements SubjectInterface, \JsonSer
             'term' => $this->getTerm(),
         ];
     }
-
 }

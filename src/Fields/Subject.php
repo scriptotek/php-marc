@@ -48,7 +48,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
         foreach (parent::makeFieldObjects($record, '6..', true) as $subject) {
             if ($subject->getTag() == '653') {
                 foreach ($subject->getSubfields('a') as $sfa) {
-                    $subjects[] = new UncontrolledSubject($subject->getField(), $sfa);
+                    $subjects[] = new UncontrolledSubject($subject, $sfa);
                 }
             } else {
                 $subjects[] = $subject;

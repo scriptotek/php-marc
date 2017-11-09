@@ -4,6 +4,29 @@
         "9788202308414"
     ],
     "title": "Å nærme seg en katt",
+    "creators": [
+        {
+            "type": "100",
+            "name": "Eliot, T.S.",
+            "dates": "1888-1965",
+            "id": "(NO-TrBIB)90052479"
+        },
+        {
+            "type": "700",
+            "name": "Brekke, Paal,",
+            "dates": "1923-1993,",
+            "id": "(NO-TrBIB)90079454",
+            "relator_term": "overs.",
+            "relationship": "trl"
+        },
+        {
+            "type": "700",
+            "name": "Scheffler, Axel,",
+            "dates": "1957-",
+            "id": "(NO-TrBIB)90983587",
+            "relator_term": "illustr."
+        }
+    ],
     "subjects": [
         {
             "type": "653",
@@ -18,27 +41,19 @@
             "term": "katter"
         }
     ],
-    "creators": [
+    "classifications": [
         {
-            "type": "100",
-            "name": "Eliot, T.S.",
-            "dates": "1888-1965",
-            "id": "(NO-TrBIB)90052479"
+            "scheme": "udc",
+            "number": "820"
         },
         {
-            "type": "700",
-            "name": "Brekke, Paal,",
-            "dates": "1923-1993,",
-            "relator_term": "overs.",
-            "id": "(NO-TrBIB)90079454",
-            "relationship": "trl"
+            "scheme": "ddc",
+            "number": "821",
+            "edition": "5/nor"
         },
         {
-            "type": "700",
-            "name": "Scheffler, Axel,",
-            "dates": "1957-",
-            "relator_term": "illustr.",
-            "id": "(NO-TrBIB)90983587"
+            "scheme": "oosk",
+            "number": "S 13c/US"
         }
     ]
 }

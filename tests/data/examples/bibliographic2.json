@@ -60,5 +60,31 @@
             "type": "653",
             "term": "komponenter"
         }
+    ],
+    "classifications": [
+        {
+            "scheme": "udc",
+            "number": "535"
+        },
+        {
+            "scheme": "udc",
+            "number": "681.7"
+        },
+        {
+            "scheme": "udc",
+            "number": "534"
+        },
+        {
+            "scheme": "inspec",
+            "number": "b4170"
+        },
+        {
+            "scheme": "inspec",
+            "number": "a7820h"
+        },
+        {
+            "scheme": "inspec",
+            "number": "a4280"
+        }
     ]
 }

@@ -3,6 +3,7 @@
 namespace Scriptotek\Marc;
 
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
+use Scriptotek\Marc\Fields\Classification;
 use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Person;
 use Scriptotek\Marc\Fields\Subject;
@@ -14,7 +15,7 @@ class BibliographicRecord extends Record
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['id', 'isbns', 'title', 'subjects', 'creators'];
+    public $properties = ['id', 'isbns', 'title', 'creators', 'subjects', 'classifications'];
 
     /**
      * Get the descriptive cataloging form value from LDR/18. Returns any of
@@ -77,6 +78,22 @@ class BibliographicRecord extends Record
             $b = empty($tag) || in_array($subject->getType(), $tag);
 
             return $a && $b;
+        }));
+    }
+
+    /**
+     * Get an array of the 080, 082, 083, 084 fields as `Classification` objects, optionally
+     * filtered by scheme and/or tag.
+     *
+     * @param string $scheme
+     * @return Classification[]
+     */
+    public function getClassifications($scheme = null)
+    {
+        return array_values(array_filter(Classification::get($this), function ($classifications) use ($scheme) {
+            $a = is_null($scheme) || $scheme == $classifications->getScheme();
+
+            return $a;
         }));
     }
 
