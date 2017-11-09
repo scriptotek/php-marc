@@ -4,6 +4,9 @@
         "9788202308414"
     ],
     "title": "Å nærme seg en katt",
+    "publisher": "Cappelen Damm",
+    "pub_year": "2009",
+    "edition": null,
     "creators": [
         {
             "type": "100",
@@ -55,5 +58,8 @@
             "scheme": "oosk",
             "number": "S 13c/US"
         }
-    ]
+    ],
+    "toc": null,
+    "summary": null,
+    "part_of": null
 }

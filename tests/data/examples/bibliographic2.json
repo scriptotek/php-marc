@@ -4,6 +4,9 @@
         "0471616389"
     ],
     "title": "Acousto-optic devices : principles, design, and applications",
+    "publisher": "Wiley",
+    "pub_year": "1992",
+    "edition": null,
     "creators": [
         {
             "type": "100",
@@ -86,5 +89,8 @@
             "scheme": "inspec",
             "number": "a4280"
         }
-    ]
+    ],
+    "toc": null,
+    "summary": null,
+    "part_of": null
 }

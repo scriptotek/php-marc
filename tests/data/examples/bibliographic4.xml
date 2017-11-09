@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>02915cam a2200337 i 4500</leader>
+      <controlfield tag="001">999919884907102204</controlfield>
+      <controlfield tag="005">20170721125733.0</controlfield>
+      <controlfield tag="007">ta</controlfield>
+      <controlfield tag="008">160915s2017    enka          00| 0 eng|c</controlfield>
+      <datafield tag="010" ind1=" " ind2=" ">
+         <subfield code="a">2016041198</subfield>
+      </datafield>
+      <datafield tag="020" ind1=" " ind2=" ">
+         <subfield code="a">9781107084940</subfield>
+         <subfield code="q">innbundet.</subfield>
+      </datafield>
+      <datafield tag="020" ind1=" " ind2=" ">
+         <subfield code="a">1107084946</subfield>
+         <subfield code="q">(hardback)</subfield>
+      </datafield>
+      <datafield tag="035" ind1=" " ind2=" ">
+         <subfield code="a">(EXLNZ-47BIBSYS_NETWORK)999920236483202201</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">OU/DLC</subfield>
+         <subfield code="c">OU</subfield>
+         <subfield code="e">rda</subfield>
+         <subfield code="d">DLC</subfield>
+         <subfield code="b">nob</subfield>
+         <subfield code="d">NO-TrBIB</subfield>
+      </datafield>
+      <datafield tag="042" ind1=" " ind2=" ">
+         <subfield code="a">pcc</subfield>
+      </datafield>
+      <datafield tag="050" ind1="0" ind2="0">
+         <subfield code="a">QC611</subfield>
+         <subfield code="b">.R26 2017</subfield>
+      </datafield>
+      <datafield tag="082" ind1="0" ind2="0">
+         <subfield code="a">537.622</subfield>
+         <subfield code="2">23</subfield>
+      </datafield>
+      <datafield tag="082" ind1="0" ind2="4">
+         <subfield code="a">537.62</subfield>
+         <subfield code="2">23/nor</subfield>
+         <subfield code="q">NoOU</subfield>
+      </datafield>
+      <datafield tag="100" ind1="1" ind2=" ">
+         <subfield code="a">Rammer, Jørgen</subfield>
+         <subfield code="0">90614467</subfield>
+         <subfield code="4">aut</subfield>
+      </datafield>
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a">Physics of electronic materials :</subfield>
+         <subfield code="b">fundamentals to device applications /</subfield>
+         <subfield code="c">Jørgen Rammer, Lund University.</subfield>
+      </datafield>
+      <datafield tag="263" ind1=" " ind2=" ">
+         <subfield code="a">1712</subfield>
+      </datafield>
+      <datafield tag="264" ind1=" " ind2="1">
+         <subfield code="a">Cambridge, United Kingdom ;</subfield>
+         <subfield code="a">New York, NY :</subfield>
+         <subfield code="b">Cambridge University Press,</subfield>
+         <subfield code="c">2017</subfield>
+      </datafield>
+      <datafield tag="300" ind1=" " ind2=" ">
+         <subfield code="a">XII, 438 sider.</subfield>
+         <subfield code="b">illustrasjoner</subfield>
+      </datafield>
+      <datafield tag="336" ind1=" " ind2=" ">
+         <subfield code="a">text</subfield>
+         <subfield code="b">txt</subfield>
+         <subfield code="2">rdacontent</subfield>
+      </datafield>
+      <datafield tag="337" ind1=" " ind2=" ">
+         <subfield code="a">unmediated</subfield>
+         <subfield code="b">n</subfield>
+         <subfield code="2">rdamedia</subfield>
+      </datafield>
+      <datafield tag="338" ind1=" " ind2=" ">
+         <subfield code="a">volume</subfield>
+         <subfield code="b">nc</subfield>
+         <subfield code="2">rdacarrier</subfield>
+      </datafield>
+      <datafield tag="505" ind1="0" ind2=" ">
+         <subfield code="a">Quantum mechanics -- Quantum tunneling -- Standard metal model -- Standard conductor model -- Electric circuit theory -- Quantum wells -- Particle in a periodic potential -- Bloch currents -- Crystalline solids -- Semiconductor doping -- Transistors -- Heterostructures -- Mesoscopic physics -- Arithmetic, logic and machines.</subfield>
+      </datafield>
+      <datafield tag="520" ind1=" " ind2=" ">
+         <subfield code="a">&quot;Electronic devices play a crucial role in todays societies and in the physical sciences where they originated. Contemplating that in just a few decades, technology guiding electrons and photons has emerged that makes possible oral and visual communication between peoples on opposite sides of the planet is truly a triumph of science and technology. Not to mention that equipped with a computer with access to the Internet, one can instantly access a wealth of human knowledge. The physical principles providing the understanding of the functioning of present day electronic devices should therefore be of interest not only to physicists, electrical engineers and material scientists, but to anyone with a general interest in how the wired world around us is functioning. Present day information technology is based on the physical properties of semiconductors, in particular the functioning of the transistor. The intension of this book is to take the reader from the principles of quantum mechanics through the quantum theory of metals and semiconductors all the way to how devices are used to perform their duties in electric circuits: for example functioning as amplifiers, switches, and in the hard ware of computers. The mechanics of arithmetic and logical operations are discussed and it is shown how electronic devices in the present day CMOS-technology can be carriers of arithmetic calculations and logic operations in computers&quot;--</subfield>
+         <subfield code="c">Provided by publisher.</subfield>
+      </datafield>
+      <datafield tag="650" ind1=" " ind2="0">
+         <subfield code="a">Semiconductors.</subfield>
+      </datafield>
+      <datafield tag="650" ind1=" " ind2="7">
+         <subfield code="a">Halvledere</subfield>
+         <subfield code="0">(NoOU)REAL005740</subfield>
+         <subfield code="2">noubomn</subfield>
+      </datafield>
+      <datafield tag="650" ind1=" " ind2="7">
+         <subfield code="a">Elektriske kretser</subfield>
+         <subfield code="0">(NoOU)REAL003680</subfield>
+         <subfield code="2">noubomn</subfield>
+      </datafield>
+      <datafield tag="653" ind1="0" ind2="0">
+         <subfield code="a">halvledere</subfield>
+         <subfield code="a">kvantemekanikk</subfield>
+         <subfield code="a">elektronikk</subfield>
+      </datafield>
+      <datafield tag="AVA" ind1=" " ind2=" ">
+         <subfield code="0">999919884907102204</subfield>
+         <subfield code="8">22199228190002204</subfield>
+         <subfield code="a">47BIBSYS_UBO</subfield>
+         <subfield code="b">1030310</subfield>
+         <subfield code="c">UREAL Boksamling</subfield>
+         <subfield code="d">537.62 Ram</subfield>
+         <subfield code="e">available</subfield>
+         <subfield code="f">1</subfield>
+         <subfield code="g">0</subfield>
+         <subfield code="j">k00423</subfield>
+         <subfield code="k">1</subfield>
+         <subfield code="p">1</subfield>
+         <subfield code="q">UiO Realfagsbiblioteket</subfield>
+      </datafield>
+   </record>
+</collection>

@@ -2,11 +2,12 @@
 
 namespace Scriptotek\Marc\Fields;
 
+use Scriptotek\Marc\MagicAccess;
 use Scriptotek\Marc\Record;
 
 class Field implements \JsonSerializable
 {
-    use SerializableField;
+    use SerializableField, MagicAccess;
 
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
@@ -45,23 +46,6 @@ class Field implements \JsonSerializable
     public function __call($name, $args)
     {
         return call_user_func_array([$this->field, $name], $args);
-    }
-
-    public function __get($key)
-    {
-        // Convert key from underscore_case to camelCase.
-        $key_uc = preg_replace_callback(
-            '/_([a-z])/',
-            function($matches) {
-                return strtoupper($matches[1]);
-            },
-            $key
-        );
-
-        $method = 'get' . ucfirst($key_uc);
-        if (method_exists($this, $method)) {
-            return call_user_func([$this, $method]);
-        }
     }
 
     public function __toString()

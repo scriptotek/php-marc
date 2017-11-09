@@ -2,6 +2,9 @@
     "id": "999401461934702201",
     "isbns": [],
     "title": "The eightfold way",
+    "publisher": "W.A. Benjamin",
+    "pub_year": "1964",
+    "edition": null,
     "creators": [
         {
             "type": "100",
@@ -31,5 +34,8 @@
             "scheme": "msc",
             "number": "81"
         }
-    ]
+    ],
+    "toc": null,
+    "summary": null,
+    "part_of": null
 }

@@ -1,0 +1,70 @@
+{
+    "id": "999919884907102204",
+    "isbns": [
+        "9781107084940",
+        "1107084946"
+    ],
+    "title": "Physics of electronic materials : fundamentals to device applications",
+    "publisher": "Cambridge University Press,",
+    "pub_year": "2017",
+    "edition": null,
+    "creators": [
+        {
+            "type": "100",
+            "name": "Rammer, Jørgen",
+            "id": "90614467",
+            "relationship": "aut"
+        }
+    ],
+    "subjects": [
+        {
+            "type": "650",
+            "vocabulary": "lcsh",
+            "term": "Semiconductors."
+        },
+        {
+            "type": "650",
+            "vocabulary": "noubomn",
+            "term": "Halvledere",
+            "id": "(NoOU)REAL005740"
+        },
+        {
+            "type": "650",
+            "vocabulary": "noubomn",
+            "term": "Elektriske kretser",
+            "id": "(NoOU)REAL003680"
+        },
+        {
+            "type": "653",
+            "term": "halvledere"
+        },
+        {
+            "type": "653",
+            "term": "kvantemekanikk"
+        },
+        {
+            "type": "653",
+            "term": "elektronikk"
+        }
+    ],
+    "classifications": [
+        {
+            "scheme": "ddc",
+            "number": "537.622",
+            "edition": "23"
+        },
+        {
+            "scheme": "ddc",
+            "number": "537.62",
+            "edition": "23/nor"
+        }
+    ],
+    "toc": {
+        "text": "Quantum mechanics -- Quantum tunneling -- Standard metal model -- Standard conductor model -- Electric circuit theory -- Quantum wells -- Particle in a periodic potential -- Bloch currents -- Crystalline solids -- Semiconductor doping -- Transistors -- Heterostructures -- Mesoscopic physics -- Arithmetic, logic and machines."
+    },
+    "summary": {
+        "text": "\"Electronic devices play a crucial role in todays societies and in the physical sciences where they originated. Contemplating that in just a few decades, technology guiding electrons and photons has emerged that makes possible oral and visual communication between peoples on opposite sides of the planet is truly a triumph of science and technology. Not to mention that equipped with a computer with access to the Internet, one can instantly access a wealth of human knowledge. The physical principles providing the understanding of the functioning of present day electronic devices should therefore be of interest not only to physicists, electrical engineers and material scientists, but to anyone with a general interest in how the wired world around us is functioning. Present day information technology is based on the physical properties of semiconductors, in particular the functioning of the transistor. The intension of this book is to take the reader from the principles of quantum mechanics through the quantum theory of metals and semiconductors all the way to how devices are used to perform their duties in electric circuits: for example functioning as amplifiers, switches, and in the hard ware of computers. The mechanics of arithmetic and logical operations are discussed and it is shown how electronic devices in the present day CMOS-technology can be carriers of arithmetic calculations and logic operations in computers\"--",
+        "assigning_source": "Provided by publisher."
+    },
+    "part_of": null
+}

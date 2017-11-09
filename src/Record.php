@@ -24,6 +24,8 @@ use Scriptotek\Marc\Fields\Field;
  */
 class Record implements \JsonSerializable
 {
+    use MagicAccess;
+
     protected $record;
 
     /**
@@ -153,8 +155,12 @@ class Record implements \JsonSerializable
                 $o[$prop] = $value;
             } elseif (is_array($value)) {
                 $t = [];
-                foreach ($value as $v) {
-                    $t[] = $v->jsonSerialize();
+                foreach ($value as $k => $v) {
+                    if (is_object($v)) {
+                        $t[$k] = $v->jsonSerialize();
+                    } else {
+                        $t[$k] = (string) $v;
+                    }
                 }
                 $o[$prop] = $t;
             } else if (is_object($value)) {
@@ -169,14 +175,6 @@ class Record implements \JsonSerializable
     public function __call($name, $args)
     {
         return call_user_func_array([$this->record, $name], $args);
-    }
-
-    public function __get($key)
-    {
-        $method = 'get' . ucfirst($key);
-        if (method_exists($this, $method)) {
-            return call_user_func([$this, $method]);
-        }
     }
 
     public function __toString()
