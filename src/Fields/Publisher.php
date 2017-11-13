@@ -8,10 +8,10 @@ class Publisher extends Field implements FieldInterface
 {
     public static function get(Record $record)
     {
-        foreach ($record->getFields('264') as $field) {
+        foreach ($record->query('264{$b}') as $field) {
             return new static($field->getField());
         }
-        foreach ($record->getFields('260') as $field) {
+        foreach ($record->query('260{$b}') as $field) {
             return new static($field->getField());
         }
     }
