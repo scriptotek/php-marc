@@ -52,7 +52,7 @@ class Record implements \JsonSerializable
 
     public function getFields($spec = null, $pcre = null)
     {
-        return array_values(array_map(function(File_MARC_Field $field) {
+        return array_values(array_map(function (File_MARC_Field $field) {
             return new Field($field);
         }, $this->record->getFields($spec, $pcre)));
     }
@@ -163,7 +163,7 @@ class Record implements \JsonSerializable
                     }
                 }
                 $o[$prop] = $t;
-            } else if (is_object($value)) {
+            } elseif (is_object($value)) {
                 $o[$prop] = $value->jsonSerialize();
             } else {
                 $o[$prop] = $value;

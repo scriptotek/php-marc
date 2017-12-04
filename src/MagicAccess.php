@@ -3,7 +3,6 @@
 
 namespace Scriptotek\Marc;
 
-
 trait MagicAccess
 {
     public function __get($key)
@@ -11,7 +10,7 @@ trait MagicAccess
         // Convert key from underscore_case to camelCase.
         $key_uc = preg_replace_callback(
             '/_([a-z])/',
-            function($matches) {
+            function ($matches) {
                 return strtoupper($matches[1]);
             },
             $key
@@ -22,5 +21,4 @@ trait MagicAccess
             return call_user_func([$this, $method]);
         }
     }
-
 }
