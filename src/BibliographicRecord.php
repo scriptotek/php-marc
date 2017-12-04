@@ -105,7 +105,6 @@ class BibliographicRecord extends Record
                 $out['text'] = implode("\n", $out['text']);
 
                 return $out;
-
             } else {
                 // Basic
                 return $field->mapSubFields([
@@ -201,5 +200,4 @@ class BibliographicRecord extends Record
             ]);
         }
     }
-
 }

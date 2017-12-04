@@ -13,7 +13,8 @@ class ExamplesTest extends TestCase
     /**
      * @dataProvider testExampleDataProvider
      */
-    public function testExample($filename) {
+    public function testExample($filename)
+    {
         $record = Record::fromFile($filename);
         $jsonFilename = substr($filename, 0, strrpos($filename, ".")) . '.json';
         if (!file_exists($jsonFilename)) {
@@ -24,7 +25,8 @@ class ExamplesTest extends TestCase
         }
     }
 
-    public function testExampleDataProvider() {
+    public function testExampleDataProvider()
+    {
         foreach (glob(__DIR__ . '/data/examples/*.xml') as $filename) {
             yield [$filename];
         }
