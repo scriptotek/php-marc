@@ -11,7 +11,7 @@ use Scriptotek\Marc\Record;
 class ExamplesTest extends TestCase
 {
     /**
-     * @dataProvider testExampleDataProvider
+     * @dataProvider exampleDataProvider
      */
     public function testExample($filename)
     {
@@ -25,7 +25,7 @@ class ExamplesTest extends TestCase
         }
     }
 
-    public function testExampleDataProvider()
+    public function exampleDataProvider()
     {
         foreach (glob(__DIR__ . '/data/examples/*.xml') as $filename) {
             yield [$filename];
