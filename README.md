@@ -213,11 +213,16 @@ foreach ($record->getSubjects('mesh', Subject::TOPICAL_TERM) as $subject) {
 }
 ```
 
-The string representation of this field makes use of the constant `Subject::glue`
-to glue subject components together. The default value is a space-padded colon,
-making `Physics : History : 20th century` the string representation of
-`650 $aPhysics $xHistory $yHistory`. If you prefer the "LCSH-way" of
-`Physics--History--20th century`, just set `Subject::glue = '--'`.
+Static options:
+
+* `Subject::glue` (default: ` : `) defines what string is used to glue the subfields
+  together in the string representation. For instance, `650 $aPhysics $xHistory $yHistory`
+  becomes `Physics : History : 20th century` when using ` : ` as glue, or
+  `Physics--History--20th century` with `'--'`.
+* `Subject::chopPunctuation` (default: `true`) defines if ending punctuation (.:,;/)
+  is to be chopped off at the end of subjects. Usually, any ending punctuation is an
+  ISBD character that can be safely chopped off, but it might also indicate an abbreviation,
+  and unfortunately there is no way to know.
 
 ## Notes
 

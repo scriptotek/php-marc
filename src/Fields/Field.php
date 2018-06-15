@@ -79,9 +79,13 @@ class Field implements \JsonSerializable
      * @param string   $glue
      * @return string
      */
-    protected function toString($codes, $glue = ' ')
+    protected function toString($codes, $glue = ' ', $chopPunctuation = true)
     {
-        return trim(implode($glue, $this->getSubfieldValues($codes)));
+        $value = trim(implode($glue, $this->getSubfieldValues($codes)));
+        if ($chopPunctuation) {
+            $value = preg_replace('/[.:,;]$/', '', $value);
+        }
+        return $value;
     }
 
     /**

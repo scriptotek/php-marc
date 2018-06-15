@@ -12,6 +12,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
     public $properties = ['type', 'vocabulary', 'term', 'id'];
 
     public static $glue = ' : ';
+    public static $chopPunctuation = true;
     public static $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
 
     const PERSONAL_NAME = '600';
@@ -92,7 +93,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
 
     public function getTerm()
     {
-        return $this->toString(self::$termComponentCodes, self::$glue);
+        return $this->toString(self::$termComponentCodes, self::$glue, self::$chopPunctuation);
     }
 
     public function __toString()

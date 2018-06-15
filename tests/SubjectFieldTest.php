@@ -7,16 +7,16 @@ use Scriptotek\Marc\Fields\UncontrolledSubject;
 
 class SubjectFieldTest extends TestCase
 {
-    protected function getNthrecord($n)
+    protected function getNthrecord($filename, $n)
     {
-        $records = Collection::fromFile('tests/data/sru-alma.xml')->toArray();
+        $records = Collection::fromFile('tests/data/' . $filename)->toArray();
 
         return $records[$n - 1];
     }
 
     public function testSubjectString()
     {
-        $record = $this->getNthrecord(1);
+        $record = $this->getNthrecord('sru-alma.xml', 1);
 
         # Vocabulary from indicator2
         $sub = $record->subjects[0];
@@ -25,9 +25,20 @@ class SubjectFieldTest extends TestCase
         $this->assertEquals('Eightfold way (Nuclear physics) : Addresses, essays, lectures', strval($sub));
     }
 
+    public function testChopPunctuation()
+    {
+        $record = $this->getNthrecord('sru-loc.xml', 2);
+
+        # Vocabulary from indicator2
+        $sub = $record->subjects[0];
+        $this->assertEquals('lcsh', $sub->vocabulary);
+        $this->assertEquals(Subject::TOPICAL_TERM, $sub->type);
+        $this->assertEquals('Popular music : 1961-1970', strval($sub));
+    }
+
     public function testSubjects()
     {
-        $record = $this->getNthrecord(3);
+        $record = $this->getNthrecord('sru-alma.xml', 3);
 
         # Vocabulary from subfield 2
         $subject = $record->subjects[1];
@@ -40,7 +51,7 @@ class SubjectFieldTest extends TestCase
 
     public function testRepeated653a()
     {
-        $record = $this->getNthrecord(3);
+        $record = $this->getNthrecord('sru-alma.xml', 3);
 
         $subjects = $record->getSubjects(null, Subject::UNCONTROLLED_INDEX_TERM);
         $this->assertCount(2, $subjects);
@@ -53,7 +64,7 @@ class SubjectFieldTest extends TestCase
 
     public function testGetSubjectsFiltering()
     {
-        $record = $this->getNthrecord(3);
+        $record = $this->getNthrecord('sru-alma.xml', 3);
 
         $lcsh = $record->getSubjects('lcsh');
         $noubomn = $record->getSubjects('noubomn');
@@ -70,7 +81,7 @@ class SubjectFieldTest extends TestCase
 
     public function testEdit()
     {
-        $record = $this->getNthrecord(3);
+        $record = $this->getNthrecord('sru-alma.xml', 3);
         $this->assertCount(5, $record->subjects);
 
         $this->assertInstanceOf(Subject::class, $record->subjects[0]);
@@ -94,7 +105,7 @@ class SubjectFieldTest extends TestCase
 
     public function testJsonSerialization()
     {
-        $record = $this->getNthrecord(3);
+        $record = $this->getNthrecord('sru-alma.xml', 3);
         $subject = $record->subjects[1];
 
         $this->assertJsonStringEqualsJsonString(
