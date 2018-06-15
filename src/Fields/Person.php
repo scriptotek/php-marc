@@ -11,7 +11,7 @@ class Person extends Field implements FieldInterface
      */
     public $properties = ['type', 'vocabulary', 'name', 'titulation', 'dates', 'id', 'relator_term', 'relationship'];
 
-    public static $glue = ' : ';
+    public static $formatWithDate = '{name} ({dates})';
     public static $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
 
     const MAIN_ENTRY= '100';
@@ -73,10 +73,12 @@ class Person extends Field implements FieldInterface
 
     public function __toString()
     {
-        if ($this->getDates()) {
-            return sprintf('%s (%s)', $this->getName(), $this->getDates());
-        }
+        $tpl = $this->getDates() ? self::$formatWithDate : '{name}';
 
-        return $this->getName();
+        return str_replace(
+            ['{name}', '{dates}'],
+            [$this->clean($this->getName()), $this->clean($this->getDates())],
+            $tpl
+        );
     }
 }

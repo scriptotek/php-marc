@@ -14,6 +14,9 @@ class Field implements \JsonSerializable
      */
     public $properties = [];
 
+    public static $glue = ' : ';
+    public static $chopPunctuation = true;
+
     protected $field;
 
     public function __construct(\File_MARC_Field $field)
@@ -53,6 +56,16 @@ class Field implements \JsonSerializable
         return $this->field->__toString();
     }
 
+    protected function clean($value, $options = [])
+    {
+        $chopPunctuation = isset($options['chopPunctuation']) ? $options['chopPunctuation'] : static::$chopPunctuation;
+        $value = trim($value);
+        if ($chopPunctuation) {
+            $value = rtrim($value, '[.:,;]$');
+        }
+        return $value;
+    }
+
     /**
      * @param string|string[] $codes
      * @return array
@@ -76,16 +89,13 @@ class Field implements \JsonSerializable
      * Return concatenated string of the given subfields.
      *
      * @param string[] $codes
-     * @param string   $glue
+     * @param array    $options
      * @return string
      */
-    protected function toString($codes, $glue = ' ', $chopPunctuation = true)
+    protected function toString($codes, $options = [])
     {
-        $value = trim(implode($glue, $this->getSubfieldValues($codes)));
-        if ($chopPunctuation) {
-            $value = preg_replace('/[.:,;]$/', '', $value);
-        }
-        return $value;
+        $glue = isset($options['glue']) ? $options['glue'] : static::$glue;
+        return $this->clean(implode($glue, $this->getSubfieldValues($codes)), $options);
     }
 
     /**

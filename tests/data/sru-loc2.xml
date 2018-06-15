@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.1</zs:version><zs:numberOfRecords>1</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema>marcxml</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>03313cim a2200649 a 4500</leader>
+  <controlfield tag="001">536510</controlfield>
+  <controlfield tag="005">20160209192238.0</controlfield>
+  <controlfield tag="006">m    e   h f      </controlfield>
+  <controlfield tag="007">cr|nna||||||da</controlfield>
+  <controlfield tag="007">sz||mnnnnn|ned</controlfield>
+  <controlfield tag="008">080422s2005    dcunnnnes      z| n eng  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">  2002997016</subfield>
+  </datafield>
+  <datafield tag="024" ind1="7" ind2=" ">
+    <subfield code="a">us-nls-db52877</subfield>
+    <subfield code="2">dtb</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC-B</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC-B</subfield>
+  </datafield>
+  <datafield tag="041" ind1="1" ind2=" ">
+    <subfield code="a">eng</subfield>
+    <subfield code="h">ger</subfield>
+  </datafield>
+  <datafield tag="072" ind1=" " ind2="7">
+    <subfield code="a">SCIEAN</subfield>
+    <subfield code="2">NBDL</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">530.1</subfield>
+    <subfield code="a">ANF</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">DB 52877 (May be available only for download)</subfield>
+    <subfield code="2">z</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Einstein, Albert,</subfield>
+    <subfield code="d">1879-1955.</subfield>
+  </datafield>
+  <datafield tag="240" ind1="1" ind2="0">
+    <subfield code="a">U&#x308;ber die spezielle und die allgemeine Relativita&#x308;tstheorie.</subfield>
+    <subfield code="l">English</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Relativity :</subfield>
+    <subfield code="b">the special and the general theory /</subfield>
+    <subfield code="c">by Albert Einstein ; authorized translation by Robert W. Lawson.</subfield>
+    <subfield code="h">[sound recording]</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">National Library Service for the Blind and Physically Handicapped, Library of Congress,</subfield>
+    <subfield code="c">2005.</subfield>
+    <subfield code="f">(APH, recording studio).</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 online resource (audio (4 hours, 56 minutes))</subfield>
+  </datafield>
+  <datafield tag="306" ind1=" " ind2=" ">
+    <subfield code="a">045600</subfield>
+  </datafield>
+  <datafield tag="336" ind1=" " ind2=" ">
+    <subfield code="a">spoken word</subfield>
+    <subfield code="b">spw</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield tag="337" ind1=" " ind2=" ">
+    <subfield code="a">audio</subfield>
+    <subfield code="b">s</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield tag="337" ind1=" " ind2=" ">
+    <subfield code="a">computer</subfield>
+    <subfield code="b">c</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield tag="338" ind1=" " ind2=" ">
+    <subfield code="a">online resource</subfield>
+    <subfield code="b">cr</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield tag="344" ind1=" " ind2=" ">
+    <subfield code="a">digital</subfield>
+    <subfield code="g">mono</subfield>
+    <subfield code="2">rda</subfield>
+  </datafield>
+  <datafield tag="347" ind1=" " ind2=" ">
+    <subfield code="a">audio file</subfield>
+    <subfield code="b">Daisy</subfield>
+    <subfield code="2">rda</subfield>
+  </datafield>
+  <datafield tag="385" ind1=" " ind2=" ">
+    <subfield code="n">age</subfield>
+    <subfield code="a">Adults</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Originally issued by NLS on cassette in 2002.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="506" ind1=" " ind2=" ">
+    <subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Physically Handicapped, Library of Congress.</subfield>
+  </datafield>
+  <datafield tag="511" ind1="0" ind2=" ">
+    <subfield code="a">Narrated by: Fred Major.</subfield>
+  </datafield>
+  <datafield tag="516" ind1=" " ind2=" ">
+    <subfield code="a">Digital talking book. 1 level and 49 navigation points. Digitally mastered.</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Scientist Albert Einstein presents his theory of relativity--the measurement and study of space and time--for the layman who "is not conversant with the mathematical apparatus of theoretical physics." Originally published in 1916. This fifteenth edition includes five appendixes. 1952.</subfield>
+  </datafield>
+  <datafield tag="521" ind1=" " ind2=" ">
+    <subfield code="a">Male narrator.</subfield>
+    <subfield code="b">NLS/BPH</subfield>
+  </datafield>
+  <datafield tag="530" ind1=" " ind2=" ">
+    <subfield code="a">May also be available for loan on cartridge. Contact your cooperating library for more information.</subfield>
+  </datafield>
+  <datafield tag="534" ind1=" " ind2=" ">
+    <subfield code="p">Recorded from:</subfield>
+    <subfield code="b">15th ed.</subfield>
+    <subfield code="c">New York : Three Rivers Press, c1961.</subfield>
+    <subfield code="z">0517884410</subfield>
+  </datafield>
+  <datafield tag="538" ind1=" " ind2=" ">
+    <subfield code="a">Full audio and structure.</subfield>
+  </datafield>
+  <datafield tag="538" ind1=" " ind2=" ">
+    <subfield code="a">System requirements: NLS authorized ANSI/NISO Z39.86-2002 digital talking book (dtb) player compatible with NLS flash cartridges. Web version requires computer with Internet access, BARD password and NLS authorized digital talking book player. Contact your cooperating library or the National Library Service for the Blind and Physically Handicapped, Library of Congress, for more information.</subfield>
+  </datafield>
+  <datafield tag="542" ind1=" " ind2=" ">
+    <subfield code="g">1961</subfield>
+    <subfield code="d">Estate of Albert Einstein</subfield>
+  </datafield>
+  <datafield tag="588" ind1=" " ind2=" ">
+    <subfield code="a">Description based on cassette record.</subfield>
+  </datafield>
+  <datafield tag="593" ind1=" " ind2=" ">
+    <subfield code="a">1</subfield>
+    <subfield code="b">49</subfield>
+    <subfield code="c">DM</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Relativity (Physics)</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="4">
+    <subfield code="a">Downloadable books.</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="4">
+    <subfield code="a">Nonfiction.</subfield>
+  </datafield>
+  <datafield tag="655" ind1=" " ind2="7">
+    <subfield code="a">Talking books.</subfield>
+    <subfield code="2">lcgft</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Major, Fred,</subfield>
+    <subfield code="e">narrator.</subfield>
+  </datafield>
+  <datafield tag="852" ind1="8" ind2="1">
+    <subfield code="a">DLC-B</subfield>
+    <subfield code="c">DB 52877</subfield>
+    <subfield code="z">NLS/BPH</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://hdl.loc.gov/loc.nls/db.52877</subfield>
+    <subfield code="3">Downloadable talking book.</subfield>
+    <subfield code="x">xbard audio</subfield>
+  </datafield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">blndbks</subfield>
+  </datafield>
+  <datafield tag="951" ind1=" " ind2=" ">
+    <subfield code="a">2002</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">retrordapartial</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="a">Retrospective copy allotment 2008 First report</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="a">NLS DB GRP 5</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record></zs:records><zs:echoedSearchRetrieveRequest><zs:version>1.1</zs:version><zs:query>dc.creator=Einstein AND dc.date=2005</zs:query><zs:maximumRecords>10</zs:maximumRecords><zs:recordPacking>xml</zs:recordPacking><zs:recordSchema>marcxml</zs:recordSchema></zs:echoedSearchRetrieveRequest></zs:searchRetrieveResponse>

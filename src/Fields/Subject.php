@@ -93,7 +93,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
 
     public function getTerm()
     {
-        return $this->toString(self::$termComponentCodes, self::$glue, self::$chopPunctuation);
+        return $this->toString(self::$termComponentCodes);
     }
 
     public function __toString()
