@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="PSR2Tweaked">
+    <description>PSR2 without namespace requirement.</description>
+    <rule ref="PSR2"></rule>
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
+</ruleset>
