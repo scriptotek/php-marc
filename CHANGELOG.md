@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - `getPartOf()` for 773 fields
 - Added a `mapSubFields()` method to the `Field` class.
 - Made the `Record` class JSON serializable.
-
+- Added a `getType()` and `getTag()` method to `Classification`.
 ### Changed
 
 - Changed the `Field::sf()` method to return `NULL`, not an empty string,
