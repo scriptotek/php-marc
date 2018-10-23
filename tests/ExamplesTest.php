@@ -1,6 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
+
 use Scriptotek\Marc\AuthorityRecord;
 use Scriptotek\Marc\BibliographicRecord;
 use Scriptotek\Marc\Fields\Subject;
@@ -27,7 +28,7 @@ class ExamplesTest extends TestCase
 
     public function exampleDataProvider()
     {
-        foreach (glob(__DIR__ . '/data/examples/*.xml') as $filename) {
+        foreach (glob($this->pathTo('examples/*.xml')) as $filename) {
             yield [$filename];
         }
     }

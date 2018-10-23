@@ -1,6 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
+
 use Scriptotek\Marc\Record;
 
 class IsbnFieldTest extends TestCase

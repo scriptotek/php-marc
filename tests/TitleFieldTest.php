@@ -1,6 +1,9 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
+
+use File_MARC_Data_Field;
+use File_MARC_Subfield;
 use Scriptotek\Marc\Fields\Title;
 
 class TitleFieldTest extends TestCase

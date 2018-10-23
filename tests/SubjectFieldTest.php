@@ -1,19 +1,12 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use Scriptotek\Marc\Collection;
+namespace Tests;
+
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\Fields\UncontrolledSubject;
 
 class SubjectFieldTest extends TestCase
 {
-    protected function getNthrecord($filename, $n)
-    {
-        $records = Collection::fromFile('tests/data/' . $filename)->toArray();
-
-        return $records[$n - 1];
-    }
-
     public function testSubjectString()
     {
         $record = $this->getNthrecord('sru-alma.xml', 1);

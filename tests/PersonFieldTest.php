@@ -1,18 +1,9 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-use Scriptotek\Marc\Collection;
-use Scriptotek\Marc\Fields\Person;
+namespace Tests;
 
 class PersonFieldTest extends TestCase
 {
-    protected function getNthrecord($filename, $n)
-    {
-        $records = Collection::fromFile('tests/data/' . $filename)->toArray();
-
-        return $records[$n - 1];
-    }
-
     public function testSimple()
     {
         $record = $this->getNthrecord('sru-alma.xml', 1);

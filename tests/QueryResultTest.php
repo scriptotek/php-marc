@@ -1,6 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
+
 use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Record;
 use Scriptotek\Marc\QueryResult;
