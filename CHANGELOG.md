@@ -4,8 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-
 ## [Unreleased]
+
+None yet
+
+## [2.0.0] - 2018-10-23
 
 ### Added
 
@@ -21,6 +24,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added a `mapSubFields()` method to the `Field` class.
 - Made the `Record` class JSON serializable.
 - Added a `getType()` and `getTag()` method to `Classification`.
+
 ### Changed
 
 - Changed the `Field::sf()` method to return `NULL`, not an empty string,
@@ -72,7 +76,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `Record::fromString` now throws a `RecordNotFound` exception rather than an `ErrorException` exception if no record was found.
 - `Record::getType` now throws a `UnknownRecordType` exception rather than an `ErrorException`.
 
-[Unreleased]: https://github.com/scriptotek/php-marc/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/scriptotek/php-marc/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/scriptotek/php-marc/compare/v1.0.1...v2.0.0
 [1.0.1]: https://github.com/scriptotek/php-marc/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/scriptotek/php-marc/compare/v0.3.2...v1.0.0
 [0.3.2]: https://github.com/scriptotek/php-marc/compare/v0.3.1...v0.3.2
