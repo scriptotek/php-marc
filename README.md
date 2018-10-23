@@ -15,8 +15,7 @@ Works with both Binary MARC and MARCXML (namespaced or not), but not the various
 Line mode MARC formats. Records can be edited using the editing capabilities of
 File_MARC.
 
-Note that version 0.3.0 introduced a few breaking changes. See
-[releases](https://github.com/scriptotek/php-marc/releases) for more information.
+See [the changelog](CHANGELOG.md) for information about (breaking) changes.
 
 ## Installation using Composer:
 
