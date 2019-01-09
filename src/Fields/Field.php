@@ -126,7 +126,7 @@ class Field implements \JsonSerializable
             $value = $this->sf($code);
 
             foreach ($this->getSubfields() as $q) {
-                if ($q->getCode() == $code) {
+                if ($q->getCode() === $code) {
                     $value = $q->getData();
                 }
             }
