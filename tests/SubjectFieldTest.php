@@ -16,6 +16,13 @@ class SubjectFieldTest extends TestCase
         $this->assertEquals('lcsh', $sub->vocabulary);
         $this->assertEquals(Subject::TOPICAL_TERM, $sub->type);
         $this->assertEquals('Eightfold way (Nuclear physics) : Addresses, essays, lectures', strval($sub));
+        $this->assertEquals('Eightfold way (Nuclear physics) : Addresses, essays, lectures', $sub->getTerm());
+
+        $sf0 = new \File_MARC_Subfield('a', 'Eightfold way (Nuclear physics)');
+        $sf0->setPosition(0);
+        $sf1 = new \File_MARC_Subfield('x', 'Addresses, essays, lectures');
+        $sf1->setPosition(1);
+        $this->assertEquals([$sf0, $sf1], $sub->getParts());
     }
 
     public function testChopPunctuation()
@@ -33,12 +40,14 @@ class SubjectFieldTest extends TestCase
     {
         $record = $this->getNthrecord('sru-alma.xml', 3);
 
-        # Vocabulary from subfield 2
         $subject = $record->subjects[1];
         $this->assertInstanceOf('Scriptotek\Marc\Fields\Subject', $subject);
         $this->assertEquals('noubomn', $subject->vocabulary);
         $this->assertEquals('Elementærpartikler', strval($subject));
         $this->assertEquals(Subject::TOPICAL_TERM, $subject->getType());
+        $this->assertEquals('Elementærpartikler', $subject->getTerm());
+        $this->assertEquals([new \File_MARC_Subfield('a', 'Elementærpartikler')], $subject->getParts());
+
         $this->assertNull($subject->getId());
     }
 

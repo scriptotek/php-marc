@@ -88,7 +88,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
 
     public function getParts()
     {
-        return $this->getSubfields(self::$termComponentCodes);
+        return $this->getSubfields('[' . implode('', self::$termComponentCodes) . ']', true);
     }
 
     public function getTerm()
