@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Added new method `Field::asLineMarc()` to return a line mode Marc string
+  representation of the field.
+
 ### Fixed
 
 - Fixed the `Subject::getParts()` method.

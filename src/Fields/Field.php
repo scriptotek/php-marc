@@ -99,6 +99,36 @@ class Field implements \JsonSerializable
     }
 
     /**
+     * Return a line MARC representation of the field. If the field is deleted,
+     * null is returned.
+     *
+     * @param string $sep Subfield separator character, defaults to '$'
+     * @param string $blank Blank indicator character, defaults to ' '
+     * @return string|null.
+     */
+    public function asLineMarc($sep = '$', $blank = ' ')
+    {
+        if ($this->field->isEmpty()) {
+            return null;
+        }
+        $subfields = [];
+        foreach ($this->field->getSubfields() as $sf) {
+            $subfields[] = $sep . $sf->getCode() . ' ' . $sf->getData();
+        }
+        $tag = $this->field->getTag();
+        $ind1 = $this->field->getIndicator(1);
+        $ind2 = $this->field->getIndicator(2);
+        if ($ind1 == ' ') {
+            $ind1 = $blank;
+        }
+        if ($ind2 == ' ') {
+            $ind2 = $blank;
+        }
+
+        return "${tag} ${ind1}${ind2} " . implode(' ', $subfields);
+    }
+
+    /**
      * Return the data value of the *first* subfield with a given code.
      *
      * @param string $code

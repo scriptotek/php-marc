@@ -84,4 +84,27 @@ class IsbnFieldTest extends TestCase
             json_encode(['id' => $record->id])
         );
     }
+
+    public function testAsLineMarc()
+    {
+        $source = '<?xml version="1.0" encoding="UTF-8" ?>
+          <record xmlns="http://www.loc.gov/MARC21/slim">
+            <leader>99999cam a2299999 u 4500</leader>
+            <controlfield tag="001">98218834x</controlfield>
+            <datafield tag="020" ind1=" " ind2=" ">
+              <subfield code="q">h.</subfield>
+              <subfield code="c">Nkr 98.00</subfield>
+            </datafield>
+          </record>';
+
+        $record = Record::fromString($source);
+        $field = $record->isbns[0];
+
+        $this->assertEquals('020    $q h. $c Nkr 98.00', $field->asLineMarc());
+        $this->assertEquals('020    $$q h. $$c Nkr 98.00', $field->asLineMarc('$$'));
+        $this->assertEquals('020 ## $$q h. $$c Nkr 98.00', $field->asLineMarc('$$', '#'));
+
+        $field->delete();
+        $this->assertNull($field->asLineMarc());
+    }
 }
