@@ -13,7 +13,10 @@ class Subject extends Field implements FieldInterface, SubjectInterface
 
     public static $glue = ' : ';
     public static $chopPunctuation = true;
-    public static $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
+    public static $termComponentCodes = [
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z',
+    ];
 
     const PERSONAL_NAME = '600';
     const CORPORATION_NAME = '601';
