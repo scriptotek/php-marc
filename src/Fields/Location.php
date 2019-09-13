@@ -61,7 +61,7 @@ class Location extends Field implements FieldInterface
 
     public function getPublicNote()
     {
-        return $this->sf('x');
+        return $this->sf('z');
     }
 
     public function __toString()
