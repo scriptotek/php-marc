@@ -17,6 +17,8 @@ use Scriptotek\Marc\Record;
  */
 class Location extends Field implements FieldInterface
 {
+    public static $glue = ' ';
+
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
