@@ -45,9 +45,11 @@ class Location extends Field implements FieldInterface
     public function getCallcode()
     {
         return $this->toString([
+            'h',    // Classification part (NR)
+            'i',    // Item part (R)
+            'j',    // Shelving control number (NR)
             'k',    // Call number prefix
             'l',    // Shelving form of title
-            'h',    // Classification portion of the call number
             'm',    // Call number suffix
         ]);
     }
@@ -64,6 +66,6 @@ class Location extends Field implements FieldInterface
 
     public function __toString()
     {
-        return $this->toString(['a', 'b', 'c', 'k', 'l', 'h', 'm']);
+        return $this->toString(['a', 'b', 'c', 'h', 'i', 'j', 'k', 'l', 'm']);
     }
 }
