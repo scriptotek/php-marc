@@ -24,6 +24,11 @@ class Field implements \JsonSerializable
         $this->field = $field;
     }
 
+    /**
+     * Get the wrapped field.
+     *
+     * @return \File_MARC_Field
+     */
     public function getField()
     {
         return $this->field;
