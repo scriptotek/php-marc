@@ -2,6 +2,8 @@
 
 namespace Tests;
 
+use File_MARC;
+use File_MARC_Record;
 use Scriptotek\Marc\AuthorityRecord;
 use Scriptotek\Marc\BibliographicRecord;
 use Scriptotek\Marc\Fields\Field;
@@ -100,5 +102,24 @@ class RecordTest extends TestCase
 
         $record = Record::fromString($source);
         $this->assertEquals(Marc21::ISBD_PUNCTUATION_OMITTED, $record->catalogingForm);
+    }
+
+    /**
+     * Test the getRecord method.
+     *
+     * @throws \File_MARC_Exception
+     */
+    public function testGetRecord()
+    {
+        $source = '<?xml version="1.0" encoding="UTF-8" ?>
+          <record>
+            <leader>99999cam a2299999 c 4500</leader>
+          </record>';
+        $wrapped_record = new File_MARC_Record(new File_MARC($source, File_MARC::SOURCE_STRING));
+        $wrapper = new Record($wrapped_record);
+
+        // Make sure that the exact same wrapped record object is returned
+        // by the getter.
+        $this->assertSame($wrapped_record, $wrapper->getRecord());
     }
 }

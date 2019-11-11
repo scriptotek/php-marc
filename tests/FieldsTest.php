@@ -2,6 +2,8 @@
 
 namespace Tests;
 
+use File_MARC_Field;
+use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Record;
 
 class IsbnFieldTest extends TestCase
@@ -106,5 +108,18 @@ class IsbnFieldTest extends TestCase
 
         $field->delete();
         $this->assertNull($field->asLineMarc());
+    }
+
+    /**
+     * Test the getField method.
+     */
+    public function testGetField()
+    {
+        $wrapped_field = new File_MARC_Field('020', '$q h. $c Nkr 98.00');
+        $wrapper = new Field($wrapped_field);
+
+        // Make sure that the exact same wrapped field object is returned
+        // by the getter.
+        $this->assertSame($wrapped_field, $wrapper->getField());
     }
 }
