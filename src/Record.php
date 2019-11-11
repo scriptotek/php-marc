@@ -42,6 +42,16 @@ class Record implements \JsonSerializable
         $this->record = $record;
     }
 
+    /**
+     * Get the wrapped record.
+     *
+     * @return \File_MARC_Record
+     */
+    public function getRecord()
+    {
+        return $this->record;
+    }
+
     public function getField($spec = null, $pcre = null)
     {
         $q = $this->record->getField($spec, $pcre);
