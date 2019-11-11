@@ -16,6 +16,7 @@ Line mode MARC formats. Records can be edited using the editing capabilities of
 File_MARC.
 
 See [the changelog](CHANGELOG.md) for information about (breaking) changes.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information about contributing to the project.
 
 ## Installation using Composer:
 
