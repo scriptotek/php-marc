@@ -70,12 +70,24 @@ class Record implements \JsonSerializable
         return $this->record;
     }
 
+    /**
+     * Find and wrap the specified MARC field.
+     *
+     * @param string $spec
+     *   The tag name.
+     * @param bool $pcre
+     *   If true, match as a regular expression.
+     *
+     * @return \Scriptotek\Marc\Fields\Field|null
+     *   A wrapped field, or NULL if not found.
+     */
     public function getField($spec = null, $pcre = null)
     {
         $q = $this->record->getField($spec, $pcre);
         if ($q) {
             return new Field($q);
         }
+        return null;
     }
 
     public function getFields($spec = null, $pcre = null)
