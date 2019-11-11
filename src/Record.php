@@ -45,6 +45,11 @@ class Record implements JsonSerializable
 {
     use MagicAccess;
 
+    /**
+     * The record that is being wrapped.
+     *
+     * @var \File_MARC_Record
+     */
     protected $record;
 
     /**
@@ -91,6 +96,17 @@ class Record implements JsonSerializable
         return null;
     }
 
+    /**
+     * Find and wrap the specified MARC fields.
+     *
+     * @param string $spec
+     *   The tag name.
+     * @param bool $pcre
+     *   If true, match as a regular expression.
+     *
+     * @return \Scriptotek\Marc\Fields\Field[]
+     *   An array of wrapped fields.
+     */
     public function getFields($spec = null, $pcre = null)
     {
         return array_values(array_map(function (File_MARC_Field $field) {
@@ -103,11 +119,14 @@ class Record implements JsonSerializable
      *************************************************************************/
 
     /**
-     * Returns the first record found in the file $filename, or null if no records found.
+     * Returns the first record found in the file $filename.
      *
-     * @param $filename
+     * @param string $filename
+     *   The name of the file containing the MARC records.
      * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
+     *   A wrapped MARC record.
      * @throws RecordNotFound
+     *   When the file does not contain a MARC record.
      */
     public static function fromFile($filename)
     {
@@ -121,11 +140,14 @@ class Record implements JsonSerializable
     }
 
     /**
-     * Returns the first record found in the string $data, or null if no records found.
+     * Returns the first record found in the string $data.
      *
-     * @param $data
+     * @param string $data
+     *   The string in which to look for MARC records.
      * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
+     *   A wrapped MARC record.
      * @throws RecordNotFound
+     *   When the string does not contain a MARC record.
      */
     public static function fromString($data)
     {
@@ -143,7 +165,8 @@ class Record implements JsonSerializable
      *************************************************************************/
 
     /**
-     * @param string $spec  The MARCspec string
+     * @param string $spec
+     *   The MARCspec string
      * @return QueryResult
      */
     public function query($spec)
@@ -156,11 +179,11 @@ class Record implements JsonSerializable
      *************************************************************************/
 
     /**
-     * Get the record type based on the value of LDR/6. Returns any of
-     * the Marc21::BIBLIOGRAPHIC, Marc21::AUTHORITY or Marc21::HOLDINGS
-     * constants.
+     * Get the record type based on the value of LDR/6.
      *
      * @return string
+     *   Any of the Marc21::BIBLIOGRAPHIC, Marc21::AUTHORITY or Marc21::HOLDINGS
+     *   constants.
      * @throws UnknownRecordType
      */
     public function getType()
@@ -187,6 +210,11 @@ class Record implements JsonSerializable
      * Support methods
      *************************************************************************/
 
+    /**
+     * Convert the MARC record into an array structure fit for `json_encode`.
+     *
+     * @return array
+     */
     public function jsonSerialize()
     {
         $o = [];
@@ -213,11 +241,26 @@ class Record implements JsonSerializable
         return $o;
     }
 
+    /**
+     * Delegate all unknown method calls to the wrapped record.
+     *
+     * @param string $name
+     *   The name of the method being called.
+     * @param array $args
+     *   The arguments being passed to the method.
+     *
+     * @return mixed
+     */
     public function __call($name, $args)
     {
         return call_user_func_array([$this->record, $name], $args);
     }
 
+    /**
+     * Get a string representation of this record.
+     *
+     * @return string
+     */
     public function __toString()
     {
         return strval($this->record);
