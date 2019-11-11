@@ -17,7 +17,25 @@ use Scriptotek\Marc\Fields\Field;
  * have to copy or rewrite the functionality in the `next()` and `_decode()`
  * methods of File_MARC and File_MARCXML, which are hard-wired to call
  * `new File_MARC_Record()`. The down-side of the wrapping approach is that we
- * break static code analysis and IDE code hinting.
+ * impede static code analysis and IDE code hinting.
+ *
+ * Methods on the wrapped record that are not implemented here may be accessed
+ * using magic method calls, or through `getRecord()`. Method tags are included
+ * below to aid IDE code hinting, but using the getter will give you better code
+ * hinting and documentation.
+ *
+ * @method string getLeader()
+ * @method string setLeader(string $leader)
+ * @method File_MARC_Field appendField(File_MARC_Field $new_field)
+ * @method File_MARC_Field prependField(File_MARC_Field $new_field)
+ * @method File_MARC_Field insertField(File_MARC_Field $new_field, File_MARC_Field $existing_field, bool $before = false)
+ * @method bool setLeaderLengths(int $record_length, int $base_address)
+ * @method int deleteFields(string $tag, bool $pcre = null)
+ * @method addWarning(string $warning)
+ * @method string toRaw()
+ * @method string toJSON()
+ * @method string toJSONHash
+ * @method string toXML(string $encoding = "UTF-8", bool $indent = true, bool $single = true)
  *
  * @property string id
  * @property string type
