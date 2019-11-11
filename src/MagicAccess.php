@@ -3,6 +3,11 @@
 
 namespace Scriptotek\Marc;
 
+/**
+ * A trait that allows all getters to be accessed as properties.
+ *
+ * @package Scriptotek\Marc
+ */
 trait MagicAccess
 {
     public function __get($key)
