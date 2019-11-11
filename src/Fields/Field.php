@@ -2,10 +2,12 @@
 
 namespace Scriptotek\Marc\Fields;
 
+use File_MARC_Field;
+use JsonSerializable;
 use Scriptotek\Marc\MagicAccess;
 use Scriptotek\Marc\Record;
 
-class Field implements \JsonSerializable
+class Field implements JsonSerializable
 {
     use SerializableField, MagicAccess;
 
@@ -19,7 +21,7 @@ class Field implements \JsonSerializable
 
     protected $field;
 
-    public function __construct(\File_MARC_Field $field)
+    public function __construct(File_MARC_Field $field)
     {
         $this->field = $field;
     }
