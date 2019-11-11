@@ -3,24 +3,91 @@
 namespace Scriptotek\Marc\Fields;
 
 use File_MARC_Field;
+use File_MARC_Subfield;
 use JsonSerializable;
 use Scriptotek\Marc\MagicAccess;
 use Scriptotek\Marc\Record;
 
+/**
+ * The MARC field wrapper.
+ *
+ * We wrap File_MARC_Field rather than extend it, just like in our Record
+ * class. File_MARC_Field has two known subclasses, namely File_MARC_Data_Field
+ * and File_MARC_Control_Field.
+ *
+ * Methods on the wrapped field that are not implemented here may be accessed
+ * using magic method calls, or through `getField()`. Method tags are included
+ * below to aid IDE code hinting, but using the getter will give you better
+ * code
+ * hinting and documentation.
+ *
+ * @method string getTag()
+ * @method string setTag()
+ * @method bool isEmpty()
+ * @method bool isControlField()
+ * @method bool isDataField()
+ * @method string toRaw()
+ * @method formatField(array $exclude = array('2'))
+ *
+ * FIXME: These methods are just implemented in File_MARC_Data_Field and not in
+ * File_MARC_Field or File_MARC_Control_Field, so they may not always be
+ * available:
+ *
+ * @method File_MARC_Subfield appendSubfield(File_MARC_Subfield $new_subfield)
+ * @method File_MARC_Subfield prependSubfield(File_MARC_Subfield $new_subfield)
+ * @method File_MARC_Subfield insertSubfield(File_MARC_Subfield $new_field, File_MARC_Subfield $existing_field, bool $before = false)
+ * @method int addSubfields(array $subfields)
+ * @method deleteSubfield(File_MARC_Subfield $subfield)
+ * @method string getIndicator(int $ind)
+ * @method string setIndicator(int $ind, string $value)
+ * @method string getSubfield(string $code = null, bool $pcre = null)
+ * @method array getSubfields(string $code = null, bool $pcre = null)
+ * @method string getContents(string $joinChar = '')
+ *
+ * FIXME: These methods are just implemented in File_MARC_Control_Field and not
+ * in File_MARC_Field or File_MARC_Data_Field, so they may not always be
+ * available:
+ *
+ * @method string getData()
+ * @method bool setData(string $data)
+ */
 class Field implements JsonSerializable
 {
     use SerializableField, MagicAccess;
 
     /**
-     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     * @var array List of properties to be included when serializing the record
+     *     using the `toArray()` method.
      */
     public $properties = [];
 
+    /**
+     * The characters used to separate values of a subfield.
+     *
+     * @var string
+     */
     public static $glue = ' : ';
+
+    /**
+     * Whether to strip punctuation from the end of some field values.
+     *
+     * @var bool
+     */
     public static $chopPunctuation = true;
 
+    /**
+     * The wrapped field.
+     *
+     * @var \File_MARC_Field
+     */
     protected $field;
 
+    /**
+     * Field constructor.
+     *
+     * @param \File_MARC_Field $field
+     *   The field to wrap.
+     */
     public function __construct(File_MARC_Field $field)
     {
         $this->field = $field;
@@ -36,16 +103,41 @@ class Field implements JsonSerializable
         return $this->field;
     }
 
+    /**
+     * Delegate all unknown method calls to the wrapped field.
+     *
+     * @param string $name
+     *   The name of the method being called.
+     * @param array $args
+     *   The arguments being passed to the method.
+     *
+     * @return mixed
+     */
     public function __call($name, $args)
     {
         return call_user_func_array([$this->field, $name], $args);
     }
 
+    /**
+     * Get a string representation of this field.
+     *
+     * @return string
+     */
     public function __toString()
     {
         return $this->field->__toString();
     }
 
+    /**
+     * Remove extra whitespace and punctuation from field values.
+     *
+     * @param string $value
+     *   The value to clean.
+     * @param array $options
+     *   A list of options. Currently only the chopPunctuation key is used.
+     *
+     * @return string
+     */
     protected function clean($value, $options = [])
     {
         $chopPunctuation = isset($options['chopPunctuation']) ? $options['chopPunctuation'] : static::$chopPunctuation;
@@ -57,8 +149,12 @@ class Field implements JsonSerializable
     }
 
     /**
+     * Extract values from subfields of this field.
+     *
      * @param string|string[] $codes
-     * @return array
+     *   The subfield code or an array of such codes.
+     * @return string[]
+     *   The values that were contained in the requested subfields.
      */
     protected function getSubfieldValues($codes)
     {
@@ -66,6 +162,7 @@ class Field implements JsonSerializable
             $codes = [$codes];
         }
         $parts = [];
+        /** @var \File_MARC_Subfield $sf */
         foreach ($this->field->getSubfields() as $sf) {
             if (in_array($sf->getCode(), $codes)) {
                 $parts[] = trim($sf->getData());
@@ -79,8 +176,11 @@ class Field implements JsonSerializable
      * Return concatenated string of the given subfields.
      *
      * @param string[] $codes
-     * @param array    $options
+     *   The subfield codes to retrieve.
+     * @param array $options
+     *   Options to pass to the `clean` method.
      * @return string
+     *   The concatenated subfield values.
      */
     protected function toString($codes, $options = [])
     {
@@ -89,12 +189,14 @@ class Field implements JsonSerializable
     }
 
     /**
-     * Return a line MARC representation of the field. If the field is deleted,
-     * null is returned.
+     * Get a line MARC representation of the field.
      *
-     * @param string $sep Subfield separator character, defaults to '$'
-     * @param string $blank Blank indicator character, defaults to ' '
-     * @return string|null.
+     * @param string $sep
+     *   Subfield separator character, defaults to '$'
+     * @param string $blank
+     *   Blank indicator character, defaults to ' '
+     * @return string|null
+     *   A line MARC representation of the field or NULL if the field is empty.
      */
     public function asLineMarc($sep = '$', $blank = ' ')
     {
@@ -102,6 +204,7 @@ class Field implements JsonSerializable
             return null;
         }
         $subfields = [];
+        /** @var \File_MARC_Subfield $sf */
         foreach ($this->field->getSubfields() as $sf) {
             $subfields[] = $sep . $sf->getCode() . ' ' . $sf->getData();
         }
@@ -122,16 +225,18 @@ class Field implements JsonSerializable
      * Return the data value of the *first* subfield with a given code.
      *
      * @param string $code
+     *   The subfield identifier.
      * @param mixed $default
+     *   The fallback value to return if the subfield does not exist.
      * @return mixed
      */
     public function sf($code, $default = null)
     {
-
         // In PHP, ("a" == 0) will evaluate to TRUE, so it's actually very important that we ensure type here!
         $code = (string) $code;
 
-        $subfield = $this->getSubfield($code);
+        /** @var \File_MARC_Subfield $subfield */
+        $subfield = $this->field->getSubfield($code);
         if (!$subfield) {
             return $default;
         }
@@ -139,13 +244,25 @@ class Field implements JsonSerializable
         return trim($subfield->getData());
     }
 
+    /**
+     * TODO: document this function.
+     *
+     * @param $map
+     *   TODO: ?
+     * @param bool $includeNullValues
+     *   TODO: ?
+     *
+     * @return array
+     *   TODO: ?
+     */
     public function mapSubFields($map, $includeNullValues = false)
     {
         $o = [];
         foreach ($map as $code => $prop) {
             $value = $this->sf($code);
 
-            foreach ($this->getSubfields() as $q) {
+            /** @var \File_MARC_Subfield $q */
+            foreach ($this->field->getSubfields() as $q) {
                 if ($q->getCode() === $code) {
                     $value = $q->getData();
                 }
@@ -158,7 +275,20 @@ class Field implements JsonSerializable
         return $o;
     }
 
-    public static function makeFieldObject(Record $record, $tag, $pcre=false)
+    /**
+     * TODO: document this function.
+     *
+     * @param \Scriptotek\Marc\Record $record
+     *   TODO: ?
+     * @param string $tag
+     *   The tag name.
+     * @param bool $pcre
+     *   If true, match as a regular expression.
+     *
+     * @return \Scriptotek\Marc\Fields\Field
+     *   TODO: ?
+     */
+    public static function makeFieldObject(Record $record, $tag, $pcre = false)
     {
         $field = $record->getField($tag, $pcre);
 
@@ -167,10 +297,22 @@ class Field implements JsonSerializable
         return $field ? new static($field->getField()) : null;
     }
 
-    public static function makeFieldObjects(Record $record, $tag, $pcre=false)
+    /**
+     * TODO: document this function.
+     *
+     * @param \Scriptotek\Marc\Record $record
+     *   TODO: ?
+     * @param string $tag
+     *   The tag name.
+     * @param bool $pcre
+     *   If true, match as a regular expression.
+     *
+     * @return \Scriptotek\Marc\Fields\Field[]
+     *   TODO: ?
+     */
+    public static function makeFieldObjects(Record $record, $tag, $pcre = false)
     {
-        return array_map(function ($field) {
-
+        return array_map(function (Field $field) {
             // Note: `new static()` is a way of creating a new instance of the
             // called class using late static binding.
             return new static($field->getField());
