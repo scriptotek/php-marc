@@ -5,6 +5,7 @@ namespace Scriptotek\Marc;
 use File_MARC_Field;
 use File_MARC_Record;
 use File_MARC_Reference;
+use JsonSerializable;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\ControlField;
@@ -40,7 +41,7 @@ use Scriptotek\Marc\Fields\Field;
  * @property string id
  * @property string type
  */
-class Record implements \JsonSerializable
+class Record implements JsonSerializable
 {
     use MagicAccess;
 
