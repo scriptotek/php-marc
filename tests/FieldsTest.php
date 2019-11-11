@@ -6,7 +6,7 @@ use File_MARC_Field;
 use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Record;
 
-class IsbnFieldTest extends TestCase
+class FieldsTest extends TestCase
 {
     public function testIsbn()
     {
