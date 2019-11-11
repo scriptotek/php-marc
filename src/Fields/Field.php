@@ -29,23 +29,6 @@ class Field implements \JsonSerializable
         return $this->field;
     }
 
-    public function jsonSerialize()
-    {
-        if (count($this->properties)) {
-            $o = [];
-            foreach ($this->properties as $prop) {
-                $value = $this->$prop;
-                if (is_object($value)) {
-                    $o[$prop] = $value->jsonSerialize();
-                } elseif ($value) {
-                    $o[$prop] = $value;
-                }
-            }
-            return $o;
-        }
-        return (string) $this;
-    }
-
     public function __call($name, $args)
     {
         return call_user_func_array([$this->field, $name], $args);
