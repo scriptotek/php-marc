@@ -8,15 +8,20 @@
 
 # scriptotek/marc
 
-A small PHP package providing a simple interface to work with MARC21 records
-on top of the excellent [File_MARC package](https://github.com/pear/File_MARC).
+This package provides a simple interface to work with MARC21 records using the excellent
+[File_MARC](https://github.com/pear/File_MARC) and [MARCspec](http://marcspec.github.io/)
+packages.
+It doesn't do any of the heavy lifting itself, but instead
 
-Works with both Binary MARC and MARCXML (namespaced or not), but not the various
-Line mode MARC formats. Records can be edited using the editing capabilities of
-File_MARC.
+- makes it a little bit easier to load data by automatically determining what you throw
+  at it (Binary MARC or MARCXML, namespaced XML or not, a collection of records in some
+  container or a single record).
+- adds a few extra convenience methods and a fluent interface to MARCspec.
 
-See [the changelog](CHANGELOG.md) for information about (breaking) changes.
-See [CONTRIBUTING.md](CONTRIBUTING.md) for information about contributing to the project.
+If you don't need any of this, you might want to use File_MARC directly instead.
+
+Want to contribute to this project?
+Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Installation using Composer:
 
@@ -73,6 +78,13 @@ use Scriptotek\Marc\Record;
 
 $record = Record::fromFile($someFileName);
 ```
+
+## Editing records
+
+Records can be edited using the editing capabilities of File_MARC
+([API docs](https://pear.php.net/package/File_MARC/docs/latest/)).
+See [an example](https://github.com/scriptotek/php-marc/issues/13#issuecomment-522036879)
+to get started.
 
 ## Querying with MARCspec
 
