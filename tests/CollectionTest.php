@@ -2,32 +2,21 @@
 
 namespace Tests;
 
+use Scriptotek\Marc\BibliographicRecord;
 use Scriptotek\Marc\Collection;
 use Scriptotek\Marc\Exceptions\XmlException;
 
 class CollectionTest extends TestCase
 {
+    /**
+     * Test that an empty Collection is created if no MARC records were found in the input.
+     */
     public function testEmptyCollection()
     {
         $source = '<?xml version="1.0" encoding="UTF-8" ?><test></test>';
 
         $collection = Collection::fromString($source);
         $this->assertCount(0, $collection->toArray());
-    }
-
-    public function testBinaryMarc()
-    {
-        $records = $this->getTestCollection('sandburg.mrc')->toArray();
-
-        $this->assertCount(1, $records);
-        $this->assertEquals('Arithmetic', $records[0]->title);
-    }
-
-    public function testBibsysOaiPmhSample()
-    {
-        $collection = $this->getTestCollection('oaipmh-bibsys.xml');
-
-        $this->assertCount(89, $collection->toArray());
     }
 
     /**
@@ -40,38 +29,50 @@ class CollectionTest extends TestCase
         $this->getTestCollection('alma-bibs-api-invalid.xml');
     }
 
-    public function testLocSample()
+    /**
+     * Define a list of sample binary MARC files that we can test with,
+     * and the expected number of records in each.
+     *
+     * @return array
+     */
+    public function mrcFiles()
     {
-        $collection = $this->getTestCollection('sru-loc.xml');
-
-        $this->assertCount(10, $collection->toArray());
+        return [
+            ['sandburg.mrc', 1],        // Single binary MARC file
+        ];
     }
 
-    public function testBibsysSample()
+    /**
+     * Define a list of sample XML files from different sources that we can test with,
+     * and the expected number of records in each.
+     *
+     * @return array
+     */
+    public function xmlFiles()
     {
-        $collection = $this->getTestCollection('sru-bibsys.xml');
-
-        $this->assertCount(117, $collection->toArray());
+        return [
+            ['oaipmh-bibsys.xml', 89],  // Records encapsulated in OAI-PMH response
+            ['sru-loc.xml', 10],        // Records encapsulated in SRU response
+            ['sru-bibsys.xml', 117],    // (Another one)
+            ['sru-zdb.xml', 8],         // (Another one)
+            ['sru-kth.xml', 10],        // (Another one)
+            ['sru-alma.xml', 3],        // (Another one)
+        ];
     }
 
-    public function testZdbSample()
+    /**
+     * Test that the sample files can be loaded using Collection::fromFile
+     *
+     * @dataProvider mrcFiles
+     * @dataProvider xmlFiles
+     * @param string $filename
+     * @param int $expected
+     */
+    public function testCollectionFromFile($filename, $expected)
     {
-        $collection = $this->getTestCollection('sru-zdb.xml');
+        $records = $this->getTestCollection($filename)->toArray();
 
-        $this->assertCount(8, $collection->toArray());
-    }
-
-    public function testKthSample()
-    {
-        $collection = $this->getTestCollection('sru-kth.xml');
-
-        $this->assertCount(10, $collection->toArray());
-    }
-
-    public function testAlmaSample()
-    {
-        $collection = $this->getTestCollection('sru-alma.xml');
-
-        $this->assertCount(3, $collection->toArray());
+        $this->assertCount($expected, $records);
+        $this->assertInstanceOf(BibliographicRecord::class, $records[0]);
     }
 }
