@@ -5,6 +5,7 @@ namespace Scriptotek\Marc\Importers;
 use File_MARC;
 use Scriptotek\Marc\Collection;
 use Scriptotek\Marc\Factory;
+use SimpleXMLElement;
 
 class Importer
 {

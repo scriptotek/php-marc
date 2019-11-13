@@ -10,6 +10,7 @@ use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\ControlField;
 use Scriptotek\Marc\Fields\Field;
+use SimpleXMLElement;
 
 /**
  * The MARC record wrapper.
@@ -146,6 +147,21 @@ class Record implements JsonSerializable
     public static function fromString($data)
     {
         return Collection::fromString($data)->first();
+    }
+
+    /**
+     * Returns the first record found in the SimpleXMLElement object
+     *
+     * @param SimpleXMLElement $element
+     *   The SimpleXMLElement object in which to look for MARC records.
+     * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
+     *   A wrapped MARC record.
+     * @throws RecordNotFound
+     *   When the object does not contain a MARC record.
+     */
+    public static function fromSimpleXMLElement(SimpleXMLElement $element)
+    {
+        return Collection::fromSimpleXMLElement($element)->first();
     }
 
     /*************************************************************************

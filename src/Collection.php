@@ -6,6 +6,8 @@ use File_MARC_Record;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Importers\Importer;
+use Scriptotek\Marc\Importers\XmlImporter;
+use SimpleXMLElement;
 
 class Collection implements \Iterator
 {
@@ -49,6 +51,19 @@ class Collection implements \Iterator
         $importer = new Importer();
 
         return $importer->fromString($data);
+    }
+
+    /**
+     * Load records from a SimpleXMLElement object.
+     *
+     * @param SimpleXMLElement $element
+     * @return Collection
+     */
+    public static function fromSimpleXMLElement(SimpleXMLElement $element)
+    {
+        $importer = new XmlImporter($element);
+
+        return $importer->getCollection();
     }
 
     /**

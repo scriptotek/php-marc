@@ -75,4 +75,21 @@ class CollectionTest extends TestCase
         $this->assertCount($expected, $records);
         $this->assertInstanceOf(BibliographicRecord::class, $records[0]);
     }
+
+
+    /**
+     * Test that the sample files can be loaded using Collection::fromSimpleXMLElement.
+     *
+     * @dataProvider xmlFiles
+     * @param string $filename
+     * @param int $expected
+     */
+    public function testInitializeFromSimpleXmlElement($filename, $expected)
+    {
+        $el = simplexml_load_file($this->pathTo($filename));
+
+        $collection = Collection::fromSimpleXMLElement($el);
+
+        $this->assertCount($expected, $collection->toArray());
+    }
 }

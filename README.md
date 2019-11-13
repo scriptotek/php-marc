@@ -29,9 +29,9 @@ composer require scriptotek/marc
 
 ## Reading records
 
-Use `Collection::fromFile` or `Collection::fromString` to read one or more
-MARC records from a file or string. The methods autodetect the data format
-(Binary XML or MARCXML) and whether the XML is namespaced or not.
+Use `Collection::fromFile`, `Collection::fromString` or `Collection::fromSimpleXMLElement`
+to read one or more MARC records from a file or string. The methods autodetect the data
+format (Binary XML or MARCXML) and whether the XML is namespaced or not.
 
 ```php
 use Scriptotek\Marc\Collection;
@@ -64,9 +64,9 @@ foreach ($records as $record) {
 }
 ```
 
-If you only have a single record, you can also use `Record::fromFile` or
-`Record::fromString`. These use the `Collection` methods under the hood,
-but returns a single `Record` object.
+If you only have a single record, you can also use `Record::fromFile`,
+`Record::fromString` or `Record::fromSimpleXMLElement`. These use the
+`Collection` methods under the hood, but returns a single `Record` object.
 
 ```php
 use Scriptotek\Marc\Record;

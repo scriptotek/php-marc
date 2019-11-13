@@ -4,6 +4,7 @@ namespace Scriptotek\Marc\Importers;
 
 use File_MARCXML;
 use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\XmlException;
 use Scriptotek\Marc\Factory;
 use SimpleXMLElement;
@@ -15,15 +16,30 @@ class XmlImporter
     /* var SimpleXMLElement */
     protected $source;
 
+    /**
+     * XmlImporter constructor.
+     *
+     * @param string|SimpleXMLElement $data  Filename, XML string or SimpleXMLElement object
+     * @param string $ns  URI or prefix of the namespace
+     * @param bool $isPrefix TRUE if $ns is a prefix, FALSE if it's a URI; defaults to FALSE
+     * @param string $factory  (optional) Object factory, probably no need to set this outside testing.
+     */
     public function __construct($data, $ns = '', $isPrefix = false, $factory = null)
     {
         $this->factory = isset($factory) ? $factory : new Factory();
+
+        if (is_a($data, SimpleXMLElement::class)) {
+            $this->source = $data;
+            return;
+        }
 
         if (strlen($data) < 256 && file_exists($data)) {
             $data = file_get_contents($data);
         }
 
+        // Store errors internally so that we can fetch them with libxml_get_errors() later
         libxml_use_internal_errors(true);
+
         $this->source = simplexml_load_string($data, 'SimpleXMLElement', 0, $ns, $isPrefix);
         if (false === $this->source) {
             throw new XmlException(libxml_get_errors());
@@ -69,6 +85,22 @@ class XmlImporter
         return [];
     }
 
+    public function getFirstRecord()
+    {
+        $records = $this->getRecords();
+        if (!count($records)) {
+            throw new RecordNotFound();
+        }
+
+        $record = $records[0];
+
+        list($prefix, $ns) = $this->getMarcNamespace($record->getNamespaces(true));
+
+        $parser = $this->factory->make('File_MARCXML', $record, File_MARCXML::SOURCE_SIMPLEXMLELEMENT, $ns);
+
+        return (new Collection($parser))->$this->getFirstRecord();
+    }
+
     public function getCollection()
     {
         $records = $this->getRecords();
@@ -77,6 +109,7 @@ class XmlImporter
         }
 
         list($prefix, $ns) = $this->getMarcNamespace($records[0]->getNamespaces(true));
+
         $pprefix = empty($prefix) ? '' : "$prefix:";
 
         $records = array_map(function (SimpleXMLElement $record) {
