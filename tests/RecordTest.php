@@ -6,6 +6,7 @@ use File_MARC;
 use File_MARC_Record;
 use Scriptotek\Marc\AuthorityRecord;
 use Scriptotek\Marc\BibliographicRecord;
+use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Fields\Field;
 use Scriptotek\Marc\Fields\Subject;
 use Scriptotek\Marc\HoldingsRecord;
@@ -121,5 +122,41 @@ class RecordTest extends TestCase
         // Make sure that the exact same wrapped record object is returned
         // by the getter.
         $this->assertSame($wrapped_record, $wrapper->getRecord());
+    }
+
+    /**
+     * Test that a Record wrapper object will not be initialized from
+     * an SimpleXMLElement object that doesn't contain a MARC record.
+     */
+    public function testInitializeFromInvalidSimpleXMLElement()
+    {
+        $source = simplexml_load_string(
+            '<?xml version="1.0" encoding="UTF-8" ?><book></book>'
+        );
+
+        $this->expectException(RecordNotFound::class);
+        $record = Record::fromSimpleXMLElement($source);
+    }
+
+    /**
+     * Test that a Record wrapper object can be initialized from
+     * a SimpleXMLElement object.
+     */
+    public function testInitializeFromSimpleXmlElement()
+    {
+        $source = simplexml_load_string('<?xml version="1.0" encoding="UTF-8" ?>
+          <record xmlns="http://www.loc.gov/MARC21/slim">
+            <leader>99999cam a2299999 u 4500</leader>
+            <controlfield tag="001">98218834x</controlfield>
+            <datafield tag="020" ind1=" " ind2=" ">
+              <subfield code="a">8200424421</subfield>
+              <subfield code="q">h.</subfield>
+              <subfield code="c">Nkr 98.00</subfield>
+            </datafield>
+          </record>');
+
+        $record = Record::fromSimpleXMLElement($source);
+        $this->assertInstanceOf(Record::class, $record);
+        $this->assertInstanceOf(BibliographicRecord::class, $record);
     }
 }
