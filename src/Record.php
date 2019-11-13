@@ -130,13 +130,7 @@ class Record implements JsonSerializable
      */
     public static function fromFile($filename)
     {
-        $records = Collection::fromFile($filename)->toArray();
-
-        if (!count($records)) {
-            throw new RecordNotFound();
-        }
-
-        return $records[0];
+        return Collection::fromFile($filename)->first();
     }
 
     /**
@@ -151,13 +145,7 @@ class Record implements JsonSerializable
      */
     public static function fromString($data)
     {
-        $records = Collection::fromString($data)->toArray();
-
-        if (!count($records)) {
-            throw new RecordNotFound();
-        }
-
-        return $records[0];
+        return Collection::fromString($data)->first();
     }
 
     /*************************************************************************
