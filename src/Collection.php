@@ -3,6 +3,7 @@
 namespace Scriptotek\Marc;
 
 use File_MARC_Record;
+use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Importers\Importer;
 
@@ -97,6 +98,21 @@ class Collection implements \Iterator
     public function toArray()
     {
         return iterator_to_array($this);
+    }
+
+    /**
+     * Return the first record in the collection.
+     *
+     * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
+     * @throws RecordNotFound if the collection is empty
+     */
+    public function first()
+    {
+        $this->rewind();
+        if (is_null($this->current())) {
+            throw new RecordNotFound();
+        }
+        return $this->current();
     }
 
     /**
