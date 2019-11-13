@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Scriptotek\Marc\Collection;
+use Scriptotek\Marc\Exceptions\XmlException;
 
 class CollectionTest extends TestCase
 {
@@ -30,13 +31,12 @@ class CollectionTest extends TestCase
     }
 
     /**
-     * @expectedException Scriptotek\Marc\Exceptions\XmlException
+     * Test that it XmlException is thrown when the specified encoding (UTF-16)
+     * differs from the actual encoding (UTF-8).
      */
-    public function testAlmaBibsApiExample()
+    public function testExceptionOnInvalidEncoding()
     {
-        // Expect failure because of invalid encoding in XML declaration:
-        // Document labelled UTF-16 but has UTF-8 content
-
+        $this->expectException(XmlException::class);
         $this->getTestCollection('alma-bibs-api-invalid.xml');
     }
 
