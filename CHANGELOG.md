@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+(Nothing yet)
+
+## [2.1.0] - 2019-11-20
+
 ### Added
 
 - Added info to contributors (CONTRIBUTING.md).
@@ -113,7 +117,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `Record::fromString` now throws a `RecordNotFound` exception rather than an `ErrorException` exception if no record was found.
 - `Record::getType` now throws a `UnknownRecordType` exception rather than an `ErrorException`.
 
-[Unreleased]: https://github.com/scriptotek/php-marc/compare/v2.0.2...HEAD
+[Unreleased]: https://github.com/scriptotek/php-marc/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/scriptotek/php-marc/compare/v2.0.2...v2.1.0
 [2.0.2]: https://github.com/scriptotek/php-marc/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/scriptotek/php-marc/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/scriptotek/php-marc/compare/v1.0.1...v2.0.0
