@@ -4,6 +4,7 @@ namespace Scriptotek\Marc;
 
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Fields\Classification;
+use Scriptotek\Marc\Fields\Edition;
 use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Person;
 use Scriptotek\Marc\Fields\Publisher;
@@ -66,9 +67,19 @@ class BibliographicRecord extends Record
     }
 
     /**
+     * Get 250 as an `Edition` object. Returns null if no such field was found.
+     *
+     * @return Edition
+     */
+    public function getEdition()
+    {
+        return Edition::get($this);
+    }
+
+    /**
      * Get 26[04]$b as a `Publisher` object. Returns null if no such field was found.
      *
-     * @return Title
+     * @return Publisher
      */
     public function getPublisher()
     {

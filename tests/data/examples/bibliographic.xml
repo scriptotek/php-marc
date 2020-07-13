@@ -34,6 +34,9 @@
         <subfield code="a">The eightfold way</subfield>
         <subfield code="c">Murray Gell-Mann, Yuval Ne'eman</subfield>
     </datafield>
+    <datafield ind1=" " ind2=" " tag="250">
+        <subfield code="a">Third edition</subfield>
+    </datafield>
     <datafield tag="260" ind1=" " ind2=" ">
         <subfield code="a">New York</subfield>
         <subfield code="b">W.A. Benjamin</subfield>

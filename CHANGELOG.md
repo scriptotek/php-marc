@@ -6,7 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-(Nothing yet)
+### Added
+
+- Added edition property to BibliographicRecord.
+  ([da949e6](https://github.com/scriptotek/php-marc/commit/da949e640e86be7498f26d0e74fbb6c26bfcbce3))
 
 ## [2.1.0] - 2019-11-20
 
