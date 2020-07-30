@@ -40,8 +40,8 @@ use Scriptotek\Marc\Record;
  * @method deleteSubfield(File_MARC_Subfield $subfield)
  * @method string getIndicator(int $ind)
  * @method string setIndicator(int $ind, string $value)
- * @method string getSubfield(string $code = null, bool $pcre = null)
- * @method array getSubfields(string $code = null, bool $pcre = null)
+ * @method File_MARC_Subfield|false getSubfield(string $code = null, bool $pcre = null)
+ * @method File_MARC_List|array getSubfields(string $code = null, bool $pcre = null)
  * @method string getContents(string $joinChar = '')
  *
  * FIXME: These methods are just implemented in File_MARC_Control_Field and not
