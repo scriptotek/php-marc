@@ -156,7 +156,7 @@ class Field implements JsonSerializable
      * @return string[]
      *   The values that were contained in the requested subfields.
      */
-    protected function getSubfieldValues($codes)
+    public function getSubfieldValues($codes)
     {
         if (!is_array($codes)) {
             $codes = [$codes];
