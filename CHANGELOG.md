@@ -4,12 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased
+
+Nothing yet
+
+## [2.2.0] - 2020-09-16
 
 ### Added
 
 - Added edition property to BibliographicRecord.
   ([da949e6](https://github.com/scriptotek/php-marc/commit/da949e640e86be7498f26d0e74fbb6c26bfcbce3))
+
+### Changed
+
+- Made `getSubfieldValues()` public.
+  ([#21](https://github.com/scriptotek/php-marc/pull/21), by [@rudolfbyker](https://github.com/rudolfbyker))
+
+### Fixed
+
+- Fixed return types in @method annotations.
+  ([#20](https://github.com/scriptotek/php-marc/pull/20), by [@rudolfbyker](https://github.com/rudolfbyker))
 
 ## [2.1.0] - 2019-11-20
 
