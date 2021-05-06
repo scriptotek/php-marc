@@ -8,7 +8,7 @@ class Edition extends Field implements FieldInterface
 {
     public static function get(Record $record)
     {
-        foreach ($record->query('250') as $field) {
+        foreach ($record->query('250{$a}') as $field) {
             return new static($field->getField());
         }
     }
