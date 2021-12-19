@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-interface SubjectFieldInterface extends AuthorityFieldInterface
+interface SubjectInterface extends AuthorityInterface
 {
     public function getVocabulary();
 

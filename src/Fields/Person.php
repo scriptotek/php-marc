@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Person extends Field implements FieldInterface, AuthorityFieldInterface
+class Person extends Field implements FieldInterface, AuthorityInterface
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
@@ -14,8 +14,8 @@ class Person extends Field implements FieldInterface, AuthorityFieldInterface
     public static string $formatWithDate = '{name} ({dates})';
     public static array $termComponentCodes = ['a', 'b', 'x', 'y', 'z'];
 
-    const MAIN_ENTRY= '100';
-    const ADDED_ENTRY = '700';
+    public const MAIN_ENTRY= '100';
+    public const ADDED_ENTRY = '700';
 
     /**
      * @param Record $record

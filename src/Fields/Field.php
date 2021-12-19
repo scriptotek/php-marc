@@ -52,9 +52,10 @@ use Scriptotek\Marc\Record;
  * @method string getData()
  * @method bool setData(string $data)
  */
-class Field implements JsonSerializable
+class Field implements JsonSerializable, FieldInterface
 {
-    use SerializableField, MagicAccess;
+    use SerializableField;
+    use MagicAccess;
 
     /**
      * @var array List of properties to be included when serializing the record
@@ -124,7 +125,7 @@ class Field implements JsonSerializable
      *
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         return $this->field->__toString();
     }

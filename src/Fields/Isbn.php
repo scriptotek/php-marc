@@ -17,6 +17,6 @@ class Isbn extends Field implements FieldInterface
      */
     public static function get(Record $record): array
     {
-        return parent::makeFieldObjects($record, '020');
+        return static::makeFieldObjects($record, '020');
     }
 }

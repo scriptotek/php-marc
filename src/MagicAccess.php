@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Scriptotek\Marc;
 
 /**

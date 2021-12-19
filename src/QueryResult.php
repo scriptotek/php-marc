@@ -7,6 +7,7 @@ use ArrayIterator;
 use Countable;
 use File_MARC_Field;
 use File_MARC_Reference;
+use File_MARC_Subfield;
 use IteratorAggregate;
 use Traversable;
 use Scriptotek\Marc\Fields\Field;
@@ -14,8 +15,8 @@ use Scriptotek\Marc\Fields\Field;
 class QueryResult implements IteratorAggregate, ArrayAccess, Countable
 {
     protected $ref;
-    protected $data;
-    protected $content;
+    protected array $data;
+    protected array $content;
 
     /**
      * QueryResult constructor.
@@ -43,21 +44,21 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
     /**
      * Get the first result (field or subfield), or null if no results.
      *
-     * @return File_MARC_Field|File_MARC_Subfield|null
+     * @return Field|File_MARC_Subfield|null
      */
-    public function first()
+    public function first(): Field|File_MARC_Subfield|null
     {
-        return isset($this->data[0]) ? $this->data[0] : null;
+        return $this->data[0] ?? null;
     }
 
     /**
      * Get the text content of the first result, or null if no results.
      *
-     * @return string
+     * @return string|null
      */
-    public function text()
+    public function text(): ?string
     {
-        return isset($this->content[0]) ? $this->content[0] : null;
+        return $this->content[0] ?? null;
     }
 
     /**
@@ -65,7 +66,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
      * @return Traversable
      */
-    public function getIterator()
+    public function getIterator(): Traversable|ArrayIterator
     {
         return new ArrayIterator($this->data);
     }
@@ -76,7 +77,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * @param mixed $offset An offset to check for.
      * @return boolean true on success or false on failure.
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->data[$offset]);
     }
@@ -85,9 +86,9 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * Offset to retrieve
      * @link http://php.net/manual/en/arrayaccess.offsetget.php
      * @param mixed $offset The offset to retrieve.
-     * @return File_MARC_Field|File_MARC_Subfield
+     * @return Field|File_MARC_Subfield|null
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): Field|File_MARC_Subfield|null
     {
         return $this->data[$offset];
     }
@@ -98,7 +99,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * @param mixed $offset The offset to assign the value to.
      * @param mixed $value The value to set.
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         $this->data[$offset] = $value;
     }
@@ -108,7 +109,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * @link http://php.net/manual/en/arrayaccess.offsetunset.php
      * @param mixed $offset The offset to unset.
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->data[$offset]);
     }
@@ -118,7 +119,7 @@ class QueryResult implements IteratorAggregate, ArrayAccess, Countable
      * @link http://php.net/manual/en/countable.count.php
      * @return int The number of results
      */
-    public function count()
+    public function count(): int
     {
         return count($this->data);
     }

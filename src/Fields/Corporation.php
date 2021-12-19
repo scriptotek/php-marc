@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Corporation extends Field implements AuthorityFieldInterface
+class Corporation extends Field implements AuthorityInterface
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
@@ -13,8 +13,8 @@ class Corporation extends Field implements AuthorityFieldInterface
 
     public static array $headingComponentCodes = ['a', 'b', 'c', 'd', 'n'];
 
-    const MAIN_ENTRY= '110';
-    const ADDED_ENTRY = '710';
+    public const MAIN_ENTRY= '110';
+    public const ADDED_ENTRY = '710';
 
     /**
      * @param Record $record

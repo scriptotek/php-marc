@@ -8,10 +8,10 @@ class Classification extends Subfield implements \JsonSerializable
 {
     use SerializableField;
 
-    const UDC = '080';
-    const DEWEY = '082';
-    const ADD_DEWEY = '082';
-    const OTHER_SCHEME = '084';
+    public const UDC = '080';
+    public const DEWEY = '082';
+    public const ADD_DEWEY = '082';
+    public const OTHER_SCHEME = '084';
 
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.

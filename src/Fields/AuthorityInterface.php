@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-interface AuthorityFieldInterface extends FieldInterface
+interface AuthorityInterface
 {
     /**
      * The control number of the authority record.

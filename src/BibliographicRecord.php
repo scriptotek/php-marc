@@ -9,7 +9,7 @@ use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Person;
 use Scriptotek\Marc\Fields\Publisher;
 use Scriptotek\Marc\Fields\Subject;
-use Scriptotek\Marc\Fields\SubjectFieldInterface;
+use Scriptotek\Marc\Fields\SubjectInterface;
 use Scriptotek\Marc\Fields\Title;
 
 class BibliographicRecord extends Record
@@ -54,9 +54,9 @@ class BibliographicRecord extends Record
     /**
      * Get the 245 field as a `Title` object. Returns null if no such field was found.
      *
-     * @return Title
+     * @return Title|null
      */
-    public function getTitle(): Title
+    public function getTitle(): ?Title
     {
         return Title::get($this);
     }
@@ -64,9 +64,9 @@ class BibliographicRecord extends Record
     /**
      * Get 250 as an `Edition` object. Returns null if no such field was found.
      *
-     * @return Edition
+     * @return Edition|null
      */
-    public function getEdition()
+    public function getEdition(): ?Edition
     {
         return Edition::get($this);
     }
@@ -74,9 +74,9 @@ class BibliographicRecord extends Record
     /**
      * Get 26[04]$b as a `Publisher` object. Returns null if no such field was found.
      *
-     * @return Publisher
+     * @return Publisher|null
      */
-    public function getPublisher()
+    public function getPublisher(): ?Publisher
     {
         return Publisher::get($this);
     }
@@ -86,7 +86,7 @@ class BibliographicRecord extends Record
      *
      * @return string
      */
-    public function getPubYear()
+    public function getPubYear(): string
     {
         return substr($this->query('008')->text(), 7, 4);
     }
@@ -94,9 +94,9 @@ class BibliographicRecord extends Record
     /**
      * Get TOC
      *
-     * @return string
+     * @return array|null
      */
-    public function getToc()
+    public function getToc(): ?array
     {
         $field = $this->getField('505');
         if ($field) {
@@ -118,14 +118,15 @@ class BibliographicRecord extends Record
                 ]);
             }
         }
+        return null;
     }
 
     /**
      * Get Summary
      *
-     * @return array
+     * @return array|null
      */
-    public function getSummary()
+    public function getSummary(): array|null
     {
         $field = $this->getField('520');
         if ($field) {
@@ -134,21 +135,22 @@ class BibliographicRecord extends Record
                'c' => 'assigning_source',
             ]);
         }
+        return null;
     }
 
     /**
-     * Get an array of the 6XX fields as `SubjectFieldInterface` objects, optionally
+     * Get an array of the 6XX fields as `SubjectInterface` objects, optionally
      * filtered by vocabulary and/or tag.
      *
-     * @param string $vocabulary
-     * @param string|string[] $tag
-     * @return SubjectFieldInterface[]
+     * @param string|null $vocabulary
+     * @param string|string[]|null $tag
+     * @return SubjectInterface[]
      */
-    public function getSubjects($vocabulary = null, $tag = null)
+    public function getSubjects(string $vocabulary = null, array|string $tag = null): array
     {
         $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
 
-        return array_values(array_filter(Subject::get($this), function (SubjectFieldInterface $subject) use ($vocabulary, $tag) {
+        return array_values(array_filter(Subject::get($this), function (SubjectInterface $subject) use ($vocabulary, $tag) {
             $a = is_null($vocabulary) || $vocabulary == $subject->getVocabulary();
             $b = empty($tag) || in_array($subject->getType(), $tag);
 
@@ -160,10 +162,10 @@ class BibliographicRecord extends Record
      * Get an array of the 080, 082, 083, 084 fields as `Classification` objects, optionally
      * filtered by scheme and/or tag.
      *
-     * @param string $scheme
+     * @param string|null $scheme
      * @return Classification[]
      */
-    public function getClassifications($scheme = null)
+    public function getClassifications(string $scheme = null): array
     {
         return array_values(array_filter(Classification::get($this), function ($classifications) use ($scheme) {
             $a = is_null($scheme) || $scheme == $classifications->getScheme();
@@ -176,10 +178,10 @@ class BibliographicRecord extends Record
      * Get an array of the 100 and 700 fields as `Person` objects, optionally
      * filtered by tag.
      *
-     * @param string|string[] $tag
+     * @param string|string[]|null $tag
      * @return Person[]
      */
-    public function getCreators($tag = null)
+    public function getCreators(array|string $tag = null): array
     {
         $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
 
@@ -191,9 +193,9 @@ class BibliographicRecord extends Record
     /**
      * Get part of from 773.
      *
-     * @return string
+     * @return array|null
      */
-    public function getPartOf()
+    public function getPartOf(): ?array
     {
         $field = $this->getField('773');
         if ($field) {
@@ -205,5 +207,6 @@ class BibliographicRecord extends Record
                 'v' => 'volume',
             ]);
         }
+        return null;
     }
 }

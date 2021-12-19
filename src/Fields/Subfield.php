@@ -33,7 +33,7 @@ abstract class Subfield implements \JsonSerializable
         return (string) $this;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->subfield->getData();
     }

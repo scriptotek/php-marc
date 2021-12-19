@@ -2,7 +2,7 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class UncontrolledSubject extends Subfield implements SubjectFieldInterface, \JsonSerializable
+class UncontrolledSubject extends Subfield implements \JsonSerializable, SubjectInterface
 {
     public function getType(): string
     {

@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Subject extends Field implements SubjectFieldInterface
+class Subject extends Field implements SubjectInterface
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
@@ -18,21 +18,21 @@ class Subject extends Field implements SubjectFieldInterface
         'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z',
     ];
 
-    const PERSONAL_NAME = '600';
-    const CORPORATION_NAME = '601';
-    const MEETING_NAME = '611';
-    const UNIFORM_TITLE = '630';
-    const NAMED_EVENT = '647';
-    const CHRONOLOGICAL_TERM = '648';
-    const TOPICAL_TERM = '650';
-    const GEOGRAPHIC_NAME = '651';
-    const UNCONTROLLED_INDEX_TERM = '653';
-    const FACETED_TOPICAL_TERM = '654';
-    const GENRE_FORM = '655';
-    const OCCUPATION = '656';
-    const FUNCTION_TERM = '657';
-    const CURRICULUM_OBJECTIVE = '658';
-    const HIERARCHICAL_PLACE_NAME = '662';
+    public const PERSONAL_NAME = '600';
+    public const CORPORATION_NAME = '601';
+    public const MEETING_NAME = '611';
+    public const UNIFORM_TITLE = '630';
+    public const NAMED_EVENT = '647';
+    public const CHRONOLOGICAL_TERM = '648';
+    public const TOPICAL_TERM = '650';
+    public const GEOGRAPHIC_NAME = '651';
+    public const UNCONTROLLED_INDEX_TERM = '653';
+    public const FACETED_TOPICAL_TERM = '654';
+    public const GENRE_FORM = '655';
+    public const OCCUPATION = '656';
+    public const FUNCTION_TERM = '657';
+    public const CURRICULUM_OBJECTIVE = '658';
+    public const HIERARCHICAL_PLACE_NAME = '662';
 
     protected array $vocabularies = [
         '0' => 'lcsh',  // 0: Library of Congress Subject Headings
@@ -53,7 +53,7 @@ class Subject extends Field implements SubjectFieldInterface
     {
         $subjects = [];
 
-        foreach (parent::makeFieldObjects($record, '6..', true) as $subject) {
+        foreach (static::makeFieldObjects($record, '6..', true) as $subject) {
             if ($subject->getTag() == '653') {
                 foreach ($subject->getSubfields('a') as $sfa) {
                     $subjects[] = new UncontrolledSubject($subject, $sfa);
