@@ -4,19 +4,23 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Corporation extends Field implements FieldInterface
+class Corporation extends Field implements AuthorityFieldInterface
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['type', 'id', 'name', 'subordinate_unit', 'location', 'date', 'number', 'relationship'];
+    public array $properties = ['type', 'id', 'name', 'subordinate_unit', 'location', 'date', 'number', 'relationship'];
 
-    public static $headingComponentCodes = ['a', 'b', 'c', 'd', 'n'];
+    public static array $headingComponentCodes = ['a', 'b', 'c', 'd', 'n'];
 
     const MAIN_ENTRY= '110';
     const ADDED_ENTRY = '710';
 
-    public static function get(Record $record)
+    /**
+     * @param Record $record
+     * @return static[]
+     */
+    public static function get(Record $record): array
     {
         $objs = [];
 
@@ -31,7 +35,7 @@ class Corporation extends Field implements FieldInterface
         return $objs;
     }
 
-    public function getType()
+    public function getType(): string
     {
         return $this->getTag();
     }
@@ -39,47 +43,47 @@ class Corporation extends Field implements FieldInterface
     /**
      * Return the Authority record control number
      */
-    public function getId()
+    public function getId(): ?string
     {
         // preg_match('/^\((.+)\)(.+)$/', $sf0->getData(), $matches);
         return $this->sf('0');
     }
 
-    public function getName()
+    public function getName(): ?string
     {
         return $this->sf('a');
     }
 
-    public function getSubordinateUnit()
+    public function getSubordinateUnit(): ?string
     {
         return $this->sf('b');
     }
 
-    public function getLocation()
+    public function getLocation(): ?string
     {
         return $this->sf('c');
     }
 
-    public function getDate()
+    public function getDate(): ?string
     {
         return $this->sf('d');
     }
 
-    public function getNumber()
+    public function getNumber(): ?string
     {
         return $this->sf('n');
     }
 
-    public function getRelationship()
+    public function getRelationship(): ?string
     {
         return $this->sf('4');
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         $out = [];
         foreach ($this->getSubfields() as $sf) {
-            if (in_array($sf->getCode(), $this->headingComponentCodes)) {
+            if (in_array($sf->getCode(), static::$headingComponentCodes)) {
                 $out[] = $sf->getData();
             }
         }

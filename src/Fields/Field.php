@@ -3,6 +3,7 @@
 namespace Scriptotek\Marc\Fields;
 
 use File_MARC_Field;
+use File_MARC_List;
 use File_MARC_Subfield;
 use JsonSerializable;
 use Scriptotek\Marc\MagicAccess;
@@ -59,33 +60,33 @@ class Field implements JsonSerializable
      * @var array List of properties to be included when serializing the record
      *     using the `toArray()` method.
      */
-    public $properties = [];
+    public array $properties = [];
 
     /**
      * The characters used to separate values of a subfield.
      *
      * @var string
      */
-    public static $glue = ' : ';
+    public static string $glue = ' : ';
 
     /**
      * Whether to strip punctuation from the end of some field values.
      *
      * @var bool
      */
-    public static $chopPunctuation = true;
+    public static bool $chopPunctuation = true;
 
     /**
      * The wrapped field.
      *
-     * @var \File_MARC_Field
+     * @var File_MARC_Field
      */
-    protected $field;
+    protected File_MARC_Field $field;
 
     /**
      * Field constructor.
      *
-     * @param \File_MARC_Field $field
+     * @param File_MARC_Field $field
      *   The field to wrap.
      */
     public function __construct(File_MARC_Field $field)
@@ -96,9 +97,9 @@ class Field implements JsonSerializable
     /**
      * Get the wrapped field.
      *
-     * @return \File_MARC_Field
+     * @return File_MARC_Field
      */
-    public function getField()
+    public function getField(): File_MARC_Field
     {
         return $this->field;
     }
@@ -113,7 +114,7 @@ class Field implements JsonSerializable
      *
      * @return mixed
      */
-    public function __call($name, $args)
+    public function __call(string $name, array $args)
     {
         return call_user_func_array([$this->field, $name], $args);
     }
@@ -131,16 +132,19 @@ class Field implements JsonSerializable
     /**
      * Remove extra whitespace and punctuation from field values.
      *
-     * @param string $value
+     * @param string|null $value
      *   The value to clean.
      * @param array $options
      *   A list of options. Currently only the chopPunctuation key is used.
      *
      * @return string
      */
-    protected function clean($value, $options = [])
+    protected function clean(string $value = null, array $options = []): string
     {
-        $chopPunctuation = isset($options['chopPunctuation']) ? $options['chopPunctuation'] : static::$chopPunctuation;
+        if (is_null($value)) {
+            return "";
+        }
+        $chopPunctuation = $options['chopPunctuation'] ?? static::$chopPunctuation;
         $value = trim($value);
         if ($chopPunctuation) {
             $value = rtrim($value, '[.:,;]$');
@@ -156,13 +160,13 @@ class Field implements JsonSerializable
      * @return string[]
      *   The values that were contained in the requested subfields.
      */
-    public function getSubfieldValues($codes)
+    public function getSubfieldValues(array|string $codes): array
     {
         if (!is_array($codes)) {
             $codes = [$codes];
         }
         $parts = [];
-        /** @var \File_MARC_Subfield $sf */
+        /** @var File_MARC_Subfield $sf */
         foreach ($this->field->getSubfields() as $sf) {
             if (in_array($sf->getCode(), $codes)) {
                 $parts[] = trim($sf->getData());
@@ -182,9 +186,9 @@ class Field implements JsonSerializable
      * @return string
      *   The concatenated subfield values.
      */
-    protected function toString($codes, $options = [])
+    protected function toString(array $codes, array $options = []): string
     {
-        $glue = isset($options['glue']) ? $options['glue'] : static::$glue;
+        $glue = $options['glue'] ?? static::$glue;
         return $this->clean(implode($glue, $this->getSubfieldValues($codes)), $options);
     }
 
@@ -198,13 +202,13 @@ class Field implements JsonSerializable
      * @return string|null
      *   A line MARC representation of the field or NULL if the field is empty.
      */
-    public function asLineMarc($sep = '$', $blank = ' ')
+    public function asLineMarc(string $sep = '$', string $blank = ' '): ?string
     {
         if ($this->field->isEmpty()) {
             return null;
         }
         $subfields = [];
-        /** @var \File_MARC_Subfield $sf */
+        /** @var File_MARC_Subfield $sf */
         foreach ($this->field->getSubfields() as $sf) {
             $subfields[] = $sep . $sf->getCode() . ' ' . $sf->getData();
         }
@@ -226,11 +230,11 @@ class Field implements JsonSerializable
      *
      * @param string $code
      *   The subfield identifier.
-     * @param mixed $default
+     * @param string|null $default
      *   The fallback value to return if the subfield does not exist.
-     * @return mixed
+     * @return string|null
      */
-    public function sf($code, $default = null)
+    public function sf(string $code, string $default = null): ?string
     {
         // In PHP, ("a" == 0) will evaluate to TRUE, so it's actually very important that we ensure type here!
         $code = (string) $code;
@@ -255,13 +259,13 @@ class Field implements JsonSerializable
      * @return array
      *   TODO: ?
      */
-    public function mapSubFields($map, $includeNullValues = false)
+    public function mapSubFields(array $map, bool $includeNullValues = false): array
     {
         $o = [];
         foreach ($map as $code => $prop) {
             $value = $this->sf($code);
 
-            /** @var \File_MARC_Subfield $q */
+            /** @var File_MARC_Subfield $q */
             foreach ($this->field->getSubfields() as $q) {
                 if ($q->getCode() === $code) {
                     $value = $q->getData();
@@ -278,17 +282,17 @@ class Field implements JsonSerializable
     /**
      * TODO: document this function.
      *
-     * @param \Scriptotek\Marc\Record $record
+     * @param Record $record
      *   TODO: ?
      * @param string $tag
      *   The tag name.
      * @param bool $pcre
      *   If true, match as a regular expression.
      *
-     * @return \Scriptotek\Marc\Fields\Field
+     * @return static|null
      *   TODO: ?
      */
-    public static function makeFieldObject(Record $record, $tag, $pcre = false)
+    public static function makeFieldObject(Record $record, string $tag, bool $pcre = false): ?static
     {
         $field = $record->getField($tag, $pcre);
 
@@ -300,17 +304,17 @@ class Field implements JsonSerializable
     /**
      * TODO: document this function.
      *
-     * @param \Scriptotek\Marc\Record $record
+     * @param Record $record
      *   TODO: ?
      * @param string $tag
      *   The tag name.
      * @param bool $pcre
      *   If true, match as a regular expression.
      *
-     * @return \Scriptotek\Marc\Fields\Field[]
+     * @return static[]
      *   TODO: ?
      */
-    public static function makeFieldObjects(Record $record, $tag, $pcre = false)
+    public static function makeFieldObjects(Record $record, string $tag, bool $pcre = false): array
     {
         return array_map(function (Field $field) {
             // Note: `new static()` is a way of creating a new instance of the

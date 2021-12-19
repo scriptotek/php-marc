@@ -10,7 +10,7 @@ class QueryResultTest extends TestCase
 {
     protected $record;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->record = Record::fromString('<?xml version="1.0" encoding="UTF-8" ?>
           <record xmlns="http://www.loc.gov/MARC21/slim">

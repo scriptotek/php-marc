@@ -2,11 +2,9 @@
 
 namespace Scriptotek\Marc\Fields;
 
-use Scriptotek\Marc\Record;
-
 trait SerializableField
 {
-    public function jsonSerialize()
+    public function jsonSerialize(): array|string
     {
         if (count($this->properties)) {
             $o = [];

@@ -2,9 +2,9 @@
 
 namespace Scriptotek\Marc\Fields;
 
-class UncontrolledSubject extends Subfield implements SubjectInterface, \JsonSerializable
+class UncontrolledSubject extends Subfield implements SubjectFieldInterface, \JsonSerializable
 {
-    public function getType()
+    public function getType(): string
     {
         return Subject::UNCONTROLLED_INDEX_TERM;
     }
@@ -17,27 +17,27 @@ class UncontrolledSubject extends Subfield implements SubjectInterface, \JsonSer
     /**
      * Return the Authority record control number
      */
-    public function getId()
+    public function getId(): ?string
     {
         return null;
     }
 
-    public function getTerm()
+    public function getTerm(): string
     {
         return $this->subfield->getData();
     }
 
-    public function getParts()
+    public function getParts(): array
     {
         return [$this->getTerm()];
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->getTerm();
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): string|array
     {
         return [
             'type' => $this->getType(),

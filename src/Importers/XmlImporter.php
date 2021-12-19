@@ -101,7 +101,7 @@ class XmlImporter
         return (new Collection($parser))->$this->getFirstRecord();
     }
 
-    public function getCollection()
+    public function getCollection(): Collection
     {
         $records = $this->getRecords();
         if (!count($records)) {

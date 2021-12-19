@@ -4,16 +4,16 @@ namespace Scriptotek\Marc\Fields;
 
 use Scriptotek\Marc\Record;
 
-class Subject extends Field implements FieldInterface, SubjectInterface
+class Subject extends Field implements SubjectFieldInterface
 {
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['type', 'vocabulary', 'term', 'id'];
+    public array $properties = ['type', 'vocabulary', 'term', 'id'];
 
-    public static $glue = ' : ';
-    public static $chopPunctuation = true;
-    public static $termComponentCodes = [
+    public static string $glue = ' : ';
+    public static bool $chopPunctuation = true;
+    public static array $termComponentCodes = [
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
         'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z',
     ];
@@ -34,7 +34,7 @@ class Subject extends Field implements FieldInterface, SubjectInterface
     const CURRICULUM_OBJECTIVE = '658';
     const HIERARCHICAL_PLACE_NAME = '662';
 
-    protected $vocabularies = [
+    protected array $vocabularies = [
         '0' => 'lcsh',  // 0: Library of Congress Subject Headings
         '1' => 'lccsh', // 1: LC subject headings for children's literature
         '2' => 'mesh',  // 2: Medical Subject Headings
@@ -45,7 +45,11 @@ class Subject extends Field implements FieldInterface, SubjectInterface
         // 7: Source specified in subfield $2
     ];
 
-    public static function get(Record $record)
+    /**
+     * @param Record $record
+     * @return (UncontrolledSubject|Subject)[]
+     */
+    public static function get(Record $record): array
     {
         $subjects = [];
 
@@ -62,12 +66,12 @@ class Subject extends Field implements FieldInterface, SubjectInterface
         return $subjects;
     }
 
-    public function getType()
+    public function getType(): string
     {
         return $this->getTag();
     }
 
-    public function getVocabulary()
+    public function getVocabulary(): ?string
     {
         $ind2 = $this->field->getIndicator(2);
         $sf2 = $this->field->getSubfield('2');
@@ -84,22 +88,22 @@ class Subject extends Field implements FieldInterface, SubjectInterface
     /**
      * Return the Authority record control number
      */
-    public function getId()
+    public function getId(): ?string
     {
         return $this->sf('0');
     }
 
-    public function getParts()
+    public function getParts(): array
     {
         return $this->getSubfields('[' . implode('', self::$termComponentCodes) . ']', true);
     }
 
-    public function getTerm()
+    public function getTerm(): ?string
     {
         return $this->toString(self::$termComponentCodes);
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->getTerm();
     }

@@ -2,7 +2,9 @@
 
 namespace Scriptotek\Marc;
 
+use File_MARC;
 use File_MARC_Record;
+use File_MARCXML;
 use Scriptotek\Marc\Exceptions\RecordNotFound;
 use Scriptotek\Marc\Exceptions\UnknownRecordType;
 use Scriptotek\Marc\Importers\Importer;
@@ -11,18 +13,18 @@ use SimpleXMLElement;
 
 class Collection implements \Iterator
 {
-    protected $parser;
-    protected $_records;
-    protected $useCache = false;
-    protected $position = 0;
-    protected $_current;
+    protected File_MARCXML|File_MARC|null $parser;
+    protected ?array $_records = null;
+    protected bool $useCache = false;
+    protected int $position = 0;
+    protected Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null $_current = null;
 
     /**
      * Collection constructor.
      *
-     * @param \File_MARC|\File_MARCXML $parser
+     * @param File_MARCXML|File_MARC|null $parser
      */
-    public function __construct($parser = null)
+    public function __construct(File_MARCXML|File_MARC $parser = null)
     {
         $this->parser = $parser;
     }
@@ -33,7 +35,7 @@ class Collection implements \Iterator
      * @param string $filename
      * @return Collection
      */
-    public static function fromFile($filename)
+    public static function fromFile(string $filename): Collection
     {
         $importer = new Importer();
 
@@ -46,7 +48,7 @@ class Collection implements \Iterator
      * @param string $data
      * @return Collection
      */
-    public static function fromString($data)
+    public static function fromString(string $data): Collection
     {
         $importer = new Importer();
 
@@ -59,7 +61,7 @@ class Collection implements \Iterator
      * @param SimpleXMLElement $element
      * @return Collection
      */
-    public static function fromSimpleXMLElement(SimpleXMLElement $element)
+    public static function fromSimpleXMLElement(SimpleXMLElement $element): Collection
     {
         $importer = new XmlImporter($element);
 
@@ -72,7 +74,7 @@ class Collection implements \Iterator
      * @param File_MARC_Record $record
      * @return string
      */
-    public static function getRecordType(File_MARC_Record $record)
+    public static function getRecordType(File_MARC_Record $record): string
     {
         $leader = $record->getLeader();
         $recordType = substr($leader, 6, 1);
@@ -110,7 +112,7 @@ class Collection implements \Iterator
      *
      * @return Collection[]
      */
-    public function toArray()
+    public function toArray(): array
     {
         return iterator_to_array($this);
     }
@@ -118,10 +120,10 @@ class Collection implements \Iterator
     /**
      * Return the first record in the collection.
      *
-     * @return BibliographicRecord|HoldingsRecord|AuthorityRecord
+     * @return Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null
      * @throws RecordNotFound if the collection is empty
      */
-    public function first()
+    public function first(): Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null
     {
         $this->rewind();
         if (is_null($this->current())) {
@@ -134,51 +136,47 @@ class Collection implements \Iterator
      * Creates a Record object from a File_MARC_Record object.
      *
      * @param File_MARC_Record $record
-     * @return AuthorityRecord|BibliographicRecord|HoldingsRecord
+     * @return Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null
      */
-    public function recordFactory(File_MARC_Record $record)
+    public function recordFactory(File_MARC_Record $record): Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null
     {
         try {
             $recordType = self::getRecordType($record);
         } catch (UnknownRecordType $e) {
             return new Record($record);
         }
-        switch ($recordType) {
-            case Marc21::BIBLIOGRAPHIC:
-                return new BibliographicRecord($record);
-
-            case Marc21::HOLDINGS:
-                return new HoldingsRecord($record);
-
-            case Marc21::AUTHORITY:
-                return new AuthorityRecord($record);
-        }
+        return match ($recordType) {
+            Marc21::BIBLIOGRAPHIC => new BibliographicRecord($record),
+            Marc21::HOLDINGS => new HoldingsRecord($record),
+            Marc21::AUTHORITY => new AuthorityRecord($record),
+            default => null,
+        };
     }
 
     /*********************************************************
      * Iterator
      *********************************************************/
 
-    public function valid()
+    public function valid(): bool
     {
         return !is_null($this->_current);
     }
 
-    public function current()
+    public function current(): Record|HoldingsRecord|BibliographicRecord|AuthorityRecord|null
     {
         return $this->_current;
     }
 
-    public function key()
+    public function key(): int
     {
         return $this->position;
     }
 
-    public function next()
+    public function next(): void
     {
         ++$this->position;
         if ($this->useCache) {
-            $rec = isset($this->_records[$this->position]) ? $this->_records[$this->position] : false;
+            $rec = $this->_records[$this->position] ?? false;
         } else {
             $rec = isset($this->parser) ? $this->parser->next() : null;
             if ($rec) {
@@ -189,7 +187,7 @@ class Collection implements \Iterator
         $this->_current = $rec ?: null;
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->position = -1;
         if (is_null($this->_records)) {

@@ -9,21 +9,23 @@ use SimpleXMLElement;
 
 class Importer
 {
+    private Factory $factory;
+
     public function __construct(Factory $factory = null)
     {
-        $this->factory = isset($factory) ? $factory : new Factory();
+        $this->factory = $factory ?? new Factory();
     }
 
-    public function fromFile($filename)
+    public function fromFile(string $filename): Collection
     {
         $data = file_get_contents($filename);
 
         return $this->fromString($data);
     }
 
-    public function fromString($data)
+    public function fromString(string $data): Collection
     {
-        $isXml = (substr($data, 0, 1) == '<');
+        $isXml = str_starts_with($data, '<');
         if ($isXml) {
             $importer = new XmlImporter($data);
 

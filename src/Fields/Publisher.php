@@ -6,7 +6,11 @@ use Scriptotek\Marc\Record;
 
 class Publisher extends Field implements FieldInterface
 {
-    public static function get(Record $record)
+    /**
+     * @param Record $record
+     * @return static|null
+     */
+    public static function get(Record $record): ?static
     {
         foreach ($record->query('264{$b}') as $field) {
             return new static($field->getField());
@@ -14,9 +18,10 @@ class Publisher extends Field implements FieldInterface
         foreach ($record->query('260{$b}') as $field) {
             return new static($field->getField());
         }
+        return null;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->sf('b');
     }

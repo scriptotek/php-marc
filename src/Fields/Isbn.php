@@ -6,12 +6,16 @@ use Scriptotek\Marc\Record;
 
 class Isbn extends Field implements FieldInterface
 {
-    public function __toString()
+    public function __toString(): string
     {
         return $this->sf('a', '');
     }
 
-    public static function get(Record $record)
+    /**
+     * @param Record $record
+     * @return static[]
+     */
+    public static function get(Record $record): array
     {
         return parent::makeFieldObjects($record, '020');
     }

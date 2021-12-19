@@ -17,9 +17,9 @@ class Classification extends Subfield implements \JsonSerializable
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
 
-    public $properties = ['scheme', 'number', 'heading', 'edition', 'assigning_agency', 'id'];
+    public array $properties = ['scheme', 'number', 'heading', 'edition', 'assigning_agency', 'id'];
 
-    public static function get(Record $record)
+    public static function get(Record $record): array
     {
         $out = [];
         foreach ($record->getFields('08[0234]', true) as $field) {
@@ -30,17 +30,17 @@ class Classification extends Subfield implements \JsonSerializable
         return $out;
     }
 
-    public function getType()
+    public function getType(): string
     {
         return $this->getTag();
     }
 
-    public function getTag()
+    public function getTag(): string
     {
         return $this->field->getTag();
     }
 
-    public function getScheme()
+    public function getScheme(): string
     {
         $typeMap = [
             '080' => 'udc',
@@ -57,31 +57,32 @@ class Classification extends Subfield implements \JsonSerializable
         return $typeMap[$tag];
     }
 
-    public function getEdition()
+    public function getEdition(): ?string
     {
         if (in_array($this->field->getTag(), ['080', '082', '083'])) {
             return $this->field->sf('2');
         }
+        return null;
     }
 
-    public function getNumber()
+    public function getNumber(): string
     {
         return $this->subfield->getData();
     }
 
-    public function getAssigningVocabulary()
+    public function getAssigningVocabulary(): ?string
     {
         return $this->field->sf('q');
     }
 
-    public function getId()
+    public function getId(): ?string
     {
         // NOTE: Both $a and $0 are repeatable, but there's no examples of how that would look like.
         //       I'm guessing that they would alternate: $a ... $0 ... $a ... $0 ... , but not sure.
         return $this->field->sf('0');
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->getNumber();
     }

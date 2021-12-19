@@ -6,9 +6,9 @@ use Scriptotek\Marc\Record;
 
 class Title extends Field implements FieldInterface
 {
-    public static function get(Record $record)
+    public static function get(Record $record): static
     {
-        return parent::makeFieldObject($record, '245');
+        return static::makeFieldObject($record, '245');
     }
 
     /**
@@ -17,7 +17,7 @@ class Title extends Field implements FieldInterface
      *  - Removes trailing '/'
      *  - See tests/TitleFieldTest.php for more info.
      */
-    public function __toString()
+    public function __toString(): string
     {
         // $a is not repeated
         $a = $this->field->getSubfield('a');

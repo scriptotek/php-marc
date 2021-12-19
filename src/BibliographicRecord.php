@@ -9,15 +9,15 @@ use Scriptotek\Marc\Fields\Isbn;
 use Scriptotek\Marc\Fields\Person;
 use Scriptotek\Marc\Fields\Publisher;
 use Scriptotek\Marc\Fields\Subject;
-use Scriptotek\Marc\Fields\SubjectInterface;
+use Scriptotek\Marc\Fields\SubjectFieldInterface;
 use Scriptotek\Marc\Fields\Title;
 
 class BibliographicRecord extends Record
 {
     /**
-     * @var array List of properties to be included when serializing the record using the `toArray()` method.
+     * @var string[] List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = [
+    public array $properties = [
         'id', 'isbns', 'title', 'publisher', 'pub_year', 'edition',  'creators',
         'subjects', 'classifications', 'toc', 'summary', 'part_of'
     ];
@@ -28,14 +28,9 @@ class BibliographicRecord extends Record
      * Marc21::ISBD_PUNCTUATION_INCLUDED, Marc21::NON_ISBD_PUNCTUATION_OMITTED
      * or Marc21::UNKNOWN_CATALOGING_FORM.
      *
-     * @property Isbn[] isbns
-     * @property string title
-     * @property SubjectInterface[] subjects
-     *
      * @return string
-     * @throws UnknownRecordType
      */
-    public function getCatalogingForm()
+    public function getCatalogingForm(): string
     {
         $leader = $this->record->getLeader();
         return substr($leader, 18, 1);
@@ -51,7 +46,7 @@ class BibliographicRecord extends Record
      *
      * @return Isbn[]
      */
-    public function getIsbns()
+    public function getIsbns(): array
     {
         return Isbn::get($this);
     }
@@ -61,7 +56,7 @@ class BibliographicRecord extends Record
      *
      * @return Title
      */
-    public function getTitle()
+    public function getTitle(): Title
     {
         return Title::get($this);
     }
@@ -142,18 +137,18 @@ class BibliographicRecord extends Record
     }
 
     /**
-     * Get an array of the 6XX fields as `SubjectInterface` objects, optionally
+     * Get an array of the 6XX fields as `SubjectFieldInterface` objects, optionally
      * filtered by vocabulary and/or tag.
      *
      * @param string $vocabulary
      * @param string|string[] $tag
-     * @return SubjectInterface[]
+     * @return SubjectFieldInterface[]
      */
     public function getSubjects($vocabulary = null, $tag = null)
     {
         $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
 
-        return array_values(array_filter(Subject::get($this), function (SubjectInterface $subject) use ($vocabulary, $tag) {
+        return array_values(array_filter(Subject::get($this), function (SubjectFieldInterface $subject) use ($vocabulary, $tag) {
             $a = is_null($vocabulary) || $vocabulary == $subject->getVocabulary();
             $b = empty($tag) || in_array($subject->getType(), $tag);
 

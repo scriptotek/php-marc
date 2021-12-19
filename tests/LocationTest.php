@@ -8,7 +8,7 @@ use Scriptotek\Marc\Fields\Location;
 
 class LocationTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $field = new File_MARC_Data_Field('852', array(
             new File_MARC_Subfield('b', '1030310'),

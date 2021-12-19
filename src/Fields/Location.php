@@ -17,34 +17,38 @@ use Scriptotek\Marc\Record;
  */
 class Location extends Field implements FieldInterface
 {
-    public static $glue = ' ';
+    public static string $glue = ' ';
 
     /**
      * @var array List of properties to be included when serializing the record using the `toArray()` method.
      */
-    public $properties = ['location', 'sublocation', 'shelvinglocation', 'callcode'];
+    public array $properties = ['location', 'sublocation', 'shelvinglocation', 'callcode'];
 
-    public static function get(Record $record)
+    /**
+     * @param Record $record
+     * @return static[]
+     */
+    public static function get(Record $record): array
     {
-        return parent::makeFieldObjects($record, '852');
+        return static::makeFieldObjects($record, '852');
     }
 
-    public function getLocation()
+    public function getLocation(): ?string
     {
         return $this->sf('a');
     }
 
-    public function getSublocation()
+    public function getSublocation(): ?string
     {
         return $this->sf('b');
     }
 
-    public function getShelvinglocation()
+    public function getShelvinglocation(): ?string
     {
         return $this->sf('c');
     }
 
-    public function getCallcode()
+    public function getCallcode(): ?string
     {
         return $this->toString([
             'h',    // Classification part (NR)
@@ -56,17 +60,17 @@ class Location extends Field implements FieldInterface
         ]);
     }
 
-    public function getNonpublicNote()
+    public function getNonpublicNote(): ?string
     {
         return $this->sf('x');
     }
 
-    public function getPublicNote()
+    public function getPublicNote(): ?string
     {
         return $this->sf('z');
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->toString(['a', 'b', 'c', 'h', 'i', 'j', 'k', 'l', 'm']);
     }
