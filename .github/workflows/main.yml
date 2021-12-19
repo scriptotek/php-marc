@@ -4,19 +4,24 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
-        php_version:
+        php:
           - "8.0"
           - "8.1"
+    runs-on: ubuntu-latest
+    name: PHP ${{ matrix.php }}
     steps:
     - uses: actions/checkout@v2
     - uses: php-actions/composer@v6
       with:
-        php_version: ${{ matrix.php_version }}
+        php_version: ${{ matrix.php }}
+    - uses: php-actions/phpstan@v3
+      with:
+        php_version: ${{ matrix.php }}
+        path: src/
     - uses: php-actions/phpunit@v3
       with:
-        php_version: ${{ matrix.php_version }}
+        php_version: ${{ matrix.php }}
         php_extensions: pcov
     - run: bash <(curl -s https://codecov.io/bash)
