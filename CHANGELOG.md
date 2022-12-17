@@ -8,6 +8,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 Nothing yet
 
+## [2.2.3] - 2022-12-17
+
+### Changed
+
+- Fixed return type for PHP 8.1 compatibility
+  ([#23](https://github.com/scriptotek/php-marc/pull/23), by [@gerricom](https://github.com/gerricom))
+- Add PHP 8.2 to test matrix
+
+## [2.2.1] - 2021-05-06
+
+### Changed
+
+- Fixed crash when 250 is missing
+  ([6850aed](https://github.com/scriptotek/php-marc/commit/6850aedf9a3a41f49fd026336283c487e844919c))
+
+### Changed
+
+- Made `getSubfieldValues()` public.
+  ([#21](https://github.com/scriptotek/php-marc/pull/21), by [@rudolfbyker](https://github.com/rudolfbyker))
+
 ## [2.2.0] - 2020-09-16
 
 ### Added
