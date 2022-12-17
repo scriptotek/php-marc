@@ -1,6 +1,6 @@
 [![Coverage](https://img.shields.io/codecov/c/github/scriptotek/php-marc)](https://codecov.io/gh/scriptotek/php-marc)
 [![StyleCI](https://github.styleci.io/repos/41363199/shield?branch=main)](https://styleci.io/repos/41363199)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/scriptotek/marc)](https://codeclimate.com/github/scriptotek/marc)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/scriptotek/php-marc)](https://codeclimate.com/github/scriptotek/php-marc)
 [![Latest Stable Version](https://img.shields.io/packagist/v/scriptotek/marc)](https://packagist.org/packages/scriptotek/marc)
 [![Total Downloads](https://img.shields.io/packagist/dt/scriptotek/marc)](https://packagist.org/packages/scriptotek/marc)
 
