@@ -219,7 +219,7 @@ class Record implements JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize(): array
+    public function jsonSerialize()
     {
         $o = [];
         foreach ($this->properties as $prop) {
