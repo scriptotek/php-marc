@@ -26,9 +26,9 @@ class ExamplesTest extends TestCase
         }
     }
 
-    public function exampleDataProvider()
+    public static function exampleDataProvider()
     {
-        foreach (glob($this->pathTo('examples/*.xml')) as $filename) {
+        foreach (glob(self::pathTo('examples/*.xml')) as $filename) {
             yield [$filename];
         }
     }

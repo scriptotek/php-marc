@@ -7,14 +7,14 @@ use Scriptotek\Marc\Record;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
-    protected function pathTo($filename)
+    protected static function pathTo($filename)
     {
         return __DIR__ . '/data/' . $filename;
     }
 
     protected function getTestCollection($filename)
     {
-        return Collection::fromFile($this->pathTo($filename));
+        return Collection::fromFile(self::pathTo($filename));
     }
 
     protected function getNthrecord($filename, $n)
