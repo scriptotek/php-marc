@@ -22,8 +22,5 @@ jobs:
       with:
         php_version: ${{ matrix.php }}
         path: src/
-    - uses: php-actions/phpunit@v3
-      with:
-        php_version: ${{ matrix.php }}
-        php_extensions: pcov
+    - run: composer test
     - run: bash <(curl -s https://codecov.io/bash)
