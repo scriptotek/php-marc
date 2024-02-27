@@ -35,7 +35,7 @@ class CollectionTest extends TestCase
      *
      * @return array
      */
-    public function mrcFiles()
+    public static function mrcFiles()
     {
         return [
             ['sandburg.mrc', 1],        // Single binary MARC file
@@ -48,7 +48,7 @@ class CollectionTest extends TestCase
      *
      * @return array
      */
-    public function xmlFiles()
+    public static function xmlFiles()
     {
         return [
             ['oaipmh-bibsys.xml', 89],  // Records encapsulated in OAI-PMH response
@@ -86,7 +86,7 @@ class CollectionTest extends TestCase
      */
     public function testInitializeFromSimpleXmlElement($filename, $expected)
     {
-        $el = simplexml_load_file($this->pathTo($filename));
+        $el = simplexml_load_file(self::pathTo($filename));
 
         $collection = Collection::fromSimpleXMLElement($el);
 
