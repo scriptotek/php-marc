@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 Nothing yet
 
+## [3.0.0] - 2024-02-27
+
+### Changed
+
+- Updated to `pear/file_marc@dev` since the last stable release is not compatible with PHP >= 8.1
+  ([#26](https://github.com/scriptotek/php-marc/pull/26), by [@danmichaelo](https://github.com/danmichaelo))
+- Add PHP 8.3 to test matrix
+
 ## [2.2.3] - 2022-12-17
 
 ### Changed
