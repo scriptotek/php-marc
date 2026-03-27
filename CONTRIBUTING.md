@@ -6,7 +6,7 @@ feel free to open an issue first.
 
 This project comes with a [ruleset.xml](https://github.com/scriptotek/php-marc/blob/master/ruleset.xml) file that
 defines the code style (which is PSR-2 at the time of this writing), so it can be checked with
-[phpcs](https://github.com/squizlabs/PHP_CodeSniffer):
+[phpcs](https://github.com/PHPCSStandards/PHP_CodeSniffer):
 
     phpcs --standard=ruleset.xml src
 
