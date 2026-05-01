@@ -4,7 +4,7 @@ namespace Scriptotek\Marc\Fields;
 
 trait SerializableField
 {
-    public function jsonSerialize(): array|string
+    public function jsonSerialize(): mixed
     {
         if (count($this->properties)) {
             $o = [];

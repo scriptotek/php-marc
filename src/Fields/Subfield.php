@@ -28,7 +28,7 @@ abstract class Subfield implements \JsonSerializable
         $this->__destruct();
     }
 
-    public function jsonSerialize(): string|array
+    public function jsonSerialize(): mixed
     {
         return (string) $this;
     }
@@ -38,12 +38,12 @@ abstract class Subfield implements \JsonSerializable
         return $this->subfield->getData();
     }
 
-    public function __call($name, $args)
+    public function __call(string $name, array $args): mixed
     {
         return call_user_func_array([$this->subfield, $name], $args);
     }
 
-    public function __get($key)
+    public function __get(string $key): mixed
     {
         $method = 'get' . ucfirst($key);
         if (method_exists($this, $method)) {

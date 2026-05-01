@@ -24,7 +24,7 @@ class Collection implements \Iterator
      *
      * @param File_MARCXML|File_MARC|null $parser
      */
-    public function __construct(File_MARCXML|File_MARC $parser = null)
+    public function __construct(File_MARCXML|File_MARC|null $parser = null)
     {
         $this->parser = $parser;
     }
@@ -206,7 +206,7 @@ class Collection implements \Iterator
      * Magic
      *********************************************************/
 
-    public function __call($name, $arguments)
+    public function __call(string $name, array $arguments): mixed
     {
         return call_user_func_array([$this->parser, $name], $arguments);
     }

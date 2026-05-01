@@ -18,8 +18,18 @@ class BibliographicRecord extends Record
      * @var string[] List of properties to be included when serializing the record using the `toArray()` method.
      */
     public array $properties = [
-        'id', 'isbns', 'title', 'publisher', 'pub_year', 'edition',  'creators',
-        'subjects', 'classifications', 'toc', 'summary', 'part_of'
+        'id',
+        'isbns',
+        'title',
+        'publisher',
+        'pub_year',
+        'edition',
+        'creators',
+        'subjects',
+        'classifications',
+        'toc',
+        'summary',
+        'part_of'
     ];
 
     /**
@@ -114,7 +124,7 @@ class BibliographicRecord extends Record
             } else {
                 // Basic
                 return $field->mapSubFields([
-                   'a' => 'text',
+                    'a' => 'text',
                 ]);
             }
         }
@@ -131,8 +141,8 @@ class BibliographicRecord extends Record
         $field = $this->getField('520');
         if ($field) {
             return $field->mapSubFields([
-               'a' => 'text',
-               'c' => 'assigning_source',
+                'a' => 'text',
+                'c' => 'assigning_source',
             ]);
         }
         return null;
@@ -146,7 +156,7 @@ class BibliographicRecord extends Record
      * @param string|string[]|null $tag
      * @return SubjectInterface[]
      */
-    public function getSubjects(string $vocabulary = null, array|string $tag = null): array
+    public function getSubjects(?string $vocabulary = null, array|string|null $tag = null): array
     {
         $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
 
@@ -165,7 +175,7 @@ class BibliographicRecord extends Record
      * @param string|null $scheme
      * @return Classification[]
      */
-    public function getClassifications(string $scheme = null): array
+    public function getClassifications(?string $scheme = null): array
     {
         return array_values(array_filter(Classification::get($this), function ($classifications) use ($scheme) {
             $a = is_null($scheme) || $scheme == $classifications->getScheme();
@@ -181,7 +191,7 @@ class BibliographicRecord extends Record
      * @param string|string[]|null $tag
      * @return Person[]
      */
-    public function getCreators(array|string $tag = null): array
+    public function getCreators(array|string|null $tag = null): array
     {
         $tag = is_null($tag) ? [] : (is_array($tag) ? $tag : [$tag]);
 

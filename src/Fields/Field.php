@@ -115,7 +115,7 @@ class Field implements JsonSerializable, FieldInterface
      *
      * @return mixed
      */
-    public function __call(string $name, array $args)
+    public function __call(string $name, array $args): mixed
     {
         return call_user_func_array([$this->field, $name], $args);
     }
@@ -140,7 +140,7 @@ class Field implements JsonSerializable, FieldInterface
      *
      * @return string
      */
-    protected function clean(string $value = null, array $options = []): string
+    protected function clean(?string $value = null, array $options = []): string
     {
         if (is_null($value)) {
             return "";
@@ -223,7 +223,7 @@ class Field implements JsonSerializable, FieldInterface
             $ind2 = $blank;
         }
 
-        return "${tag} ${ind1}${ind2} " . implode(' ', $subfields);
+        return "{$tag} {$ind1}{$ind2} " . implode(' ', $subfields);
     }
 
     /**
@@ -235,7 +235,7 @@ class Field implements JsonSerializable, FieldInterface
      *   The fallback value to return if the subfield does not exist.
      * @return string|null
      */
-    public function sf(string $code, string $default = null): ?string
+    public function sf(string $code, ?string $default = null): ?string
     {
         // In PHP, ("a" == 0) will evaluate to TRUE, so it's actually very important that we ensure type here!
         $code = (string) $code;

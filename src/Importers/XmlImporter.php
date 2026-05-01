@@ -11,10 +11,9 @@ use SimpleXMLElement;
 
 class XmlImporter
 {
-    protected $factory;
+    protected Factory $factory;
 
-    /* var SimpleXMLElement */
-    protected $source;
+    protected SimpleXMLElement $source;
 
     /**
      * XmlImporter constructor.
@@ -22,11 +21,11 @@ class XmlImporter
      * @param string|SimpleXMLElement $data  Filename, XML string or SimpleXMLElement object
      * @param string $ns  URI or prefix of the namespace
      * @param bool $isPrefix TRUE if $ns is a prefix, FALSE if it's a URI; defaults to FALSE
-     * @param string $factory  (optional) Object factory, probably no need to set this outside testing.
+     * @param Factory|null $factory  (optional) Object factory, probably no need to set this outside testing.
      */
-    public function __construct($data, $ns = '', $isPrefix = false, $factory = null)
+    public function __construct($data, string $ns = '', bool $isPrefix = false, ?Factory $factory = null)
     {
-        $this->factory = isset($factory) ? $factory : new Factory();
+        $this->factory = $factory ?? new Factory();
 
         if (is_a($data, SimpleXMLElement::class)) {
             $this->source = $data;
@@ -40,10 +39,11 @@ class XmlImporter
         // Store errors internally so that we can fetch them with libxml_get_errors() later
         libxml_use_internal_errors(true);
 
-        $this->source = simplexml_load_string($data, 'SimpleXMLElement', 0, $ns, $isPrefix);
-        if (false === $this->source) {
+        $source = simplexml_load_string($data, 'SimpleXMLElement', 0, $ns, $isPrefix);
+        if (false === $source) {
             throw new XmlException(libxml_get_errors());
         }
+        $this->source = $source;
     }
 
     public function getMarcNamespace($namespaces)
@@ -98,7 +98,7 @@ class XmlImporter
 
         $parser = $this->factory->make('File_MARCXML', $record, File_MARCXML::SOURCE_SIMPLEXMLELEMENT, $ns);
 
-        return (new Collection($parser))->$this->getFirstRecord();
+        return (new Collection($parser))->first();
     }
 
     public function getCollection(): Collection

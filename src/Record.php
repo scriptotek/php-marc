@@ -219,7 +219,7 @@ class Record implements JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize(): array|string
+    public function jsonSerialize(): mixed
     {
         $o = [];
         foreach ($this->properties as $prop) {
@@ -255,7 +255,7 @@ class Record implements JsonSerializable
      *
      * @return mixed
      */
-    public function __call($name, $args)
+    public function __call(string $name, array $args): mixed
     {
         return call_user_func_array([$this->record, $name], $args);
     }
@@ -265,7 +265,7 @@ class Record implements JsonSerializable
      *
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         return strval($this->record);
     }
